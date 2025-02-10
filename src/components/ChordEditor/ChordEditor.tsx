@@ -134,12 +134,32 @@ export function ChordEditor({
   const intervalRef = useRef<number | null>(null);
 
   useEffect(() => {
+    const updateInterval = () => {
+      if (isPlaying && intervalRef.current) {
+        window.clearInterval(intervalRef.current);
+        const stepTime = (60 / Tone.Transport.bpm.value) * 1000;
+        const validChords = chords.filter(chord => chord);
+        
+        intervalRef.current = window.setInterval(() => {
+          setCurrentStep(step => {
+            const nextStep = (step + 1) % validChords.length;
+            if (validChords[nextStep]) {
+              playChord(validChords[nextStep], keySignature);
+            }
+            return nextStep;
+          });
+        }, stepTime);
+      }
+    };
+
+    updateInterval();
+    
     return () => {
       if (intervalRef.current) {
         window.clearInterval(intervalRef.current);
       }
     };
-  }, []);
+  }, [isPlaying, Tone.Transport.bpm.value, chords, keySignature, playChord]);
 
   const handlePlayProgression = () => {
     if (isPlaying) {
