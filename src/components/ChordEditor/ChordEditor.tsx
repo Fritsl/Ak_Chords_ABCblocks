@@ -134,11 +134,16 @@ export function ChordEditor({
   const intervalRef = useRef<number | null>(null);
 
   useEffect(() => {
-    const updateInterval = () => {
+    const updateInterval = async () => {
       if (isPlaying && intervalRef.current) {
         window.clearInterval(intervalRef.current);
+        await initializeSynth();
         const stepTime = (60 / Tone.Transport.bpm.value) * 1000;
         const validChords = chords.filter(chord => chord);
+        
+        if (validChords[0]) {
+          playChord(validChords[0], keySignature);
+        }
         
         intervalRef.current = window.setInterval(() => {
           setCurrentStep(step => {
