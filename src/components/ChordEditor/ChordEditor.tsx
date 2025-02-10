@@ -1,5 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Music, Copy, Trash2 } from 'lucide-react';
+import { getFunctionColor, getCycledQuality } from '../../utils/chordUtils';
+import { usePlayback } from '../../hooks/usePlayback';
 import { Arrangement, KeySignature } from '../../types';
 import { ChordCell } from './ChordCell';
 import * as Tone from 'tone';
