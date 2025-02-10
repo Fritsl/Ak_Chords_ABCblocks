@@ -192,7 +192,6 @@ export default function App() {
           onKeyChange={setKeySignature}
           progressionMode={progressionMode}
           onProgressionModeChange={setProgressionMode}
-          speed={1}
           onProgressionSelect={(progression) => {
             if (selectedBlockIndex !== null) {
               const block = arrangement.Blocks[selectedBlockIndex];
