@@ -94,8 +94,13 @@ export function QuickActionsFooter({
             onClick={e => e.stopPropagation()}
           >
             <SynthControls
-              controls={controls}
-              onChange={setControls}
+              controls={{...controls, showModal: showSynthControls}}
+              onChange={(newControls) => {
+                setControls(newControls);
+                if (!newControls.showModal) {
+                  setShowSynthControls(false);
+                }
+              }}
             />
           </div>
         </div>
