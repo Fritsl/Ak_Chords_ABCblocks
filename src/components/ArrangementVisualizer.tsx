@@ -109,7 +109,7 @@ export function ArrangementVisualizer({
                   <button
                     onClick={() => onBlockClick(index)}
                     className={`absolute bottom-[28px] w-full transition-all duration-200 cursor-pointer
-                      hover:ring-2 hover:ring-indigo-500/50 hover:scale-[1.02]
+                      hover:ring-2 hover:ring-[#FFEE00]/50 hover:scale-[1.02]
                       ${isSelected ? 'ring-4 ring-[#FFEE00] ring-offset-2 ring-offset-transparent scale-[1.02] z-10' : ''}
                     `}
                     style={{ 
@@ -132,7 +132,7 @@ export function ArrangementVisualizer({
                   <button
                     onClick={() => onBlockClick(index)}
                     className={`absolute bottom-0 left-0 right-0 h-7 bg-[#e67e22] bg-opacity-90 text-white text-[10px] sm:text-xs px-0.5 rounded-sm
-                      group-hover:ring-2 group-hover:ring-indigo-500/50 cursor-pointer transition-all duration-200
+                      group-hover:ring-2 group-hover:ring-[#FFEE00]/50 cursor-pointer transition-all duration-200
                       ${isSelected ? 'ring-2 ring-[#FFEE00]' : ''}
                     `}
                   >
@@ -169,7 +169,7 @@ export function ArrangementVisualizer({
                 <button
                   onClick={() => onBlockClick(index)}
                   className={`absolute bottom-[28px] w-full transition-all duration-200 cursor-pointer
-                    hover:ring-2 hover:ring-indigo-500/50 hover:scale-[1.02]
+                    hover:ring-2 hover:ring-[#FFEE00]/50 hover:scale-[1.02]
                     ${isSelected ? 'ring-4 ring-[#FFEE00] ring-offset-2 ring-offset-transparent scale-[1.02] z-10' : ''}
                   `}
                   style={{ 
@@ -192,7 +192,7 @@ export function ArrangementVisualizer({
                 <button
                     onClick={() => onBlockClick(index)}
                     className={`absolute bottom-0 left-0 right-0 h-7 bg-[#e67e22] bg-opacity-90 text-white text-[10px] sm:text-xs px-0.5 rounded-sm
-                      group-hover:ring-2 group-hover:ring-indigo-500/50 cursor-pointer transition-all duration-200
+                      group-hover:ring-2 group-hover:ring-[#FFEE00]/50 cursor-pointer transition-all duration-200
                       ${isSelected ? 'ring-2 ring-[#FFEE00]' : ''}
                     `}
                   >
