@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { 
   Wand2, 
-  RefreshCw, 
+  Dice, 
   CircleSlash2, 
   ChevronUp, 
   ChevronDown, 
@@ -164,7 +164,7 @@ export function QuickActionsFooter({
                   {progressionMode === 'stretch' ? (
                     <ArrowLeftRight className="w-5 h-5" />
                   ) : (
-                    <RefreshCw className="w-5 h-5" />
+                    <Dice className="w-5 h-5" />
                   )}
                 </button>
               </div>
@@ -187,7 +187,7 @@ export function QuickActionsFooter({
                 className="p-2 text-gray-400 hover:text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors group relative"
                 title="Generate random progression"
               >
-                <RefreshCw className="w-5 h-5" />
+                <Dice className="w-5 h-5" />
                 <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 whitespace-nowrap transition-opacity">
                   Random progression
                 </span>
