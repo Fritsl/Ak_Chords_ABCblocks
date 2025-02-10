@@ -26,9 +26,21 @@ export default function App() {
   const [blockChords, setBlockChords] = useState<Record<number, string[]>>({});
   const [progressionMode, setProgressionMode] = useState<'repeat' | 'stretch'>('repeat');
   const [bpm, setBpm] = useState(120);
+  const [isContinuousPlay, setIsContinuousPlay] = useState(false);
 
   // Add ref for the editor section
   const editorRef = useRef<HTMLDivElement>(null);
+
+  const handleBlockFinished = () => {
+    if (isContinuousPlay && selectedBlockIndex !== null && arrangement) {
+      const nextBlockIndex = selectedBlockIndex + 1;
+      if (nextBlockIndex < arrangement.Blocks.length) {
+        setSelectedBlockIndex(nextBlockIndex);
+      } else {
+        setIsContinuousPlay(false);
+      }
+    }
+  };
 
   const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
@@ -200,6 +212,9 @@ export default function App() {
           chords={blockChords[selectedBlockIndex] || []}
           bpm={bpm}
           arrangement={arrangement}
+          isContinuousPlay={isContinuousPlay}
+          setIsContinuousPlay={setIsContinuousPlay}
+          onBlockFinished={handleBlockFinished}
         />
       )}
     </div>
