@@ -138,7 +138,7 @@ export function ChordEditor({
       if (isPlaying && intervalRef.current) {
         window.clearInterval(intervalRef.current);
         await Tone.start();
-        const stepTime = (60 / Tone.Transport.bpm.value) * 1000;
+        const stepTime = (60 / Tone.Transport.bpm.value) * 1000 * 4; // 4 beats per bar
         const validChords = chords.filter(chord => chord);
 
         if (validChords[0]) {
@@ -180,7 +180,7 @@ export function ChordEditor({
       setCurrentStep(0);
       const validChords = chords.filter(chord => chord);
       if (validChords.length > 0) {
-        const stepTime = (60 / Tone.Transport.bpm.value) * 1000;
+        const stepTime = (60 / Tone.Transport.bpm.value) * 1000 * 4; // 4 beats per bar
         intervalRef.current = window.setInterval(() => {
           setCurrentStep(step => {
             const nextStep = (step + 1) % validChords.length;
