@@ -88,7 +88,7 @@ export function FloatingActionPanel({
 
         <div className="grid grid-cols-2 gap-4">
           {/* Left Column: Circle of Fifths */}
-          <div className="bg-gray-900/30 rounded-lg p-3">
+          <div className="bg-gray-900/30 rounded-lg p-3 relative">
             <h4 className="text-xs font-medium text-gray-400 mb-2">Section Key & Mode</h4>
             <CircleOfFifths
               selectedKey={keySignature}

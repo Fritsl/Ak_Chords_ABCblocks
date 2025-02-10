@@ -62,7 +62,7 @@ export function KeySelector({ value, onChange }: KeySelectorProps) {
       {/* Circle of Fifths Popup */}
       {showCircle && (
         <div 
-          className="fixed inset-0 bg-gray-900/80 backdrop-blur-sm z-[100] flex items-center justify-center"
+          className="fixed inset-0 bg-gray-900/80 backdrop-blur-sm z-[999] flex items-center justify-center"
           onClick={(e) => {
             if (e.target === e.currentTarget) {
               setShowCircle(false);
