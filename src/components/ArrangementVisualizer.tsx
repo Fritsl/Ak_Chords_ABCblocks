@@ -18,11 +18,11 @@ export function ArrangementVisualizer({
 }: Props) {
   const maxHeight = 8;
   const gapSize = 2;
-  
+
   const getDisplayName = (type: string, index: number) => {
     return getNumberedSectionName(type, index, arrangement.Blocks, arrangement.Genre);
   };
-  
+
   const totalBars = arrangement.Blocks.reduce((acc, block) => {
     return acc + (arrangement.Types[block.Type]?.Length || 0);
   }, 0);
@@ -33,14 +33,14 @@ export function ArrangementVisualizer({
     const widthPrecise = parseFloat((width / totalBars * 100).toFixed(6));
     const startPosition = previousPosition;
     const endPosition = parseFloat((startPosition + widthPrecise).toFixed(6));
-    
+
     acc[index] = {
       width: widthPrecise,
       startPosition,
       endPosition,
       barPosition: acc.reduce((sum, curr) => sum + (curr?.width || 0) * totalBars / 100, 0)
     };
-    
+
     return acc;
   }, [] as Array<{
     width: number;
@@ -55,7 +55,7 @@ export function ArrangementVisualizer({
     const timer = setTimeout(() => setShowHelp(false), 5000);
     return () => clearTimeout(timer);
   }, []);
-  
+
   return (
     <div 
       className="w-full overflow-hidden rounded-lg p-4 relative"
@@ -69,7 +69,7 @@ export function ArrangementVisualizer({
           <p className="text-xs opacity-75 text-shadow">Genre: {arrangement.Genre.replace(/_/g, '/')}</p>
         </div>
       </div>
-      
+
       {/* Help tooltip */}
       {showHelp && (
         <div className="absolute top-16 left-1/2 -translate-x-1/2 bg-gray-900/90 text-white px-4 py-2 rounded-lg shadow-xl border border-gray-700 z-10 whitespace-nowrap animate-bounce">
@@ -79,7 +79,7 @@ export function ArrangementVisualizer({
           </div>
         </div>
       )}
-      
+
       <div className="relative h-[160px] w-full mx-auto">
         <div className="flex h-[120px]">
           {arrangement.Blocks.map((building, index) => {
@@ -90,13 +90,13 @@ export function ArrangementVisualizer({
             const buildingInfo = buildingData[index];
             const displayName = getDisplayName(building.Type, index);
             const isSelected = selectedBlockIndex === index;
-            
+
             if (typeof heightValue === 'object' && heightValue.start !== undefined) {
               const startHeight = heightValue.start;
               const endHeight = heightValue.end;
               const startHeightPercentage = (startHeight / maxHeight) * 100;
               const endHeightPercentage = (endHeight / maxHeight) * 100;
-              
+
               return (
                 <div
                   key={index}
@@ -129,17 +129,20 @@ export function ArrangementVisualizer({
                       {Math.round(buildingInfo.barPosition)}
                     </div>
                   </button>
-                  <div className={`absolute bottom-0 left-0 right-0 h-7 bg-[#e67e22] bg-opacity-90 text-white text-[10px] sm:text-xs px-0.5 rounded-sm
-                    group-hover:ring-2 group-hover:ring-indigo-500/50
-                    ${isSelected ? 'ring-2 ring-[#FFEE00]' : ''}
-                  `}>
+                  <button
+                    onClick={() => onBlockClick(index)}
+                    className={`absolute bottom-0 left-0 right-0 h-7 bg-[#e67e22] bg-opacity-90 text-white text-[10px] sm:text-xs px-0.5 rounded-sm
+                      group-hover:ring-2 group-hover:ring-indigo-500/50 cursor-pointer transition-all duration-200
+                      ${isSelected ? 'ring-2 ring-[#FFEE00]' : ''}
+                    `}
+                  >
                     <div className="font-medium leading-tight truncate" title={displayName}>
                       {displayName}
                     </div>
                     <div className="text-[8px] sm:text-[10px] leading-tight truncate text-center">
                       {arrangement.Types[building.Type]?.Length}
                     </div>
-                  </div>
+                  </button>
 
                   {/* Hover tooltip */}
                   <div className="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
@@ -150,10 +153,10 @@ export function ArrangementVisualizer({
                 </div>
               );
             }
-            
+
             const height = typeof heightValue === 'number' ? heightValue : 0.25;
             const heightPercentage = (height / maxHeight) * 100;
-            
+
             return (
               <div
                 key={index}
@@ -186,17 +189,20 @@ export function ArrangementVisualizer({
                     {Math.round(buildingInfo.barPosition)}
                   </div>
                 </button>
-                <div className={`absolute bottom-0 left-0 right-0 h-7 bg-[#e67e22] bg-opacity-90 text-white text-[10px] sm:text-xs px-0.5 rounded-sm
-                  group-hover:ring-2 group-hover:ring-indigo-500/50
-                  ${isSelected ? 'ring-2 ring-[#FFEE00]' : ''}
-                `}>
+                <button
+                    onClick={() => onBlockClick(index)}
+                    className={`absolute bottom-0 left-0 right-0 h-7 bg-[#e67e22] bg-opacity-90 text-white text-[10px] sm:text-xs px-0.5 rounded-sm
+                      group-hover:ring-2 group-hover:ring-indigo-500/50 cursor-pointer transition-all duration-200
+                      ${isSelected ? 'ring-2 ring-[#FFEE00]' : ''}
+                    `}
+                  >
                   <div className="font-medium leading-tight truncate" title={displayName}>
                     {displayName}
                   </div>
                   <div className="text-[8px] sm:text-[10px] leading-tight truncate text-center">
                     {arrangement.Types[building.Type]?.Length}
                   </div>
-                </div>
+                </button>
 
                   {/* Hover tooltip */}
                   <div className="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
