@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Music, Wand2, RefreshCw, CircleSlash2, ArrowUpRight } from 'lucide-react';
+import { X, Music, Wand2, Dice, CircleSlash2, ArrowUpRight } from 'lucide-react';
 import { ChordProgression, KeySignature } from '../types';
 import { CircleOfFifths } from './CircleOfFifths';
 
@@ -62,7 +62,7 @@ export function FloatingActionPanel({
               className="p-1.5 text-gray-400 hover:text-gray-300 bg-gray-700 rounded-lg group relative"
               title="Generate random progression"
             >
-              <RefreshCw className="w-4 h-4" />
+              <Dice className="w-4 h-4" />
               <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 whitespace-nowrap transition-opacity">
                 Random progression for this section
               </span>
