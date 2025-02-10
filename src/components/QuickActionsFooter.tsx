@@ -125,14 +125,6 @@ export function QuickActionsFooter({
       {/* Main Footer */}
       <div className="h-[64px] px-4">
         <div className="max-w-6xl mx-auto h-full flex items-center justify-between">
-          {/* Section Info */}
-          <div className="flex items-center gap-4">
-            <div className="text-sm text-gray-400">
-              Editing <span className="text-white font-medium">{selectedBlockType}</span>
-              <span className="text-gray-500 ml-2">({selectedBlockLength} bars)</span>
-            </div>
-          </div>
-
           {/* Quick Actions */}
           <div className="flex items-center gap-6">
             {/* Quick Progression Carousel */}
