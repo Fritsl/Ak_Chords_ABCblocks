@@ -192,6 +192,16 @@ export function QuickActionsFooter({
 
             <div className="h-8 w-px bg-gray-700" />
 
+            {/* Playback Speed */}
+            <div className="flex items-center gap-2">
+              <button className={`px-3 py-1.5 text-xs ${speed === 0.5 ? 'bg-blue-600' : 'bg-gray-700'} hover:bg-blue-500 rounded-lg transition-colors`} onClick={() => setSpeed(0.5)}>½x</button>
+              <button className={`px-3 py-1.5 text-xs ${speed === 1 ? 'bg-blue-600' : 'bg-gray-700'} hover:bg-blue-500 rounded-lg transition-colors`} onClick={() => setSpeed(1)}>1x</button>
+              <button className={`px-3 py-1.5 text-xs ${speed === 2 ? 'bg-blue-600' : 'bg-gray-700'} hover:bg-blue-500 rounded-lg transition-colors`} onClick={() => setSpeed(2)}>2x</button>
+              <button className={`px-3 py-1.5 text-xs ${speed === 4 ? 'bg-blue-600' : 'bg-gray-700'} hover:bg-blue-500 rounded-lg transition-colors`} onClick={() => setSpeed(4)}>4x</button>
+            </div>
+
+            <div className="h-8 w-px bg-gray-700" />
+
             {/* Other Actions */}
             <div className="flex items-center gap-2">
               <button
