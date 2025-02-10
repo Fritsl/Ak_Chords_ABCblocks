@@ -1,6 +1,6 @@
 import React from 'react';
 import { Arrangement, BUILDING_HEIGHTS, BUILDING_COLORS } from '../types';
-import { MousePointer } from 'lucide-react';
+import { MousePointer, RefreshCw, CircleSlash2 } from 'lucide-react';
 import { getNumberedSectionName } from '../utils/sectionNames';
 
 interface Props {
@@ -8,13 +8,17 @@ interface Props {
   showColors: boolean;
   selectedBlockIndex: number | null;
   onBlockClick: (index: number) => void;
+  onRandomProgression: () => void; // Added function
+  onClearChords: () => void;     // Added function
 }
 
 export function ArrangementVisualizer({ 
   arrangement, 
   showColors,
   selectedBlockIndex,
-  onBlockClick 
+  onBlockClick,
+  onRandomProgression,
+  onClearChords
 }: Props) {
   const maxHeight = 8;
   const gapSize = 2;
@@ -80,6 +84,31 @@ export function ArrangementVisualizer({
           </div>
         </div>
       )}
+
+      {/* Chord Control Buttons */}
+      <div className="absolute top-4 right-4 flex items-center gap-2">
+        <button
+          onClick={onRandomProgression}
+          className="p-2 text-gray-400 hover:text-white bg-gray-700/90 hover:bg-gray-600/90 rounded-lg group relative backdrop-blur-sm"
+          title="Generate random progression"
+        >
+          <RefreshCw className="w-5 h-5" />
+          <span className="absolute -bottom-8 right-0 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 whitespace-nowrap transition-opacity">
+            Random progression
+          </span>
+        </button>
+        <button
+          onClick={onClearChords}
+          className="p-2 text-gray-400 hover:text-white bg-gray-700/90 hover:bg-gray-600/90 rounded-lg group relative backdrop-blur-sm"
+          title="Clear all chords"
+        >
+          <CircleSlash2 className="w-5 h-5" />
+          <span className="absolute -bottom-8 right-0 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 whitespace-nowrap transition-opacity">
+            Clear chords
+          </span>
+        </button>
+      </div>
+
 
       <div className="relative h-[160px] w-full mx-auto">
         <div className="flex h-[120px]">
@@ -217,5 +246,6 @@ export function ArrangementVisualizer({
           </div>
         </div>
       </div>
-    );
+    </div>
+  );
 }
