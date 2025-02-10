@@ -140,7 +140,13 @@ export function FloatingActionPanel({
               <span className="text-xs text-gray-400">Fill {selectedBlockLength} bars:</span>
               <div className="flex gap-2">
                 <button
-                  onClick={() => onProgressionModeChange('repeat')}
+                  onClick={() => {
+                    onProgressionModeChange('repeat');
+                    const currentProgression = progressions[0];
+                    if (currentProgression) {
+                      onProgressionSelect(currentProgression);
+                    }
+                  }}
                   className={`px-3 py-1.5 rounded text-xs font-medium transition-colors ${
                     progressionMode === 'repeat'
                       ? 'bg-indigo-600 text-white'
@@ -151,7 +157,13 @@ export function FloatingActionPanel({
                   Repeat
                 </button>
                 <button
-                  onClick={() => onProgressionModeChange('stretch')}
+                  onClick={() => {
+                    onProgressionModeChange('stretch');
+                    const currentProgression = progressions[0];
+                    if (currentProgression) {
+                      onProgressionSelect(currentProgression);
+                    }
+                  }}
                   className={`px-3 py-1.5 rounded text-xs font-medium transition-colors ${
                     progressionMode === 'stretch'
                       ? 'bg-indigo-600 text-white'
