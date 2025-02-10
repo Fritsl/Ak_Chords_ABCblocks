@@ -236,7 +236,7 @@ export function ChordEditor({
                   e.stopPropagation();
                   Tone.Transport.bpm.value = Tone.Transport.bpm.value / 2;
                 }}
-                className="px-2 py-1.5 text-xs bg-blue-600 hover:bg-blue-500 rounded-lg"
+                className={`px-2 py-1.5 text-xs ${Tone.Transport.bpm.value === 60 ? 'bg-blue-800' : 'bg-blue-600 hover:bg-blue-500'} rounded-lg`}
               >
                 ½x
               </button>
@@ -245,7 +245,7 @@ export function ChordEditor({
                   e.stopPropagation();
                   Tone.Transport.bpm.value = Tone.Transport.bpm.value * 2;
                 }}
-                className="px-2 py-1.5 text-xs bg-blue-600 hover:bg-blue-500 rounded-lg"
+                className={`px-2 py-1.5 text-xs ${Tone.Transport.bpm.value === 240 ? 'bg-blue-800' : 'bg-blue-600 hover:bg-blue-500'} rounded-lg`}
               >
                 2x
               </button>
@@ -254,7 +254,7 @@ export function ChordEditor({
                   e.stopPropagation();
                   Tone.Transport.bpm.value = 120;
                 }}
-                className="px-2 py-1.5 text-xs bg-blue-600 hover:bg-blue-500 rounded-lg"
+                className={`px-2 py-1.5 text-xs ${Tone.Transport.bpm.value === 120 ? 'bg-blue-800' : 'bg-blue-600 hover:bg-blue-500'} rounded-lg`}
               >
                 1x
               </button>
