@@ -98,7 +98,8 @@ export function useSynth() {
           ...preset.envelope,
           attack: controls.attack,
           release: controls.release
-        }
+        },
+        maxPolyphony: 32
       }).connect(analyserRef.current).connect(reverbRef.current);
 
       isInitializedRef.current = true;
