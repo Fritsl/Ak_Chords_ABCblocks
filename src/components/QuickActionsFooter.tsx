@@ -70,15 +70,19 @@ export function QuickActionsFooter({
   const currentProgression = progressions[currentProgressionIndex];
 
   const handlePreviousProgression = () => {
-    setCurrentProgressionIndex((prev) => 
-      prev === 0 ? progressions.length - 1 : prev - 1
-    );
+    const newIndex = currentProgressionIndex === 0 ? progressions.length - 1 : currentProgressionIndex - 1;
+    setCurrentProgressionIndex(newIndex);
+    if (progressions[newIndex]) {
+      onProgressionSelect(progressions[newIndex]);
+    }
   };
 
   const handleNextProgression = () => {
-    setCurrentProgressionIndex((prev) => 
-      prev === progressions.length - 1 ? 0 : prev + 1
-    );
+    const newIndex = currentProgressionIndex === progressions.length - 1 ? 0 : currentProgressionIndex + 1;
+    setCurrentProgressionIndex(newIndex);
+    if (progressions[newIndex]) {
+      onProgressionSelect(progressions[newIndex]);
+    }
   };
 
   return (
