@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import * as Tone from 'tone';
 
@@ -11,6 +12,7 @@ export function BPMControl({ defaultBPM = 120 }: BPMControlProps) {
 
   useEffect(() => {
     Tone.Transport.bpm.value = bpm;
+    Tone.Transport.bpm.rampTo(bpm, 0.1); // Smooth transition
   }, [bpm]);
 
   const handleBPMChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -25,7 +27,6 @@ export function BPMControl({ defaultBPM = 120 }: BPMControlProps) {
   };
 
   const handleBlur = () => {
-    // Format the display value on blur
     const numericValue = parseFloat(displayValue);
     if (isNaN(numericValue)) {
       setDisplayValue(bpm.toString());
