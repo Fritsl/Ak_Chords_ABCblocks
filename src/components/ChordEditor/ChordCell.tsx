@@ -61,7 +61,7 @@ export const ChordCell = forwardRef<HTMLDivElement, ChordCellProps>(({
             border border-gray-600 focus:outline-none transition-all
             ${chord ? 'border-indigo-500/50' : ''}
             ${isActive ? 'ring-2 ring-indigo-500' : ''}
-            ${currentStep === barIndex ? 'bg-indigo-500/30' : ''} // Added visual feedback for current step
+            ${currentStep === barIndex ? 'border-b-2 border-b-red-500' : ''}
           `}
         >
           {/* Drag handle */}

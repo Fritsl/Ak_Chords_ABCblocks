@@ -308,6 +308,7 @@ export function ChordEditor({
                 functionColor={getFunctionColor(chords[barIndex])}
                 keySignature={keySignature}
                 onPlay={(chord) => playChord(chord, keySignature)}
+                currentStep={currentStep}
               />
             ))}
           </SortableContext>
