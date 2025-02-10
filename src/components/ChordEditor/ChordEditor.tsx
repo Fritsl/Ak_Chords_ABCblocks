@@ -33,8 +33,6 @@ interface ChordEditorProps {
   isSelected?: boolean;
   onSelect?: () => void;
   keySignature: KeySignature;
-  isContinuousPlay?: boolean; // Added for continuous play mode
-  onBlockFinished?: () => void; // Added for block finished callback
 }
 
 export function ChordEditor({ 
@@ -46,9 +44,7 @@ export function ChordEditor({
   genreTypeName,
   isSelected = false,
   onSelect,
-  keySignature,
-  isContinuousPlay = false, // Added default value
-  onBlockFinished, // Added prop for block finished callback
+  keySignature
 }: ChordEditorProps) {
   const block = arrangement.Blocks[blockIndex];
   const numBars = arrangement.Types[block.Type].Length;
@@ -151,13 +147,7 @@ export function ChordEditor({
 
         intervalRef.current = window.setInterval(() => {
           setCurrentStep(step => {
-            const nextStep = step + 1;
-            if (nextStep >= validChords.length) {
-              if (isContinuousPlay) {
-                onBlockFinished?.();
-              }
-              return 0;
-            }
+            const nextStep = (step + 1) % validChords.length;
             if (validChords[nextStep]) {
               playChord(validChords[nextStep], keySignature);
             }
@@ -174,7 +164,7 @@ export function ChordEditor({
         window.clearInterval(intervalRef.current);
       }
     };
-  }, [isPlaying, Tone.Transport.bpm.value, chords, keySignature, playChord, isContinuousPlay, onBlockFinished]);
+  }, [isPlaying, Tone.Transport.bpm.value, chords, keySignature, playChord]);
 
   const handlePlayProgression = () => {
     if (isPlaying) {
