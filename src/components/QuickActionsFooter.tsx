@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import * as Tone from 'tone';
+import { Music } from 'lucide-react';
 import { 
   Wand2, 
   RefreshCw, 
@@ -59,6 +61,7 @@ export function QuickActionsFooter({
   const [currentProgressionIndex, setCurrentProgressionIndex] = useState(0);
   const [isExpanded, setIsExpanded] = useState(false);
   const [showSynthControls, setShowSynthControls] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
   const [isExporting, setIsExporting] = useState(false);
   const [isCopying, setIsCopying] = useState(false);
   const [copySuccess, setCopySuccess] = useState(false);
