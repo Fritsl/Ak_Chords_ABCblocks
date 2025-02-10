@@ -26,6 +26,7 @@ export default function App() {
   const [blockChords, setBlockChords] = useState<Record<number, string[]>>({});
   const [progressionMode, setProgressionMode] = useState<'repeat' | 'stretch'>('repeat');
   const [bpm, setBpm] = useState(120);
+  const [isContinuousPlay, setIsContinuousPlay] = useState(false); // Added continuous play state
 
   // Add ref for the editor section
   const editorRef = useRef<HTMLDivElement>(null);
@@ -73,12 +74,12 @@ export default function App() {
 
   const handleBlockClick = (index: number) => {
     setSelectedBlockIndex(index);
-    
+
     // Scroll to the editor section with a smooth animation
     if (editorRef.current) {
       const yOffset = -100; // Offset to account for the header and some padding
       const y = editorRef.current.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      
+
       window.scrollTo({
         top: y,
         behavior: 'smooth'
@@ -99,13 +100,27 @@ export default function App() {
     }));
   };
 
+  const handleBlockFinished = () => {
+    if (selectedBlockIndex === null || !arrangement) return;
+    const nextBlockIndex = selectedBlockIndex + 1;
+    if (nextBlockIndex < arrangement.Blocks.length) {
+      setSelectedBlockIndex(nextBlockIndex);
+      // Scroll to the next block (similar to handleBlockClick)
+      if (editorRef.current) {
+        const yOffset = -100;
+        const y = editorRef.current.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#0B1B33] text-gray-100">
       <SiteHeader 
         keySignature={keySignature}
         onKeyChange={setKeySignature}
       />
-      
+
       {/* Main content area with padding bottom for footer */}
       <div className="pb-[200px]">
         <div className="max-w-6xl mx-auto p-4 sm:p-6 lg:p-8">
@@ -141,6 +156,9 @@ export default function App() {
                       chords={blockChords[selectedBlockIndex] || []}
                       onChordChange={(barIndex, chord) => handleChordChange(selectedBlockIndex, barIndex, chord)}
                       onChordsReorder={(newChords) => handleChordsReorder(selectedBlockIndex, newChords)}
+                      isContinuousPlay={isContinuousPlay} // Added continuous play prop
+                      onContinuousPlayChange={setIsContinuousPlay} // Added continuous play prop
+                      onBlockFinished={handleBlockFinished} // Added onBlockFinished prop
                       genreTypeName={getNumberedSectionName(
                         arrangement.Blocks[selectedBlockIndex].Type,
                         selectedBlockIndex,
@@ -179,7 +197,7 @@ export default function App() {
               const block = arrangement.Blocks[selectedBlockIndex];
               const numBars = arrangement.Types[block.Type].Length;
               let newChords: string[];
-              
+
               if (progressionMode === 'repeat') {
                 newChords = Array(numBars).fill(0).map((_, i) => progression.chords[i % progression.chords.length]);
               } else {
@@ -188,7 +206,7 @@ export default function App() {
                   return progression.chords[progressionIndex];
                 });
               }
-              
+
               setBlockChords(prev => ({
                 ...prev,
                 [selectedBlockIndex]: newChords

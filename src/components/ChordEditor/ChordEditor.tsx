@@ -29,6 +29,7 @@ interface ChordEditorProps {
   chords?: string[];
   onChordChange?: (barIndex: number, chord: string) => void;
   onChordsReorder?: (newChords: string[]) => void;
+  onBlockFinished?: () => void; // Added callback for block completion
   genreTypeName: string;
   isSelected?: boolean;
   onSelect?: () => void;
@@ -41,6 +42,7 @@ export function ChordEditor({
   chords = [], 
   onChordChange,
   onChordsReorder,
+  onBlockFinished, // Use the added callback
   genreTypeName,
   isSelected = false,
   onSelect,
@@ -130,6 +132,7 @@ export function ChordEditor({
   };
 
   const [isPlaying, setIsPlaying] = useState(false);
+  const [isContinuousPlay, setIsContinuousPlay] = useState(false); // Continuous play toggle
   const [currentStep, setCurrentStep] = useState<number>(-1);
   const intervalRef = useRef<number | null>(null);
 
@@ -147,7 +150,13 @@ export function ChordEditor({
 
         intervalRef.current = window.setInterval(() => {
           setCurrentStep(step => {
-            const nextStep = (step + 1) % validChords.length;
+            const nextStep = step + 1;
+            if (nextStep >= validChords.length) {
+              if (isContinuousPlay) {
+                onBlockFinished?.(); // Call the callback when the block is finished
+              }
+              return 0;
+            }
             if (validChords[nextStep]) {
               playChord(validChords[nextStep], keySignature);
             }
@@ -164,7 +173,7 @@ export function ChordEditor({
         window.clearInterval(intervalRef.current);
       }
     };
-  }, [isPlaying, Tone.Transport.bpm.value, chords, keySignature, playChord]);
+  }, [isPlaying, Tone.Transport.bpm.value, chords, keySignature, playChord, isContinuousPlay, onBlockFinished]);
 
   const handlePlayProgression = () => {
     if (isPlaying) {
@@ -302,6 +311,15 @@ export function ChordEditor({
             <Trash2 className="w-3 h-3" />
             <span>Clear</span>
           </button>
+          <label className="flex items-center cursor-pointer">
+            <input
+              type="checkbox"
+              checked={isContinuousPlay}
+              onChange={(e) => setIsContinuousPlay(e.target.checked)}
+              className="mr-2"
+            />
+            Continuous Play
+          </label> {/* Added continuous play toggle */}
         </div>
       </div>
 
