@@ -24,6 +24,8 @@ export function useSynth() {
   const synthRef = useRef<Tone.PolySynth | null>(null);
   const reverbRef = useRef<Tone.Reverb | null>(null);
   const volumeRef = useRef<Tone.Volume | null>(null);
+  const analyserRef = useRef<Tone.Analyser | null>(null);
+  const animationFrameRef = useRef<number>();
   const isInitializedRef = useRef(false);
   const playbackTimeoutRef = useRef<number | null>(null);
   const [controls, setControls] = useState<SynthControls>(DEFAULT_CONTROLS);
@@ -37,10 +39,14 @@ export function useSynth() {
     if (synthRef.current) {
       synthRef.current.releaseAll();
     }
+    if (animationFrameRef.current) {
+      cancelAnimationFrame(animationFrameRef.current);
+      animationFrameRef.current = undefined;
+    }
   }, []);
 
   const updateSynthSettings = useCallback(() => {
-    if (!synthRef.current || !reverbRef.current || !volumeRef.current) return;
+    if (!synthRef.current || !reverbRef.current || !volumeRef.current || !analyserRef.current) return;
 
     volumeRef.current.volume.value = controls.volume;
     reverbRef.current.wet.value = controls.reverb;
@@ -64,7 +70,7 @@ export function useSynth() {
         attack: controls.attack,
         release: controls.release
       }
-    }).connect(reverbRef.current);
+    }).connect(analyserRef.current).connect(reverbRef.current);
   }, [controls]);
 
   const initializeSynth = useCallback(async () => {
@@ -74,6 +80,7 @@ export function useSynth() {
       if (synthRef.current) synthRef.current.dispose();
       if (reverbRef.current) reverbRef.current.dispose();
       if (volumeRef.current) volumeRef.current.dispose();
+      if (analyserRef.current) analyserRef.current.dispose();
 
       volumeRef.current = new Tone.Volume(controls.volume).toDestination();
 
@@ -81,6 +88,8 @@ export function useSynth() {
         decay: 2,
         wet: controls.reverb
       }).connect(volumeRef.current);
+
+      analyserRef.current = new Tone.Analyser('waveform', 256).toDestination();
 
       const preset = SYNTH_PRESETS[controls.preset].settings;
       synthRef.current = new Tone.PolySynth(Tone.Synth, {
@@ -90,7 +99,7 @@ export function useSynth() {
           attack: controls.attack,
           release: controls.release
         }
-      }).connect(reverbRef.current);
+      }).connect(analyserRef.current).connect(reverbRef.current);
 
       isInitializedRef.current = true;
 
@@ -119,6 +128,10 @@ export function useSynth() {
       if (volumeRef.current) {
         volumeRef.current.dispose();
         volumeRef.current = null;
+      }
+      if (analyserRef.current) {
+        analyserRef.current.dispose();
+        analyserRef.current = null;
       }
       isInitializedRef.current = false;
     };
@@ -196,6 +209,7 @@ export function useSynth() {
     presets: SYNTH_PRESETS,
     stopPlayback: stopCurrentPlayback,
     handleTempoChange, // Added tempo control function
-    tempoMultiplier // Added tempoMultiplier state
+    tempoMultiplier, // Added tempoMultiplier state
+    analyserRef
   };
 }
