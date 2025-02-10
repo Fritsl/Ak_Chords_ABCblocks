@@ -62,14 +62,15 @@ export function KeySelector({ value, onChange }: KeySelectorProps) {
       {/* Circle of Fifths Popup */}
       {showCircle && (
         <div 
-          className="fixed inset-0 bg-gray-900/80 backdrop-blur-sm z-[999] flex items-center justify-center"
+          className="fixed inset-0 bg-gray-900/80 backdrop-blur-sm z-[9999] flex items-center justify-center"
+          style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
           onClick={(e) => {
             if (e.target === e.currentTarget) {
               setShowCircle(false);
             }
           }}
         >
-          <div className="bg-gray-800 p-8 rounded-xl shadow-xl border border-gray-700 relative max-w-[90vw] max-h-[90vh] overflow-auto">
+          <div className="bg-gray-800 p-8 rounded-xl shadow-xl border border-gray-700 relative max-w-[90vw] max-h-[90vh] overflow-auto" style={{ margin: 'auto' }}>
             <button
               onClick={() => setShowCircle(false)}
               className="absolute top-4 right-4 p-2 text-gray-400 hover:text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
