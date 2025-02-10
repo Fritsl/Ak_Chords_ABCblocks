@@ -53,6 +53,17 @@ export function useSynth() {
         release: controls.release
       }
     });
+    
+    // Force synth voice update
+    synthRef.current.releaseAll();
+    synthRef.current = new Tone.PolySynth(Tone.Synth, {
+      oscillator: preset.oscillator,
+      envelope: {
+        ...preset.envelope,
+        attack: controls.attack,
+        release: controls.release
+      }
+    }).connect(reverbRef.current);
   }, [controls]);
 
   const initializeSynth = useCallback(async () => {
