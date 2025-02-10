@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes custom-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: custom-pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
 @layer components {
   .trapezoid-up {
     clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);

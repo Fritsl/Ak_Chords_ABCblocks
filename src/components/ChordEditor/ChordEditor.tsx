@@ -225,10 +225,20 @@ export function ChordEditor({
                 e.stopPropagation();
                 handlePlayProgression();
               }}
-              className="px-3 py-1.5 text-xs bg-green-600 hover:bg-green-500 rounded-lg inline-flex items-center gap-1.5"
+              className={`
+                  px-3 py-1.5 text-xs rounded-lg inline-flex items-center gap-1.5
+                  ${isPlaying 
+                    ? 'bg-red-600 hover:bg-red-500 animate-pulse' 
+                    : 'bg-green-600 hover:bg-green-500'
+                  }
+                  transition-colors duration-150
+                `}
+                style={isPlaying ? {
+                  animationDuration: `${(60 / Tone.Transport.bpm.value) * 1000}ms`
+                } : undefined}
             >
               <Music className="w-3 h-3" />
-              <span>Play</span>
+              <span>{isPlaying ? 'Stop' : 'Play'}</span>
             </button>
             <div className="flex gap-1">
               <button
