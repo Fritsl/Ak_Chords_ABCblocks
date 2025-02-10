@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Music, Copy, Trash2 } from 'lucide-react';
+import { Music, Copy, Trash2, DicesIcon } from 'lucide-react'; // Added import for DicesIcon
 import { Arrangement, KeySignature } from '../../types';
 import { ChordCell } from './ChordCell';
 import * as Tone from 'tone';
@@ -227,9 +227,23 @@ export function ChordEditor({
           )}
         </div>
         <div className="flex gap-2">
-          <div className="flex gap-2">
-            
-          </div>
+          <button 
+            onClick={(e) => {
+              e.stopPropagation();
+              if (!isLoading && progressions.length > 0) {
+                const randomProgression = progressions[Math.floor(Math.random() * progressions.length)];
+                randomProgression.chords.forEach((chord, i) => {
+                  if (i < numBars) {
+                    onChordChange?.(i, chord);
+                  }
+                });
+              }
+            }}
+            className="px-3 py-1.5 text-xs bg-indigo-600 hover:bg-indigo-500 rounded-lg inline-flex items-center gap-1.5"
+          >
+            <DicesIcon className="w-3 h-3" />
+            <span>Random</span>
+          </button>
           <button 
             onClick={(e) => {
               e.stopPropagation();
@@ -262,7 +276,7 @@ export function ChordEditor({
             <Trash2 className="w-3 h-3" />
             <span>Clear</span>
           </button>
-          
+
         </div>
       </div>
 
