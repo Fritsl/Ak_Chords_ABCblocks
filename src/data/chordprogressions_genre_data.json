@@ -1,0 +1,2436 @@
+{
+    "Pop": {
+        "Mainstream Pop": {
+            "Verse": "I - vi - IV - V",
+            "Chorus": "I - V - vi - IV",
+            "Solo-Break": "Imaj7 - IVadd9 - vi - ii7 - V7 - iii7",
+            "Bridge": "Imaj7 - vim7 - IVadd9 - V7",
+            "Pre-Chorus": "Imaj7 - IV - ii - V7",
+            "Intro": "Imaj7 - vi - IVadd9 - V",
+            "Outro.Fade_Out": "I - IV - V - I - vi - IV - I - V",
+            "Air": ""
+        },
+        "Emotional Pop": {
+            "Verse": "I - vi - IV - V7",
+            "Chorus": "Imaj7 - vi - IVmaj7 - V7",
+            "Solo-Break": "im7 - II7 - vim7 - VII7 - IIaug - v6/9 - iim7b5 - I7b9",
+            "Bridge": "I6 - II7 - vi - IV - im7 - V7",
+            "Pre-Chorus": "im7 - IV - VI - V7",
+            "Intro": "Imaj7 - vi - IV - V",
+            "Outro.Fade_Out": "Imaj7 - vi - IV - V",
+            "Air": ""
+        },
+        "Soft Rock Ballad": {
+            "Verse": "Imaj7 - IV - iim7 - V7 - vi - ii7 - V7",
+            "Chorus": "I - vi - IVmaj7 - V - I - iii - IV - V7",
+            "Solo-Break": "Imaj7 - v7 - ii7 - IV - iii7 - V7 - im7 - IVmaj7",
+            "Bridge": "I - IV - iim7 - V7 - vi - IV - V7 - I",
+            "Pre-Chorus": "I6 - Imaj7 - ii7 - ii7b5 - V7 - vi",
+            "Intro": "Imaj7 - IVadd9 - iim7 - V7",
+            "Outro.Fade_Out": "Imaj7 - V7 - IV - I6 - ii7 - V7 - I",
+            "Air": ""
+        },
+        "New Wave Progression": {
+            "Verse": "Imaj7 - VI - iim7 - V7",
+            "Chorus": "I - V - vi - IV - I - V - vi - IV",
+            "Solo-Break": "VIm7 - IVmaj7 - ii7 - V7 - I13 - ivm6 - Imaj9 - VIø",
+            "Bridge": "Imaj7 - vi - IVadd9 - V7 - iim7 - iii7 - IV6",
+            "Pre-Chorus": "I - VI - IV - V7 - vi - ii7 - V",
+            "Intro": "Imaj7 - IVadd9 - vi - V",
+            "Outro.Fade_Out": "IVmaj7 - V - vi - IVmaj7 - I - IVmaj7",
+            "Air": ""
+        },
+        "Funk-Influenced Pop": {
+            "Verse": "I7 - IV7 - iim7 - V9",
+            "Chorus": "I7 - IV7 - vi7 - V7 - I7 - V7#9",
+            "Solo-Break": "im9 - IV7#5 - iim7 - III7 - vi9 - I13 - IVmaj7 - V7#9",
+            "Bridge": "I9 - vi7 - V13 - I13",
+            "Pre-Chorus": "I7 - II7 - IV7 - V7",
+            "Intro": "I7 - IV9 - ii9 - V13",
+            "Outro.Fade_Out": "I7 - IV7 - I9 - VI7 - I7 - V7 - I6/9",
+            "Air": ""
+        },
+        "Classic Bubblegum Pop": {
+            "Verse": "I - V - vi - IV",
+            "Chorus": "I - IV - V - IV - I - VI - ii - V7",
+            "Solo-Break": "I - vi - IV - I - ii - V7 - I - IV",
+            "Bridge": "IV - V - vi - IV",
+            "Pre-Chorus": "I - V - vi - IV - V7",
+            "Intro": "I - IV - I - V",
+            "Outro.Fade_Out": "I - V - vi - IV - I - V - I",
+            "Air": ""
+        },
+        "Modern K-Pop Beat": {
+            "Verse": "I - vi - IVadd9 - V7",
+            "Chorus": "Imaj7 - VI7 - iim7 - V7 - IVadd9 - V7 - iiim7 - vi",
+            "Solo-Break": "vi - IVmaj7 - I7sus4 - IIIaug - viim7 - iii7 - I9 - V7#9",
+            "Bridge": "Imaj7 - V7 - iiim7 - vi - IVadd9 - vii° - I6",
+            "Pre-Chorus": "Imaj7 - vi - IVadd9 - V7",
+            "Intro": "Imaj7 - ii7 - IV - V7",
+            "Outro.Fade_Out": "Imaj7 - vi - IV - V7 - Iadd9 - ii7 - IV - I",
+            "Air": ""
+        },
+        "J-Pop Idol Progression": {
+            "Verse": "I - vi - IV - V",
+            "Chorus": "I6 - IV - ii7 - V7",
+            "Solo-Break": "Imaj7 - V7 - vi - IV6 - ii7 - V7b5 - I9",
+            "Bridge": "Imaj7 - vi - iim7 - V7 - IV - V7 - iii - vi",
+            "Pre-Chorus": "I - V - vi - IV",
+            "Intro": "I - IV - vi - V",
+            "Outro.Fade_Out": "I - VI - IV - V",
+            "Air": ""
+        },
+        "Synth-Pop Hybrid": {
+            "Verse": "Imaj7 - vi - IVadd9 - V7",
+            "Chorus": "Imaj7 - vi - IVadd9 - V7",
+            "Solo-Break": "Imaj9 - vi - iv° - V7#9",
+            "Bridge": "Imaj7 - IV6 - vi - Iaug7",
+            "Pre-Chorus": "Imaj7 - vi7 - IVadd9 - V7 - ii7 - I7#5",
+            "Intro": "Imaj7 - IVadd9 - vi - V",
+            "Outro.Fade_Out": "I - Vadd9 - IVmaj7 - I6/9",
+            "Air": ""
+        },
+        "K-Pop Rap Fusion": {
+            "Verse": "I - vi - IV - V7",
+            "Chorus": "I - V - vi - IV - VI - ii - V - I",
+            "Solo-Break": "I9 - ii7 - IVadd9 - vi°7",
+            "Bridge": "I6 - ivm7 - III - I7 - vi - IIm7 - V7 - I",
+            "Pre-Chorus": "Imaj7 - V7 - iv - VI",
+            "Intro": "I6 - vi - IIm7 - V7",
+            "Outro.Fade_Out": "Imaj7 - vi - IVmaj7 - V7",
+            "Air": ""
+        },
+        "Electronic K-Pop Build-up": {
+            "Verse": "I - VI - IV - V",
+            "Chorus": "Imaj7 - IIadd9 - IV - V7 - vi - IVmaj7 - V7",
+            "Solo-Break": "Imaj7 - vi - IV - V7 - ii - V7 - I",
+            "Bridge": "I6/9 - vi7 - IVmaj7 - V7 - iiø - vi7 - I5 - V7",
+            "Pre-Chorus": "Imaj7 - ii7 - IVadd9 - V7#5",
+            "Intro": "Imaj7 - IV - V7 - ii",
+            "Outro.Fade_Out": "Imaj7 - IV - V7 - vi",
+            "Air": ""
+        },
+        "Glitchcore Pop": {
+            "Verse": "I - vi - IVadd9 - V7",
+            "Chorus": "Imaj7 - vi - IV - ii°",
+            "Solo-Break": "I - vii° - III9 - Vaug - i6 - I6/9",
+            "Bridge": "I7b9 - II7#9 - iii - vii°",
+            "Pre-Chorus": "IIm7b5 - V7#9 - VImaj7 - iv6",
+            "Intro": "Imaj9 - iv6 - II7#5 - iii7",
+            "Outro.Fade_Out": "V6 - IVmaj7 - vi7 - I13",
+            "Air": ""
+        },
+        "Bubblegum Bass": {
+            "Verse": "I - vi - IV - V",
+            "Chorus": "I - V - vi - IV - I - ii - V - I",
+            "Solo-Break": "I - III - VI - ii° - iv - V7 - I",
+            "Bridge": "IVmaj7 - vi - ii - V7",
+            "Pre-Chorus": "I6 - ii7 - V7 - IV",
+            "Intro": "Iadd9 - vi7 - IVadd9 - V7",
+            "Outro.Fade_Out": "Imaj9 - IVmaj7 - VI7 - V7",
+            "Air": ""
+        },
+        "Distorted Vocal Pop": {
+            "Verse": "I - VI - ii - V",
+            "Chorus": "I - V - vi - IV - I6/9 - V7",
+            "Solo-Break": "iim9 - IVmaj7 - V7b9 - I6",
+            "Bridge": "I - vi - ii7 - V7",
+            "Pre-Chorus": "Imaj7 - vi - IV - V7",
+            "Intro": "I - vi - IV - V",
+            "Outro.Fade_Out": "VImaj7 - IV - I - V7",
+            "Air": ""
+        },
+        "Dreamy Indie Chords": {
+            "Verse": "Imaj7 - vi - IVadd9 - V7",
+            "Chorus": "Imaj7 - IVadd9 - vi - V7",
+            "Solo-Break": "Imaj7 - II7 - IVadd9 - V7 - iiim7 - VI7 - ivmaj7 - VIm11",
+            "Bridge": "im7 - IVmaj7 - ii7 - V7",
+            "Pre-Chorus": "Imaj7 - III7 - iv - iiim7 - IV - V7",
+            "Intro": "Imaj7 - ii7 - IVadd9 - vi7",
+            "Outro.Fade_Out": "im7 - IVmaj7 - I6/9 - IImaj7",
+            "Air": ""
+        },
+        "Lo-Fi Indie Beat": {
+            "Verse": "Imaj7 - iv7 - vi - V7",
+            "Chorus": "Imaj7 - vi - IVmaj7 - V7",
+            "Solo-Break": "Imaj7 - vii° - IImaj7 - V7 - ii7 - IVmaj7 - vi7 - I7",
+            "Bridge": "IVmaj7 - vi7 - iiø - V7",
+            "Pre-Chorus": "VIm7 - IIm7 - IVmaj7 - Vsus4",
+            "Intro": "Imaj7 - V7 - iim7 - IV",
+            "Outro.Fade_Out": "Vmaj7 - vi - IV - I - Vmaj7 - vi - IV - I",
+            "Air": ""
+        },
+        "Synth-Driven Indie Pop": {
+            "Verse": "Imaj7 - VI - ii - V7",
+            "Chorus": "Iadd9 - V - vi - IVmaj7",
+            "Solo-Break": "Imaj7 - V7 - vi - IVmaj7 - Iadd9 - V7 - iiim7 - vi7",
+            "Bridge": "Imaj7 - vi - IVadd9 - V7",
+            "Pre-Chorus": "Imaj7 - vi - IVadd9 - III7",
+            "Intro": "Imaj7 - ii - IV - V7",
+            "Outro.Fade_Out": "I - V - VI - IVmaj7",
+            "Air": ""
+        }
+    },
+    "Rock & Alternative": {
+        "Rock & Roll Shuffle": {
+            "Verse": "I - IV - I - V7 - I - IV - V7 - I",
+            "Chorus": "I - IV - V7 - IV - I - V7 - IV - I",
+            "Solo-Break": "I7 - IV7 - V7 - II7 - I7 - V7",
+            "Bridge": "I7 - IV7 - I7 - vi - ii7 - V7",
+            "Pre-Chorus": "I - IV - iim7 - V7",
+            "Intro": "I - I7 - IV - iv",
+            "Outro.Fade_Out": "I - V7 - IV - I - V7",
+            "Air": ""
+        },
+        "Folk Rock": {
+            "Verse": "I - vi - IV - V",
+            "Chorus": "I - V - vi - IV - I - V - IV - I",
+            "Solo-Break": "I - IV - vi - V7 - IV - V - iii - IV",
+            "Bridge": "I - V - vi - IV - ib7 - VII - i - V7",
+            "Pre-Chorus": "Imaj7 - iv - ii7 - V7",
+            "Intro": "I - vi - IV - V",
+            "Outro.Fade_Out": "I - V - IV - vi - I - V",
+            "Air": ""
+        },
+        "Modern Rock": {
+            "Verse": "I5 - vi - IV - I",
+            "Chorus": "I - V - vi - IV",
+            "Solo-Break": "I - bVII - IV - v - I - bVII - IV - I5",
+            "Bridge": "im7 - VI - V - IVmaj7 - ii - V7 - I",
+            "Pre-Chorus": "V - vi - IV - IVadd9 - V7 - vi - IV - V",
+            "Intro": "I5 - IV - IV6 - vi",
+            "Outro.Fade_Out": "I - V - vi - IV - I - V - IV - I",
+            "Air": ""
+        },
+        "Glam Rock": {
+            "Verse": "I - IV - V - iv",
+            "Chorus": "I - IV - vi - V7",
+            "Solo-Break": "I7 - III7 - IVadd9 - iiø - V7 - VIaug - VIIaug7 - iv",
+            "Bridge": "I7 - IVadd9 - iiø - V#9 - vi - IV6 - V7 - IV",
+            "Pre-Chorus": "I7sus4 - iv7 - VI7 - v°7",
+            "Intro": "I - Isus4 - IV - I",
+            "Outro.Fade_Out": "I - IV - IIm7 - V7 - I - IV - IIm7 - V7 - I",
+            "Air": ""
+        },
+        "Alternative Rock Ballad": {
+            "Verse": "I - ii - IV - vi - I - V7 - ii - I",
+            "Chorus": "I - vi - IV - V7",
+            "Solo-Break": "I - IVmaj7 - vi - ii7 - V7#9 - vi - IV - I",
+            "Bridge": "I - ii - IV - vi - iii - IV - I - V7",
+            "Pre-Chorus": "V - vi - IV - V7",
+            "Intro": "I - VI - IV - V",
+            "Outro.Fade_Out": "VImaj7 - IV - vi - V9",
+            "Air": ""
+        },
+        "Dark Synthwave Rock": {
+            "Verse": "Vimin - VI - iv - I7",
+            "Chorus": "V - IV - i - vi - V7 - iv - i - V7",
+            "Solo-Break": "V7#5 - ivm7b5 - VIaug - i°7 - ivm7 - VII7",
+            "Bridge": "VI - iv - V7 - II - V7 - III - i - VI",
+            "Pre-Chorus": "i7 - iv - V7 - iv - °7 - V7alt - iv",
+            "Intro": "Imin - VI - iv6 - V7",
+            "Outro.Fade_Out": "IV - iv - IIm7 - vi - V7 - IV",
+            "Air": ""
+        },
+        "Math Rock": {
+            "Verse": "Iadd9 - VI7#5 - ii7b5 - IVaug",
+            "Chorus": "VIIadd9 - v7 - VIaug - I5 - iiiø - iv7 - Vsus4",
+            "Solo-Break": "VI7#5 - IVaug - II5 - vi7 - iv4 - I9 - vii° - IIImaj7",
+            "Bridge": "vi7 - iim7 - I6/9 - IV4 - iii7 - vi°7",
+            "Pre-Chorus": "VImaj7#5 - iv°7 - Iadd9 - V7",
+            "Intro": "Iadd9 - IV7 - ii7 - VIaug7",
+            "Outro.Fade_Out": "I4 - viadd9 - V7b5 - ii°",
+            "Air": ""
+        },
+        "Lo-Fi Garage Rock": {
+            "Verse": "I - IV - vi - V",
+            "Chorus": "I - V - vi - IV - I - V - IV - I",
+            "Solo-Break": "I5 - VII - iv - VI - i°7",
+            "Bridge": "V - iv - VI - iii - ii - V - I",
+            "Pre-Chorus": "I - vi - IV - ii7 - V7",
+            "Intro": "I5 - IV5 - i5 - VII5",
+            "Outro.Fade_Out": "I - vi - IV - V",
+            "Air": ""
+        },
+        "Psychedelic Rock": {
+            "Verse": "I - IV - vi - ii° - V7 - Isus4",
+            "Chorus": "I - vi - IVadd9 - V7#9",
+            "Solo-Break": "I - V7b5 - iv - iim7b5 - IIIaug - I7#5 - iv - VI7 - i°7 - vii°7",
+            "Bridge": "Imaj7 - IV - i7 - ii°7 - I+7",
+            "Pre-Chorus": "I - IIIaug - iv - IV - vii°7 - VI - V7",
+            "Intro": "Imaj7 - V7#9 - i7 - VI7",
+            "Outro.Fade_Out": "Imaj7 - iv - II7 - vi - Iadd9 - IV - III7",
+            "Air": ""
+        },
+        "Progressive Rock": {
+            "Verse": "I - IVmaj7 - iim7 - V7 - vi7 - IIIaug - i7",
+            "Chorus": "Imaj7 - vi - IV - V11 - iø - II7 - V7 - I",
+            "Solo-Break": "im7b5 - VIIaug7 - v7 - IIImaj7 - iv° - VI9 - iiim7 - V7#9",
+            "Bridge": "iv - VI7 - iiø - III7 - VIaug - i - v - VI",
+            "Pre-Chorus": "IIm7b5 - V7b9 - IIIaug7 - VII7 - iim7 - VI7 - ivø - V7#9",
+            "Intro": "Imaj7 - IIm7 - VIaug - IVadd9",
+            "Outro.Fade_Out": "Imaj7 - bVII - iv - im9",
+            "Air": ""
+        },
+        "Southern Rock": {
+            "Verse": "I - IV - v - IV - I - IV - v - IV - I - bVII - IV - I - I - IV - v - IV",
+            "Chorus": "I - IV - V - I7 - IV - vi - V - I",
+            "Solo-Break": "I - IV - vi - iii - V - ii - V7 - I",
+            "Bridge": "I - IV - vi - iii - IV - I - V - IV",
+            "Pre-Chorus": "I - IV - v - V7 - ii - V7",
+            "Intro": "I - IV - I - V7",
+            "Outro.Fade_Out": "I - IV - I - V - vi - IV - I - V7",
+            "Air": ""
+        },
+        "Indie Post-Punk Groove": {
+            "Verse": "I - vi - IV - V",
+            "Chorus": "I - V7#9 - vi - IV - I - II7 - IV - vi",
+            "Solo-Break": "iv - VI - i - v - iv7 - VII - i - iv",
+            "Bridge": "I - vi - IV - iv - Iadd9 - VI - iii - v7",
+            "Pre-Chorus": "V7 - IV6 - vi - iv° - V7 - vi",
+            "Intro": "I - vi - IV - V",
+            "Outro.Fade_Out": "I - IV - vi - V - I - IV - vi - V",
+            "Air": ""
+        },
+        "Classic Doo-Wop Cadence": {
+            "Verse": "I - vim7 - IV - V7",
+            "Chorus": "I - vi - IV - V7",
+            "Solo-Break": "I - vi - IV - V7",
+            "Bridge": "I - VI - IV - V7",
+            "Pre-Chorus": "I6 - iv - V7 - I",
+            "Intro": "Imaj7 - vim7 - iimin7 - V7",
+            "Outro.Fade_Out": "I6 - IVm6 - V7 - I",
+            "Air": ""
+        },
+        "50s Progression": {
+            "Verse": "I - vi - IV - V",
+            "Chorus": "I - vi - IV - V",
+            "Solo-Break": "I - vi - IVmaj7 - V7 - I7 - vi7 - IV - V7",
+            "Bridge": "I - iii - vi - iv - V7 - I",
+            "Pre-Chorus": "IIm7 - V7 - Imaj7 - vim7",
+            "Intro": "I - vi - IV - V",
+            "Outro.Fade_Out": "I - vi - IV - V",
+            "Air": ""
+        },
+        "Shoegaze": {
+            "Verse": "I - V7sus4 - vi - IVmaj7",
+            "Chorus": "IVmaj7 - vi - Isus2 - Iadd9",
+            "Solo-Break": "Imaj7 - vi - iv - II7 - I6/9",
+            "Bridge": "im7b5 - III - iv - Imaj7 - vi - ii - V7",
+            "Pre-Chorus": "Imaj7 - vi - IVadd9 - V7 - ii7 - Isus4",
+            "Intro": "Imaj7 - vi - IVadd9 - V6/9",
+            "Outro.Fade_Out": "Imaj7 - vi - IVadd9 - V9",
+            "Air": ""
+        },
+        "Grunge": {
+            "Verse": "i - VI - i - III - VII - iv",
+            "Chorus": "I5 - IV - vi - V7",
+            "Solo-Break": "iv - vi - i - v7 - VI - iø - v7 - i",
+            "Bridge": "I - vi - IV - ii",
+            "Pre-Chorus": "im - IV - bVI - v",
+            "Intro": "I - vi - IV - I5",
+            "Outro.Fade_Out": "imin7 - VI - IV - III",
+            "Air": ""
+        },
+        "Epic Rock": {
+            "Verse": "I - ii - IV - vi - V - I",
+            "Chorus": "I - VI - IV - V - I - v - IV - I",
+            "Solo-Break": "V - IV - I7 - vi - ii - V7 - I - IV",
+            "Bridge": "IVmaj7 - iv - VI - v - IIIaug - VII - V7 - I",
+            "Pre-Chorus": "I - IV - vi - bVII - V7",
+            "Intro": "I5 - III7 - ii - IVmaj7",
+            "Outro.Fade_Out": "Imaj7 - VII - vi - V7 - IV - I - Imaj7",
+            "Air": ""
+        },
+        "Post-Rock": {
+            "Verse": "Imaj7 - IV - ii - vi - IVadd9 - vi - I",
+            "Chorus": "Imaj7 - V - vii° - IVadd9",
+            "Solo-Break": "Imaj9 - iiim7 - IVadd9 - V7b5 - VImaj7 - iv6/9 - iim7 - V7",
+            "Bridge": "Imaj7 - vi - IVadd9 - iim7",
+            "Pre-Chorus": "im7 - IVadd9 - viø - V7 - Isus2",
+            "Intro": "Imaj7 - ii - IVadd9 - vi - Isus2 - V",
+            "Outro.Fade_Out": "Imaj7 - vi - IV - V6/9 - Iadd9",
+            "Air": ""
+        },
+        "Indie Rock": {
+            "Verse": "I - vi - IV - V",
+            "Chorus": "I - V - vi - IV",
+            "Solo-Break": "I - III - vi - IV - V7 - iv - VI - II7",
+            "Bridge": "Imaj7 - vi - ii - IV",
+            "Pre-Chorus": "I - V - vi - IV",
+            "Intro": "I - IV - vi - V",
+            "Outro.Fade_Out": "Imaj7 - vi - IV - V - I - IV - V7",
+            "Air": ""
+        },
+        "Power Rock": {
+            "Verse": "I5 - VII5 - IV - vi - I5 - V - IV - vi",
+            "Chorus": "I5 - VI5 - IV5 - V5 - I5 - VI5 - IV5 - V5",
+            "Solo-Break": "I5 - IV5 - i7 - VII - IV5 - i7 - VI7 - V5",
+            "Bridge": "I5 - IV - vi - V7",
+            "Pre-Chorus": "I5 - vi - IV - V7 - vi - I5",
+            "Intro": "I5 - IV5 - vi - V7",
+            "Outro.Fade_Out": "I5 - IV5 - vi - V7",
+            "Air": ""
+        }
+    },
+    "Disco": {
+        "Classic Disco Groove": {
+            "Verse": "I7 - VI7 - i7 - II7",
+            "Chorus": "Imaj7 - VI7 - iim7 - V7",
+            "Solo-Break": "Imaj7 - VI7 - II7 - V7 - iim7 - V7 - IVmaj7 - III7",
+            "Bridge": "VImaj7 - ii7 - V7 - Imaj7",
+            "Pre-Chorus": "IIm7 - V7 - IIIm7 - VI7 - IIm7 - V7 - I7",
+            "Intro": "Imaj7 - vi - ii7 - V7",
+            "Outro.Fade_Out": "Imaj7 - VI7 - i7 - II9",
+            "Air": ""
+        }
+    },
+    "Electronic": {
+        "Synthwave Retro": {
+            "Verse": "Imaj7 - VI - IVmaj7 - V7",
+            "Chorus": "IVmaj7 - vi - I - V7 - iv - I - ii7 - I",
+            "Solo-Break": "VI - IVmaj7 - Vadd9 - iii7 - VI - ivsus2 - V9 - iii7",
+            "Bridge": "IIm7b5 - V7#5 - Imaj7 - iv - VI - ii° - iii7 - i",
+            "Pre-Chorus": "I6 - IIadd9 - IVmaj7 - V7 - ii - V7 - I",
+            "Intro": "Amaj7 - vi - IVmaj7 - ii7",
+            "Outro.Fade_Out": "Imaj7 - Im7 - IVadd9 - vi - IVmaj7 - V7 - I",
+            "Air": ""
+        },
+        "Cowbell Phonk Groove": {
+            "Verse": "I7 - IV7 - iim7 - V7",
+            "Chorus": "I7 - iv7 - VII7 - iiø - I7 - vi - V7 - iv - I7",
+            "Solo-Break": "im7b5 - VI7#9 - iv11 - i°7",
+            "Bridge": "I7 - vi - II7 - iv - V13 - VII - III7 - iv",
+            "Pre-Chorus": "iim7b5 - V11 - iv6/9 - V7#9",
+            "Intro": "i6 - III7 - VIadd9 - v7b5",
+            "Outro.Fade_Out": "Imaj7 - vi7 - IV7 - V9",
+            "Air": ""
+        },
+        "Dubstep": {
+            "Verse": "im7 - iv - III - VI - v - IV - i - VII",
+            "Chorus": "I - IVmaj7 - vi - V7",
+            "Solo-Break": "V7#9 - iv - iiø - i4",
+            "Bridge": "i7 - iv7 - iø - VII7 - III7 - IV7",
+            "Pre-Chorus": "I - vi - IVsus2 - V7#9",
+            "Intro": "I - vi - IV - V",
+            "Outro.Fade_Out": "Imaj7 - IVadd9 - iiim7 - V7#5",
+            "Air": ""
+        },
+        "Techno": {
+            "Verse": "I - II - iii - VI",
+            "Chorus": "Imaj7 - IVadd9 - VIIm7b5 - IVadd9",
+            "Solo-Break": "im9 - iv7 - VII7#9 - II7 - i7#9 - V7#9 - iv - VI7",
+            "Bridge": "I - vi - V - ii",
+            "Pre-Chorus": "I - IIaug - IVadd9 - V7",
+            "Intro": "im9 - iv - VI - iv",
+            "Outro.Fade_Out": "I - vi - IV - V",
+            "Air": ""
+        },
+        "Darkstep": {
+            "Verse": "i - iv° - VI - v - i - VII - iv - i",
+            "Chorus": "i - iv - v - III - VI - ii° - v - i",
+            "Solo-Break": "vii° - iv - i - V7b9",
+            "Bridge": "i - iv° - ii° - VI7 - iv - VII7b5",
+            "Pre-Chorus": "i - iv° - vi - V7",
+            "Intro": "i°7 - iv - III7 - vi°",
+            "Outro.Fade_Out": "Iim7b5 - iv°7 - VI7 - i",
+            "Air": ""
+        },
+        "Progressive House": {
+            "Verse": "Imaj7 - iii - vi - IVadd9",
+            "Chorus": "Imaj7 - V7 - vi - IVmaj7 - Imaj9 - v - IV7 - V7",
+            "Solo-Break": "I - V - vi - IV#5 - Imaj7 - V9 - iv6 - VII7#9",
+            "Bridge": "Vmaj9 - vi7 - IVmaj7 - vi6/9 - V7 - IVadd9",
+            "Pre-Chorus": "Vadd9 - IV6 - VIIaug - I6/9",
+            "Intro": "I - IV - ii7 - Iadd9",
+            "Outro.Fade_Out": "Imaj7 - vi - IVmaj7 - V9",
+            "Air": ""
+        },
+        "Drift Phonk Bassline": {
+            "Verse": "I - VI - ii - V",
+            "Chorus": "I7 - II7 - III7 - II7",
+            "Solo-Break": "im7b5 - VII - v - VI7 - iim7 - V7 - i - iv7",
+            "Bridge": "im7b5 - IV - I7#9 - VII",
+            "Pre-Chorus": "im7 - III7 - iv6 - IVadd9",
+            "Intro": "Imaj7 - iv7 - IVadd9 - iim7",
+            "Outro.Fade_Out": "I - VI - V7 - IV",
+            "Air": ""
+        },
+        "Breakcore": {
+            "Verse": "i - III - v - ii° - iv - VI - iv° - vii",
+            "Chorus": "I7#5 - vi°7 - iv9 - V7#9",
+            "Solo-Break": "I - Iaug7 - vi - V7b9",
+            "Bridge": "Iivdim7 - V7#9 - IV - I7b5 - vi6 - iiim7b5 - I6 - V7",
+            "Pre-Chorus": "I7#5 - vi - IV - IIaug7",
+            "Intro": "I - IIIaug - VII - i7 - ivº",
+            "Outro.Fade_Out": "I6 - iiø - vi - V7 - iiim7 - IVadd9 - iim6 - I",
+            "Air": ""
+        },
+        "Roller Groove": {
+            "Verse": "I - IV - VII - ii - vi - V - I - IV",
+            "Chorus": "V - IVmaj7 - vi - V - Imaj9 - IV - im7 - V7",
+            "Solo-Break": "Imaj7 - VII7 - VI7 - V7#9 - iv - v°7",
+            "Bridge": "Imaj7 - VI7 - im7 - V9",
+            "Pre-Chorus": "ii7 - V7 - Iadd9 - iv°7",
+            "Intro": "Iadd9 - vi7 - IVmaj7 - iiø7",
+            "Outro.Fade_Out": "I6/9 - IIadd9 - Imaj7 - Imaj9",
+            "Air": ""
+        },
+        "Tech House Pulse": {
+            "Verse": "i - VII - iv - v",
+            "Chorus": "I - III7 - VIIø - VI",
+            "Solo-Break": "I7#9 - iv - VImaj7 - ii° - V7 - IV - v - I7b5",
+            "Bridge": "IIm7b5 - V7#9 - i6 - VI7#5",
+            "Pre-Chorus": "im11 - IV7#5 - iiø - V13",
+            "Intro": "im7b5 - iv7 - Imaj7 - VII7",
+            "Outro.Fade_Out": "V9 - Imaj9 - IVadd9 - III7",
+            "Air": ""
+        },
+        "Atmospheric DnB": {
+            "Verse": "iiø - V7 - Imaj7 - vi - IVmaj7 - VII - iii7 - ii7",
+            "Chorus": "VImaj7 - ivm9 - V7#9 - iim11",
+            "Solo-Break": "Imaj7 - iii - v7 - Imaj9 - iv7 - II7#9",
+            "Bridge": "Imaj7 - iiim7b5 - IVmaj7 - iim7 - vi7 - viiø7 - V7 - Imaj7",
+            "Pre-Chorus": "Imaj7 - IVadd9 - viim7b5 - V13b9",
+            "Intro": "iim7b5 - V9 - Imaj7 - iv - ii°7 - I6/9",
+            "Outro.Fade_Out": "im9 - IVmaj7 - i7 - VImaj9",
+            "Air": ""
+        },
+        "IDM (Intelligent Dance Music)": {
+            "Verse": "Imaj7 - iiø - V7#5 - iv",
+            "Chorus": "Vmaj7 - VImaj7 - i7 - IIIaug7",
+            "Solo-Break": "Iaug7 - iv7 - VI7#9 - iiø - V9 - vi°7",
+            "Bridge": "im9 - IImaj7 - iv11 - vii°7",
+            "Pre-Chorus": "IImaj7 - iv° - I6/9 - vii°",
+            "Intro": "Iadd9 - vi - IVmaj7 - ii7 - V7 - I",
+            "Outro.Fade_Out": "I9 - vi7 - iiø - V11 - I6/9",
+            "Air": ""
+        },
+        "Jungle Breaks": {
+            "Verse": "Imaj7 - iv - vi7 - ii7",
+            "Chorus": "Imaj7 - V7 - vi - IVmaj7",
+            "Solo-Break": "IVmaj7 - vi7 - iiø - V7#9",
+            "Bridge": "viim7b5 - VI - II7 - iv - iim7 - V7 - Iaug7 - IV",
+            "Pre-Chorus": "iim7 - V9 - VI7#9 - iv11",
+            "Intro": "I - V - IV - I - VI - III - IV - V",
+            "Outro.Fade_Out": "vi - IV - Imaj7 - V7",
+            "Air": ""
+        },
+        "Dreamwave Synths": {
+            "Verse": "Imaj7 - vi - ii - V7",
+            "Chorus": "Imaj7 - vi - IVmaj7 - V7",
+            "Solo-Break": "Imaj7 - iii7 - vi7 - IVmaj9 - V7 - im9 - viim7b5 - IVadd9",
+            "Bridge": "Imaj7 - VII - iv - VI - iiø - V7",
+            "Pre-Chorus": "II9 - vi - IVmaj7 - V7 - ii9 - V7b9",
+            "Intro": "Imaj7 - v - IV - vi",
+            "Outro.Fade_Out": "Imaj7 - IVmaj7 - vi - V7 - Iadd9",
+            "Air": ""
+        },
+        "Future Garage": {
+            "Verse": "im7 - iv9 - VImaj7 - i7",
+            "Chorus": "VIm7 - IVmaj7 - Imaj9 - ii7",
+            "Solo-Break": "VII - vi - v - VImaj7 - iv° - V9",
+            "Bridge": "im7b5 - iv - I7b9 - IIisus2",
+            "Pre-Chorus": "im7 - iv - VIaug - i7",
+            "Intro": "Imaj9 - ii7 - ivadd9 - vii°",
+            "Outro.Fade_Out": "im11 - VImaj7 - IV - i9",
+            "Air": ""
+        },
+        "EDM Build-up": {
+            "Verse": "I - vi - IV - V",
+            "Chorus": "I - Vadd9 - vi - IVmaj7 - V13#9",
+            "Solo-Break": "Imaj7 - IVadd9 - vi - V7 - I9 - IVmaj7 - vi7 - V7#9",
+            "Bridge": "V6 - ii7 - IVadd9 - V7",
+            "Pre-Chorus": "Iadd9 - V7sus4 - iv7 - V9#5",
+            "Intro": "Iadd9 - IVadd9 - vi - V11",
+            "Outro.Fade_Out": "Imaj7 - im7 - IV11 - V7",
+            "Air": ""
+        },
+        "Lo-Fi Hip-Hop Chill": {
+            "Verse": "im7 - v7 - IVmaj7 - i7",
+            "Chorus": "VImaj7 - IVadd9 - iim7 - V7 - Imaj7 - iii7 - V7 - I6",
+            "Solo-Break": "IVmaj7 - ii7 - iv9 - V7 - iiø - vii°7 - I7 - iii6",
+            "Bridge": "Imaj7 - vi7 - ii7 - V9",
+            "Pre-Chorus": "ivmaj7 - vi°7 - iim7b5 - V7",
+            "Intro": "im7 - IVmaj7 - iim7 - V9",
+            "Outro.Fade_Out": "Imaj7 - vi7 - ii7 - V7",
+            "Air": ""
+        },
+        "Liquid DnB": {
+            "Verse": "Imaj7 - ii7 - IV - V7",
+            "Chorus": "VI7 - v - Imaj7 - ii7",
+            "Solo-Break": "I9 - VII - VImaj7 - iv6/9",
+            "Bridge": "vi7 - IVmaj7 - iø - II7 - iv6 - V9",
+            "Pre-Chorus": "Imaj7 - IVadd9 - vi7 - V7#9",
+            "Intro": "VImaj7 - IVmaj7 - iim9 - V13",
+            "Outro.Fade_Out": "Imaj7 - vi7 - IVmaj7 - II7",
+            "Air": ""
+        },
+        "Warm Vinyl Texture Beats": {
+            "Verse": "iim7b5 - V7#9 - im9 - VImaj7",
+            "Chorus": "Imaj7 - vi7 - IVmaj7 - V7",
+            "Solo-Break": "im7 - VIadd9 - iv9 - iim7b5 - im9 - V7#9 - VII7 - im7",
+            "Bridge": "im7 - ii7 - IVmaj7 - vi6/9",
+            "Pre-Chorus": "iim7 - IVmaj7 - VI7 - II6/9",
+            "Intro": "Imaj7 - vi7 - IVadd9 - V7#9",
+            "Outro.Fade_Out": "Imaj7 - vi7 - IImaj7 - II7",
+            "Air": ""
+        },
+        "Darkwave": {
+            "Verse": "vi - iv - i - iii - v° - VI - i",
+            "Chorus": "i - VI - iv - v",
+            "Solo-Break": "vi - iv - I7 - iiø - v - vi°7 - IV - ii",
+            "Bridge": "im7b5 - v° - IVm - II7",
+            "Pre-Chorus": "im - iv - ii° - im7",
+            "Intro": "i - vi - i - iv",
+            "Outro.Fade_Out": "im - iv - v° - i - iv - v - im7 - i",
+            "Air": ""
+        },
+        "Techstep": {
+            "Verse": "i5 - VIIaug - VI4 - iv5",
+            "Chorus": "iv7 - vi7 - iiø7 - V9b5",
+            "Solo-Break": "IIm7b5 - V7#5 - IIm7 - bVIIMaj7 - IIadd9",
+            "Bridge": "ivm7b5 - ii° - V11 - IIIim9 - vi - vi°7",
+            "Pre-Chorus": "I - VII - iv°7 - V7",
+            "Intro": "Iadd9 - iv - I7b9 - iim7",
+            "Outro.Fade_Out": "VImaj7 - v7 - VIIø - IVmin9",
+            "Air": ""
+        },
+        "Future Bass": {
+            "Verse": "Imaj7 - vi - IVadd9 - V7",
+            "Chorus": "Imaj7 - Vadd9 - ii7 - IVadd11",
+            "Solo-Break": "V7#9 - ivm7 - II7 - iv°7",
+            "Bridge": "Imaj7 - IVadd9 - vi - ii7 - V7",
+            "Pre-Chorus": "Imaj7 - vi7 - IVadd9 - V7#9",
+            "Intro": "Imaj7 - iii7 - vi9 - IVmaj7",
+            "Outro.Fade_Out": "Iadd9 - VIadd9 - IVmaj7 - V7",
+            "Air": ""
+        },
+        "Dark Memphis Phonk": {
+            "Verse": "im7b5 - iv - III - VI - v° - iv - iiim7 - VI",
+            "Chorus": "iv - III - iv - i - v - VI - i - VII",
+            "Solo-Break": "iv - vi° - iim7 - III7b9",
+            "Bridge": "iim7b5 - iv°7 - IIIaug7 - viim7",
+            "Pre-Chorus": "imin7b5 - vii°7 - v7b9 - VIaug",
+            "Intro": "i - i° - iv - ii° - vi - iv - i",
+            "Outro.Fade_Out": "VII - v°7 - iv - I7b9",
+            "Air": ""
+        },
+        "Neurofunk": {
+            "Verse": "viø - iv7 - ii7 - v9",
+            "Chorus": "i - vi - IV - v - i - iii - vii - i - IV - vii° - i7 - iv - i - vi - IV - v",
+            "Solo-Break": "iø - V7#9 - IV7 - v°7",
+            "Bridge": "Iaug - IIaug - v° - iv - iiim7b5 - IV7#5",
+            "Pre-Chorus": "i°7 - I7#9 - II7b5 - viø - iv7 - vii°7",
+            "Intro": "i - iv7 - VI - iv - i° - VII",
+            "Outro.Fade_Out": "iv°7 - VI7 - i7 - V7#9 - iv°7 - i7 - VI7 - V7#9",
+            "Air": ""
+        },
+        "Jump-Up DnB": {
+            "Verse": "I - vi - IV - V",
+            "Chorus": "I7 - IV7 - i7 - v7",
+            "Solo-Break": "I7#9 - iv - IIaug7 - i° - IV - vi - III7 - v6",
+            "Bridge": "I - III7 - vi - iiø - V7",
+            "Pre-Chorus": "I7 - VI7 - iv°7 - V7#9",
+            "Intro": "i - vi - III - VII",
+            "Outro.Fade_Out": "I - vi - IV - V7",
+            "Air": ""
+        },
+        "Industrial Techno": {
+            "Verse": "im - bIIIaug - bVIadd9 - bVII7#9",
+            "Chorus": "V - IV - VII - III - V - iv° - VII - V7",
+            "Solo-Break": "vi - VII - iv° - IIIaug - ii7 - vi - I7 - vii°",
+            "Bridge": "v - iv - i°7 - V7 - iv - vi°7 - V",
+            "Pre-Chorus": "I7#9 - vi°7 - IVadd9 - inv",
+            "Intro": "I - i - I5 - vi - I - v° - II5",
+            "Outro.Fade_Out": "I - v - iø - ii° - iv - i - i - v7",
+            "Air": ""
+        },
+        "Big Room EDM": {
+            "Verse": "I - vi - IV - V",
+            "Chorus": "I - V - vi - IV",
+            "Solo-Break": "I - V7 - vi - IV - I - vi - V7 - IV",
+            "Bridge": "Imaj7 - vi - II9 - IV",
+            "Pre-Chorus": "Iadd9 - vi - IV - V7",
+            "Intro": "Imaj7 - IIadd9 - IVadd11 - V5",
+            "Outro.Fade_Out": "I - V - VI - IV",
+            "Air": ""
+        },
+        "Electro Swing": {
+            "Verse": "Imaj7 - V7 - iim7 - ivm7",
+            "Chorus": "I - V7 - ii - IV7 - I - vi - ii7 - V7",
+            "Solo-Break": "I7 - IV6 - ii°7 - V7 - iii - VI7 - Iadd9",
+            "Bridge": "IVmaj7 - ii7 - V7 - I7",
+            "Pre-Chorus": "IIm9 - V7#9 - VI7 - i6 - iib5 - iiø - V7 - i7",
+            "Intro": "I6 - IV - V7 - iv7",
+            "Outro.Fade_Out": "Imaj7 - V7 - vi - IV - I6/9",
+            "Air": ""
+        },
+        "UK Garage": {
+            "Verse": "I - iv7 - VII - III6/9",
+            "Chorus": "Imaj7 - vi - IVadd9 - V7",
+            "Solo-Break": "VIm7 - IVmaj7 - V7 - IIm7b5 - I7#5 - VIm9",
+            "Bridge": "VImaj7 - ivm7 - iiø - V7",
+            "Pre-Chorus": "vi7 - IVadd9 - ii7b5 - V7b9",
+            "Intro": "Imaj7 - vi - IVadd9 - iii",
+            "Outro.Fade_Out": "Imaj7 - vi7 - I6 - IVmaj7",
+            "Air": ""
+        },
+        "Deep House Groove": {
+            "Verse": "i7 - VImaj7 - iv7 - V7",
+            "Chorus": "I7 - iv7 - II7 - vi7",
+            "Solo-Break": "I9 - i7 - IIImaj7 - IV11",
+            "Bridge": "Imaj9 - IVmaj7 - V9 - iv6 - iim7 - V7",
+            "Pre-Chorus": "Im7b5 - IVmaj9 - iim7 - V7#9",
+            "Intro": "I7 - IVmaj7 - iim7 - vi7",
+            "Outro.Fade_Out": "im7 - IVmaj7 - ii7 - V7 - im7 - IVmaj7 - ii7 - V7",
+            "Air": ""
+        },
+        "Trance Gate": {
+            "Verse": "I - vi - IV - V - I - vi - IV - V",
+            "Chorus": "Imaj9 - IVmaj7 - vi7 - V7",
+            "Solo-Break": "VII - V7 - IVmaj9 - I7b5#9 - VIaug7 - vim7b5 - IIaug - III6/9",
+            "Bridge": "im7b5 - V7#5 - IVadd9 - III7",
+            "Pre-Chorus": "iim7 - IVadd9 - viø - VIadd9",
+            "Intro": "i - VII - VI - VII - iadd9 - VII - VIadd9 - VII",
+            "Outro.Fade_Out": "Imaj9 - vi7 - IVmaj7 - V7",
+            "Air": ""
+        },
+        "Hardstyle": {
+            "Verse": "i - iv - V7 - i - VI - III - iv - V7",
+            "Chorus": "V - iv - vi - VII - V - IV - VII - I",
+            "Solo-Break": "im - VI - VII - v - iv - V7 - i - VII",
+            "Bridge": "VI - iv - I - V7 - vi - III - IV - I",
+            "Pre-Chorus": "I - IV - vi - V7",
+            "Intro": "VI - I - iv - V7",
+            "Outro.Fade_Out": "I - V - vi - IV - I7 - V7 - vi - I",
+            "Air": ""
+        },
+        "Post-Industrial": {
+            "Verse": "I - iv - vi° - I7",
+            "Chorus": "I - VI - IVadd9 - v6 - I - iiø - V7 - I",
+            "Solo-Break": "VIIm - iv° - i7 - V7#9 - IIIaug - iv - ii°7",
+            "Bridge": "iim7b5 - bII7#9 - iv9 - bVII7#5",
+            "Pre-Chorus": "im7b5 - V7#9 - iv6 - Iaug7",
+            "Intro": "Iadd9 - VI7 - IVsus2 - i°7",
+            "Outro.Fade_Out": "I - IV - Iim7b5 - VII - IIaug - I6 - v°7 - I",
+            "Air": ""
+        }
+    },
+    "Afrobeats & Amapiano": {
+        "Afrobeats Groove": {
+            "Verse": "I - vi - ii7 - V",
+            "Chorus": "IVmaj7 - vi - II7 - V7",
+            "Solo-Break": "im7 - VI9 - IImaj7 - v°7 - IVm11 - VII7#9",
+            "Bridge": "vi - IV6 - V13 - ii7",
+            "Pre-Chorus": "iim7 - VI7 - im7 - V7",
+            "Intro": "Imaj7 - vi7 - ii7 - V7",
+            "Outro.Fade_Out": "Imaj7 - IVmaj7 - vi - V7",
+            "Air": ""
+        },
+        "Amapiano Log Drum Beat": {
+            "Verse": "Imaj7 - iii7 - vi7 - IV",
+            "Chorus": "Imaj7 - IV - vi - V7",
+            "Solo-Break": "Imaj7 - vi - IV9 - V11",
+            "Bridge": "vi - Imaj7 - ii7 - V9 - Imaj9 - viiø - ii7 - V7",
+            "Pre-Chorus": "IVmaj7 - vi7 - Imaj9 - V7#9",
+            "Intro": "Imaj7 - ii7 - IV - V7",
+            "Outro.Fade_Out": "VI7 - iv7 - I - V7 - VI7 - iv7 - I - V7",
+            "Air": ""
+        },
+        "Afro-Fusion": {
+            "Verse": "Imaj9 - vi7 - IV - V7",
+            "Chorus": "Iadd9 - IV - vi6 - V7",
+            "Solo-Break": "Imaj7 - V7 - iv6 - iim7 - II7 - vi7 - VIm7 - i7",
+            "Bridge": "Imaj7 - vii°7 - vi7 - V7",
+            "Pre-Chorus": "i9 - IVmaj7 - vi7 - V7",
+            "Intro": "i - VI - iv - V7",
+            "Outro.Fade_Out": "Imaj9 - VI7 - iim7 - V7",
+            "Air": ""
+        }
+    },
+    "Jazz": {
+        "Jazz Standard": {
+            "Verse": "Imaj7 - iim7 - V7 - Imaj7 - iiø - V7 - im7 - VI7",
+            "Chorus": "Imaj7 - IVmaj7 - ii7 - V7 - iii7 - VI7 - iim7b5 - V7 - Imaj7",
+            "Solo-Break": "IIImaj7 - vi7 - II7 - V9 - Imaj7 - bVII7 - bIII7 - #IVm7b5",
+            "Bridge": "im7b5 - V7b9 - Imaj7 - IV7 - iim7 - V7 - Imaj9 - VI7",
+            "Pre-Chorus": "IIm7 - V7 - Imaj7 - VI7 - IIm7b5 - V7alt - im7 - IVmaj7",
+            "Intro": "Imaj7 - ii7 - V7 - Imaj9",
+            "Outro.Fade_Out": "I7 - IVmaj7 - iim7 - V7 - Imaj7 - vii°7",
+            "Air": ""
+        },
+        "Jazz II-V-I": {
+            "Verse": "im7 - V7 - Imaj7 - iim7b5 - V7 - Imaj7",
+            "Chorus": "im7 - V7 - Imaj7 - iim7b5 - V7#9 - Imaj9 - iim7 - V7 - Imaj7",
+            "Solo-Break": "IIm7 - V7 - Imaj7 - IIIm7 - VI7 - IIm7b5 - V7#9 - Imaj9",
+            "Bridge": "im7b5 - V7#5 - i - III7 - VI7 - iim7 - V9 - Imaj7",
+            "Pre-Chorus": "IIm7 - V7b9 - Imaj7 - ivm7 - vii°7 - III7 - iim7b5 - V7#5",
+            "Intro": "ii7 - V7b9 - Imaj7",
+            "Outro.Fade_Out": "IIm7 - V7 - Imaj7 - VI7 - IIm7 - V7 - Imaj7 - II7 - IIm7 - V7 - Imaj7",
+            "Air": ""
+        },
+        "Modal Jazz": {
+            "Verse": "I6/9 - IVmaj7 - iim7 - V7 - im11 - VI9 - Imaj9 - iv7",
+            "Chorus": "Imaj7 - II7 - vim7 - VI7 - iiø - V7#5",
+            "Solo-Break": "imin7 - ivmaj7 - viø - bVII7 - IIImaj9 - ivmin9 - bVI7#9 - V7alt",
+            "Bridge": "VImaj7 - iim7b5 - V7#9 - i7",
+            "Pre-Chorus": "im7b5 - II7#5 - ivm9 - VI7 - iim11 - ivm11",
+            "Intro": "Im11 - iiim7b5 - V13 - Imaj7",
+            "Outro.Fade_Out": "Imaj9 - ivm7 - VI7 - iim7 - V7 - Imaj7",
+            "Air": ""
+        },
+        "Bebop Progression": {
+            "Verse": "Imaj7 - vim7 - iim7 - V7 - II7 - IIIm7 - VI7 - iim7 - V7",
+            "Chorus": "Imaj7 - vi7 - iim7 - V7 - Imaj7 - vi7 - ii7b5 - V7#9",
+            "Solo-Break": "I7b5 - IVm7 - VIIø - III7#5 - V7 - iim9 - im7 - vi7b5",
+            "Bridge": "im7 - V7 - Imaj7 - VI7 - iim7 - V7 - im7b5 - VI7",
+            "Pre-Chorus": "IV7 - ivm7 - bVII7 - III7 - vim7 - iiø - V7 - I7",
+            "Intro": "Imaj7 - iv7 - VII7 - iii7",
+            "Outro.Fade_Out": "Imaj7 - VI7b9 - iim7 - V7#9 - Imaj7 - VI7b9 - iim7 - V7#9",
+            "Air": ""
+        },
+        "Swing Era Standard": {
+            "Verse": "Imaj7 - iim7 - V7 - I6",
+            "Chorus": "Imaj7 - iii7 - vi7 - ii7 - V7 - Imaj7 - iv7 - VII7",
+            "Solo-Break": "I9 - V7 - II7 - V7 - Imaj7 - iim7 - V9 - I6/9",
+            "Bridge": "Imaj7 - vi7 - II7 - V7 - Imaj7 - III7 - ii7 - V7",
+            "Pre-Chorus": "I6 - IV6 - iim7 - V7 - iii7 - VI7",
+            "Intro": "Imaj7 - iii7 - iim7 - V7",
+            "Outro.Fade_Out": "Imaj7 - I6/9 - iim7 - V7 - Imaj7",
+            "Air": ""
+        },
+        "Cool Jazz Cadence": {
+            "Verse": "Imaj7 - ivm7 - VII7 - IIImaj7 - iim7b5 - V7 - Imaj9",
+            "Chorus": "Imaj7 - II7 - iiim7 - VI7 - iim7 - V7 - Imaj7 - V7",
+            "Solo-Break": "im9 - VI7#9 - iim7 - V7b9 - Imaj7 - iiø - V7#5 - imaj7",
+            "Bridge": "iim7b5 - V7#5 - im7 - VI7 - iim7 - V7 - Imaj7",
+            "Pre-Chorus": "Imaj7 - ii7 - V7#9 - I6/9",
+            "Intro": "Imaj7 - im7b5 - VI7 - IImaj7",
+            "Outro.Fade_Out": "Imaj7 - vi7 - ii7 - V7 - Imaj7 - IVmaj7 - Imaj7",
+            "Air": ""
+        },
+        "Latin Jazz Fusion": {
+            "Verse": "Imaj7 - vi7 - iim7 - V7 - Isus2 - IVmaj7 - iii7 - vi7",
+            "Chorus": "Imaj9 - ii7 - V13b9 - Imaj7 - VI7 - iim7 - V7#9 - I6/9",
+            "Solo-Break": "VImaj9 - V7b9 - im11 - iv7 - iim7b5 - V7#5 - Imaj7",
+            "Bridge": "Imaj7 - iim7b5 - VI7 - ivm7 - iiim7 - viø - V7#5 - Imaj7",
+            "Pre-Chorus": "IVmaj7 - iim7b5 - V7b9 - i9 - VImaj7 - bVII7 - i7 - V7#5",
+            "Intro": "Imaj9 - ii7 - iii7b5 - VI7#9",
+            "Outro.Fade_Out": "Imaj7 - iim7 - V7 - I6/9 - ivm7 - II9 - im7b5 - Imaj7",
+            "Air": ""
+        },
+        "Dixieland Progression": {
+            "Verse": "I - V7 - ii7 - V7 - I6 - IV - iii7 - vi7",
+            "Chorus": "Imaj7 - VI7 - IIm7 - V7 - Imaj7 - VI7b9 - IIm7 - V7 - IIIm7 - VI7 - IIm7 - V7 - Imaj7 - VI7 - IIm7 - V7",
+            "Solo-Break": "I7 - IV7 - VI7 - II7 - V7 - I",
+            "Bridge": "I7 - IV6 - iim7b5 - V7 - im7 - VI7 - iiø - V7",
+            "Pre-Chorus": "I7 - ii7 - V7 - I9",
+            "Intro": "Imaj7 - IV6 - V7 - I6/9",
+            "Outro.Fade_Out": "Imaj7 - IV7 - iim7 - V7 - Imaj7",
+            "Air": ""
+        }
+    },
+    "Blues": {
+        "12-Bar Blues": {
+            "Verse": "I7 - I7 - I7 - I7 - IV7 - IV7 - I7 - I7 - V7 - IV7 - I7 - V7",
+            "Chorus": "I7 - IV7 - I7 - I7 - IV7 - IV7 - I7 - I7 - V7 - IV7 - I7 - V7",
+            "Solo-Break": "I7 - IV7 - I7 - I7 - IV7 - IV7 - I7 - VI7 - iim7 - V7 - I7 - V7",
+            "Bridge": "I7 - IV7 - I7 - II7 - V7 - IV7 - I7 - V7",
+            "Pre-Chorus": "I7 - IV7 - I7 - II7",
+            "Intro": "I7 - I7 - I7 - I7 - IV7 - IV7 - I7 - I7 - V7 - IV7 - I7 - V7",
+            "Outro.Fade_Out": "I7 - IV7 - I7 - I7 - IV7 - IV7 - I7 - I7 - V7 - IV7 - I7 - V7",
+            "Air": ""
+        },
+        "Melodic Blues": {
+            "Verse": "I7 - IV7 - I7 - i°7",
+            "Chorus": "I7 - IV7 - I7 - IV7 - V7 - IV7 - I7 - V7",
+            "Solo-Break": "V7 - iv - I7 - VI7 - ii°7 - V9 - I7 - VI7#9",
+            "Bridge": "I7 - IV7 - i°7 - V7 - iim7b5 - VI7 - i°7 - I7",
+            "Pre-Chorus": "IIm7b5 - V7 - i7 - iv7",
+            "Intro": "I - I7 - IV - iv",
+            "Outro.Fade_Out": "I7 - IV7 - I7 - V7 - IV7 - I7 - IV7 - I7",
+            "Air": ""
+        },
+        "Delta Blues Classic": {
+            "Verse": "I7 - IV7 - I7 - V7 - I7",
+            "Chorus": "I7 - IV7 - I7 - I7 - IV7 - IV7 - I7 - I7 - V7 - IV7 - I7 - V7",
+            "Solo-Break": "I7 - IV7 - I7 - V7 - IV7 - I7 - V7",
+            "Bridge": "V7 - iv - I7 - VI7",
+            "Pre-Chorus": "I7 - IV7 - I7 - V7",
+            "Intro": "I - IV7 - I - I7",
+            "Outro.Fade_Out": "I7 - IV7 - I7 - V7 - IV7 - I7 - V7 - I7",
+            "Air": ""
+        },
+        "Chicago Blues Shuffle": {
+            "Verse": "I7 - IV7 - I7 - I7 - IV7 - IV7 - I7 - I7 - V7 - IV7 - I7 - V7",
+            "Chorus": "I7 - IV7 - I7 - I7 - IV7 - IV7 - I7 - I7 - V7 - IV7 - I7 - V7",
+            "Solo-Break": "I7 - IV7 - V7 - IV7 - I7 - V7 - I7 - V7",
+            "Bridge": "I7 - IV7 - I7 - V7",
+            "Pre-Chorus": "I7 - IV7 - iiim7 - VI7",
+            "Intro": "I7 - IV7 - I7 - V7",
+            "Outro.Fade_Out": "I7 - IV7 - I7 - V7 - IV7 - I7",
+            "Air": ""
+        },
+        "Texas Blues Progression": {
+            "Verse": "I7 - IV7 - I7 - I7 - IV7 - IV7 - I7 - I7 - V7 - IV7 - I7 - V7",
+            "Chorus": "I7 - IV7 - I7 - I7 - IV7 - IV7 - I7 - I7 - V7 - IV7 - I7 - V7",
+            "Solo-Break": "I7 - IV7 - V7 - I7 - V7 - IV7 - I7",
+            "Bridge": "I7 - IV7 - vi - vi7 - ii7 - V7",
+            "Pre-Chorus": "I7 - IV7 - V7 - IV7",
+            "Intro": "I7 - IV7 - I7 - V7",
+            "Outro.Fade_Out": "I7 - IV7 - I7 - V7 - IV7 - I7 - V7 - I7",
+            "Air": ""
+        },
+        "Boogie-Woogie Groove": {
+            "Verse": "I7 - IV7 - I7 - V7",
+            "Chorus": "I7 - IV7 - I7 - I7 - IV7 - IV7 - I7 - I7 - V7 - IV7 - I7 - V7",
+            "Solo-Break": "I7 - IV7 - I7 - V7 - IV7 - I7 - V7",
+            "Bridge": "I7 - IV7 - V7 - I7",
+            "Pre-Chorus": "I7 - IV7 - V7 - IV7",
+            "Intro": "I7 - IV7 - I7 - V7",
+            "Outro.Fade_Out": "I7 - IV7 - I7 - V7 - IV7 - I7",
+            "Air": ""
+        }
+    },
+    "Metal": {
+        "Symphonic Metal": {
+            "Verse": "i - VI - III - VII - iv - ii° - V7 - i",
+            "Chorus": "vi - IV - I - V - vi - IV - V - i",
+            "Solo-Break": "I - vii° - iiim7b5 - IV - iv - V7#9 - Iaug - v6",
+            "Bridge": "im7b5 - iv - VI - iv° - V7 - i",
+            "Pre-Chorus": "i - iv - VI - VII - v - iv7 - VII - VI7",
+            "Intro": "VII - VI - iv - V7",
+            "Outro.Fade_Out": "I - V7 - vi - IVmaj7 - III7 - ii - I - i°7",
+            "Air": ""
+        },
+        "Gothic Metal": {
+            "Verse": "im - VI - iv - i° - III - iv - i",
+            "Chorus": "i - v - iv - V7 - i - VI - iv - V7",
+            "Solo-Break": "im - vi° - VII - i - iv - v° - bVI - i",
+            "Bridge": "im - iv - VI - v° - i - VI - iv - v",
+            "Pre-Chorus": "im7b5 - bV - ii° - vii° - i5 - i6",
+            "Intro": "i - VI - III - iv - v° - i",
+            "Outro.Fade_Out": "i - VI - iv - i7 - v - iv - i - ii°7",
+            "Air": ""
+        },
+        "Groove Metal": {
+            "Verse": "i5 - VII5 - VI5 - VII5",
+            "Chorus": "I5 - ii° - V7 - iv - Iaug - iii°7 - VI5 - iv",
+            "Solo-Break": "vi - I5 - iv - bVII5 - vi - I5 - iv7 - V7#9",
+            "Bridge": "i - iv - i - V7 - i - VI - iv - i",
+            "Pre-Chorus": "i - °7 - v - VI - iv - i - °7 - iv - v7 - VI7",
+            "Intro": "i5 - v5 - VI5 - iv5",
+            "Outro.Fade_Out": "v - VII - v - VI - I5",
+            "Air": ""
+        },
+        "Death Metal": {
+            "Verse": "im7 - iv° - v5 - i7 - iv - v° - vi° - i7",
+            "Chorus": "iv - vi - i° - v - iv - vi - i - V7",
+            "Solo-Break": "VII - v° - VI - iv° - VII - III - v♭ - VII",
+            "Bridge": "v - VII - v° - iv - VI - ii° - V7alt",
+            "Pre-Chorus": "im - VI - v° - IV - ii - VII - i7",
+            "Intro": "im5 - i5 - bVII5 - VI5 - i° - vi° - i5",
+            "Outro.Fade_Out": "i - II - v° - iv - i - VI - v° - iv",
+            "Air": ""
+        },
+        "Metalcore": {
+            "Verse": "v - vi° - IV - I5 - vii° - V7 - i4 - I5",
+            "Chorus": "im - VI - iv - v7 - III - iv - v7 - VI",
+            "Solo-Break": "I5 - vi° - IV5 - V7b5 - I7#5#9 - vi - VII5",
+            "Bridge": "I5 - vi°7 - IV - v7 - IIIaug - i - VII",
+            "Pre-Chorus": "im - iv - v - VI - VII - iv - i7 - VII",
+            "Intro": "I5 - IV - ii° - vi - V7",
+            "Outro.Fade_Out": "i - v6 - IIIaug - i - VII° - iv6 - v5",
+            "Air": ""
+        },
+        "Progressive Metal Complexity": {
+            "Verse": "i - iv - VII - VI - v - VII - iv - VI - i° - VII",
+            "Chorus": "Imaj7 - iii - ivø - VI - V7#9 - ii° - I6/9 - VIIaug7",
+            "Solo-Break": "I5 - IIIaug7 - ii° - v7#9 - IV - vi - VII7 - iv13",
+            "Bridge": "im11 - IV7#5#9 - viø - I7#9 - II+7 - vim11",
+            "Pre-Chorus": "Iim7b5 - iv°7 - VIaug - VII7#5 - iv - VIIaug7",
+            "Intro": "I - iv - vi° - v7",
+            "Outro.Fade_Out": "Isus2 - IVadd9 - vi7b5 - im9 - VII7#9 - iv7 - Vadd11 - i - Isus4",
+            "Air": ""
+        },
+        "Folk Metal": {
+            "Verse": "vi - IV - i - V7 - III - vi - ii - V",
+            "Chorus": "im - III - VI - iv - V7 - i - iv - V7",
+            "Solo-Break": "VI - iv - I7 - v - ii - vii° - III - VI - iv - I7",
+            "Bridge": "im7 - iv - VI - v - I7 - iv - i - V7",
+            "Pre-Chorus": "VI - iv - i°7 - V7 - iv - VI - v - iv",
+            "Intro": "I - i - iv - v - i - VI - VII",
+            "Outro.Fade_Out": "vi - IV - i - V7",
+            "Air": ""
+        },
+        "Industrial Metal": {
+            "Verse": "im - iv - v - VI - i - VII - v - VI",
+            "Chorus": "V5 - iv - V7 - i - VI - V5 - i7 - V5",
+            "Solo-Break": "im5 - II5 - vii°7 - V7 - i5 - IV5 - vi°7 - V5",
+            "Bridge": "VI - iv°7 - VIaug7 - V5 - VI - iii - iv - V5",
+            "Pre-Chorus": "VII - vi - V - iv°7 - III - V7 - vi - I7#5",
+            "Intro": "i - v - VI - iv - i7",
+            "Outro.Fade_Out": "V5 - v - VI5 - iv",
+            "Air": ""
+        },
+        "Nu Metal": {
+            "Verse": "I5 - iv - v - III - vi - V7 - ii° - I5",
+            "Chorus": "I5 - vi - IV - V7",
+            "Solo-Break": "v - vi - II5 - v - II5 - iv - i° - I5 - v",
+            "Bridge": "V5 - IV5 - iii° - VI5",
+            "Pre-Chorus": "v - VI - vii° - V7 - iim6",
+            "Intro": "I5 - VI5 - iv - III5",
+            "Outro.Fade_Out": "V5 - iv - I5 - VII5 - VI5",
+            "Air": ""
+        },
+        "Doom Metal": {
+            "Verse": "vi - iv - i - ii°",
+            "Chorus": "i - vi - iv° - v7 - VII - i - i7 - v7",
+            "Solo-Break": "i - iv° - VI - v - v6 - i7 - iv - III7#5",
+            "Bridge": "i - iv - v° - VI - VII - i - ii°7 - v",
+            "Pre-Chorus": "i - iii° - iv - V7 - VI - i",
+            "Intro": "im - iv - iv° - Vm7b5",
+            "Outro.Fade_Out": "i - iv - i°7 - VI7 - i6 - vø - i",
+            "Air": ""
+        },
+        "Thrash Metal Speed": {
+            "Verse": "Im6 - VII - iv - vi - v5 - i - VII5 - v - iv5",
+            "Chorus": "im - iv - v - III - im - ii° - v - VI",
+            "Solo-Break": "I5 - VI5 - iv - V7 - ii° - VII5 - I5",
+            "Bridge": "im7 - VII - iv - iv5 - VI6 - V5 - i° - iv",
+            "Pre-Chorus": "i5 - VI5 - iv5 - vii° - v5 - iv5",
+            "Intro": "im - VII - VI - V - IV - VII - VI - V5 - iv - v° - VII5 - VI5",
+            "Outro.Fade_Out": "I5 - VI5 - VII5 - I5",
+            "Air": ""
+        },
+        "Black Metal": {
+            "Verse": "i - v - VI - iv",
+            "Chorus": "im - iv - v - i - im7 - i° - VI - VII",
+            "Solo-Break": "i - iv - v° - iv - III - vi - VII - v",
+            "Bridge": "vi - iv - vii° - ii7b5",
+            "Pre-Chorus": "iim7b5 - VIaug - v7 - iv7",
+            "Intro": "i° - vi° - vii° - iv - iv - v",
+            "Outro.Fade_Out": "im - v - VI - iv",
+            "Air": ""
+        },
+        "Power Metal": {
+            "Verse": "I - ii - VI - iv - V7 - i",
+            "Chorus": "I - VI - II5 - V7 - I - IV - v7 - I",
+            "Solo-Break": "I5 - IV6 - vi - III7 - viio - ii - V#5 - i",
+            "Bridge": "VI - v° - VII - iv - VI7 - iv - v - VII",
+            "Pre-Chorus": "im - VI - VII - V7 - iv - VI - i°7 - V",
+            "Intro": "I5 - VI7 - iv6 - VII7",
+            "Outro.Fade_Out": "I - V - bVII - IV - I5 - bVII5 - IV5 - I",
+            "Air": ""
+        },
+        "Heavy Metal Riffing": {
+            "Verse": "i5 - vi - IV7 - v - I5 - vi - V7 - i5",
+            "Chorus": "I5 - iv - VII5 - i - VI5 - III5 - iv - v♯5",
+            "Solo-Break": "I5 - iv - v7#9 - VI7 - VII5 - i - VII°7",
+            "Bridge": "im7 - VI - iv° - V7 - i5",
+            "Pre-Chorus": "Im - bVI - bVII - Im7 - bVII - v° - Im7b5",
+            "Intro": "V5 - VII5 - i5 - VI5 - i5 - VII5 - V5",
+            "Outro.Fade_Out": "VI5 - iv - V5 - i - VI5 - iv - V5 - i",
+            "Air": ""
+        }
+    },
+    "Funk, Soul & R&B": {
+        "Classic Funk": {
+            "Verse": "I7 - IV7 - vi7 - ii7",
+            "Chorus": "I7 - IV7 - vi7 - V9",
+            "Solo-Break": "I7 - IV6/9 - III7 - VI9 - iim7 - V13 - vi7 - v7",
+            "Bridge": "IV7 - v7 - ivm7 - VI7",
+            "Pre-Chorus": "IV7 - ii7 - V7 - iim7b5",
+            "Intro": "I7 - IV7 - ii7 - V7",
+            "Outro.Fade_Out": "IVmaj7 - IVm7 - I7 - VII7",
+            "Air": ""
+        },
+        "Neo Soul": {
+            "Verse": "Imaj7 - IVmaj7 - iim7 - V7 - vi7 - III7",
+            "Chorus": "Imaj7 - ii7 - V7 - I9 - vi7 - Imaj7 - V7#5 - Imaj9",
+            "Solo-Break": "Fmaj7 - Am7 - Bbmaj7#11 - Gm9 - C7#9",
+            "Bridge": "im7 - ii7 - V7 - iim7b5 - V7#9 - i7",
+            "Pre-Chorus": "Im7 - II7 - iv7 - V7",
+            "Intro": "Imaj7 - ii7 - V7 - vi7",
+            "Outro.Fade_Out": "`Fmaj9 - Em11 - Dm9 - Cmaj7 - Fmaj9 - Em11 - Dm9 - G13`",
+            "Air": ""
+        },
+        "James Brown Funk": {
+            "Verse": "I7 - IV7 - ii7 - V7 - I7 - vi7 - II7 - V7",
+            "Chorus": "I7 - IV7 - V7 - IV7",
+            "Solo-Break": "I7 - IV7 - VI7 - ii7 - V9 - im7 - VI7#5 - V7#9",
+            "Bridge": "VI7 - iv7 - VI7#9 - V7 - ii7 - V7 - I7",
+            "Pre-Chorus": "IV7 - VI7 - II7 - V7",
+            "Intro": "I7 - IV7 - ii7 - V7",
+            "Outro.Fade_Out": "I7 - IV7 - iim7 - V7 - I7",
+            "Air": ""
+        },
+        "P-Funk Groove": {
+            "Verse": "F7 - Bb7 - Cm7 - F7",
+            "Chorus": "II7 - V7 - I9 - IV9",
+            "Solo-Break": "I9 - IV7 - II7 - V7 - vi9 - II6/9 - V7b9 - I9",
+            "Bridge": "I7 - IV7 - vi7 - I7 - IV7 - V7",
+            "Pre-Chorus": "V7#9 - ii7 - IV7 - IV7",
+            "Intro": "VI9 - VII7 - I9 - II7",
+            "Outro.Fade_Out": "I7 - IV7 - vi7 - V7 - I7 - IV7 - III7 - VI7",
+            "Air": ""
+        },
+        "Motown Soul Progression": {
+            "Verse": "Imaj7 - VIm7 - IIm7 - V7",
+            "Chorus": "Imaj7 - IVmaj7 - iim7 - V7 - Imaj7 - vi7 - ii7 - V7",
+            "Solo-Break": "I7 - II7 - iv - VI7 - V7 - I9",
+            "Bridge": "IVmaj7 - vi7 - ii7 - V7 - iii7 - vi7 - I7",
+            "Pre-Chorus": "Imaj7 - ii7 - V7 - bVII7",
+            "Intro": "Imaj7 - vi7 - ii7 - V7",
+            "Outro.Fade_Out": "V7 - IVmaj7 - im7 - Imaj7",
+            "Air": ""
+        },
+        "Funky Breakbeat": {
+            "Verse": "I7 - IV7 - iim7 - iiø",
+            "Chorus": "I7 - IV9 - ii7 - V13",
+            "Solo-Break": "I7 - IV7 - vi - II7 - V11 - III7 - im7b5 - II7#9",
+            "Bridge": "im9 - VI7 - V9 - iim7b5 - V7#9 - IV7",
+            "Pre-Chorus": "I7b9 - IV7 - iiim7 - bVII7#9",
+            "Intro": "I7 - IV7 - iim7 - V9",
+            "Outro.Fade_Out": "I7 - IV - IIIm7 - IIm7 - V7 - I7",
+            "Air": ""
+        },
+        "Classic R&B Groove": {
+            "Verse": "I7 - IV7 - iimin7 - V7",
+            "Chorus": "I7 - IV7 - iim7 - V7",
+            "Solo-Break": "IImaj7 - IV7 - iim7 - viø - V7#5 - Imaj9",
+            "Bridge": "imin7b5 - ivmaj7 - ii°7 - v7b9",
+            "Pre-Chorus": "I7 - iim7 - IV7 - vi7 - V7",
+            "Intro": "I7 - iv7 - ii7 - V7",
+            "Outro.Fade_Out": "V7 - IVmaj7 - iim7 - V7 - Imaj7 - vi7 - IVmaj7 - V9",
+            "Air": ""
+        }
+    },
+    "Hip-Hop & Rap": {
+        "PluggnB Melodic Flow": {
+            "Verse": "Imaj7 - VII - VI - iim7",
+            "Chorus": "Imaj7 - vi - IV - V7",
+            "Solo-Break": "I - IV - vi - V7",
+            "Bridge": "Imaj7 - vi7 - I7b9 - IV",
+            "Pre-Chorus": "Imaj7 - IVmaj7 - vi7 - V7",
+            "Intro": "Imaj7 - ii7 - V7 - IVmaj7",
+            "Outro.Fade_Out": "VImaj7 - V7 - iim7 - Imaj9",
+            "Air": ""
+        },
+        "Mumble Rap": {
+            "Verse": "im7 - vi - iv7 - i7 - IImaj7 - v",
+            "Chorus": "I7 - iv - i7 - v7",
+            "Solo-Break": "im7b5 - IV7#9 - ii°7 - V7#5",
+            "Bridge": "iv - VI - i - v7",
+            "Pre-Chorus": "im11 - VI7 - iv7 - II7",
+            "Intro": "I - vi - ii7 - IVmaj7",
+            "Outro.Fade_Out": "i7 - iv7 - IIImaj7 - VI7",
+            "Air": ""
+        },
+        "Jazz Rap": {
+            "Verse": "Imaj7 - ivm7 - II7 - iim7b5",
+            "Chorus": "Imaj7 - VI7 - iim7 - V7 - I9 - VI7 - iim7 - V7#9",
+            "Solo-Break": "IImaj7 - iv7 - VI7#9 - V7b9 - i9 - VII7b5",
+            "Bridge": "IImaj7 - iim7 - V7 - Imaj9 - ivm7 - VII7 - II7b5 - im7b5",
+            "Pre-Chorus": "Imaj7 - III7#5 - ivm7 - VI7#9 - iim7b5 - V7b9 - i°7",
+            "Intro": "im9 - VI7#5 - iim7 - V9",
+            "Outro.Fade_Out": "VIImaj7 - vi9 - I7#9 - iim7 - V7b9",
+            "Air": ""
+        },
+        "Experimental Hip-Hop": {
+            "Verse": "Imin7 - Iaug7 - V7#9 - IVdim7",
+            "Chorus": "Imaj7 - iv7 - bVII7#9 - I6/9",
+            "Solo-Break": "IIm7b5 - V7#5#9 - IImaj7#11 - iv7 - bVII°7 - im9",
+            "Bridge": "im7b5 - IIaug7 - iv - VI7",
+            "Pre-Chorus": "I7#9 - VImaj7 - iv9 - ii°7",
+            "Intro": "I - iv - iii7 - ii°7",
+            "Outro.Fade_Out": "I9 - V11 - vi7b5 - IV7",
+            "Air": ""
+        },
+        "Grime": {
+            "Verse": "i - iv - III - v - VI - VII",
+            "Chorus": "imap7 - VI - VII - ivm7 - VI - imap7 - V - VII",
+            "Solo-Break": "VII - vi - VII - v7 - VI - ii - iv - V7",
+            "Bridge": "vi - vii° - I - ii - III - IV - V7 - vi",
+            "Pre-Chorus": "i - iv - VI - V7",
+            "Intro": "V - iv - VI - II - Isus2",
+            "Outro.Fade_Out": "i - VII6 - iv - VI - i - i",
+            "Air": ""
+        },
+        "UK Drill": {
+            "Verse": "I - ii - vi - IV - V7 - i",
+            "Chorus": "V7 - iv - i - VI",
+            "Solo-Break": "V - iv6 - v° - V7",
+            "Bridge": "iim7b5 - V7#9 - i - ivmin7",
+            "Pre-Chorus": "VI - iv - ii°7 - V7 - v - I7",
+            "Intro": "im - iv - iim7b5 - vii°",
+            "Outro.Fade_Out": "I7 - iv7 - vi - V7 - i",
+            "Air": ""
+        },
+        "Boom Bap Classic": {
+            "Verse": "I - vi - IV - V",
+            "Chorus": "Imaj7 - vi - IV - V",
+            "Solo-Break": "im7b5 - VI7 - iim7 - V7",
+            "Bridge": "I - iii7 - vi7 - ii7",
+            "Pre-Chorus": "Imaj7 - ii7 - V7 - I7",
+            "Intro": "im7 - VII7 - VI6 - V7",
+            "Outro.Fade_Out": "Imaj7 - vi7 - iim7 - V7",
+            "Air": ""
+        },
+        "Alternative Hip-Hop": {
+            "Verse": "I7 - iv - VI - i - III - v - iv - V7",
+            "Chorus": "Imaj7 - IIadd9 - V7 - iim7",
+            "Solo-Break": "I7 - iv - v° - IIIm7 - vi - I7 - iib5 - VI7#9",
+            "Bridge": "im7b5 - v7 - IV - II7",
+            "Pre-Chorus": "Imaj7 - IIIm7 - IV - iv - v°7 - V7",
+            "Intro": "Im7 - ivm7 - VI7 - i7",
+            "Outro.Fade_Out": "V7 - iim7 - VImaj7 - i7",
+            "Air": ""
+        },
+        "Spacey Autotune Rap": {
+            "Verse": "Imaj7 - vi7 - IVmaj7 - V7",
+            "Chorus": "i - iv - iiø - V7",
+            "Solo-Break": "im11 - IImaj7 - II7#9 - v7 - Isus4",
+            "Bridge": "im7b5 - IIIadd11 - ivmaj7 - VII7 - i9 - v°7",
+            "Pre-Chorus": "imin9 - ivmaj7 - V7#9 - VII7 - im7b5",
+            "Intro": "VImaj7 - iv6 - Iadd9 - vø",
+            "Outro.Fade_Out": "Imaj7 - vi - I7#9 - V7b9 - im7 - iim7 - V13 - Iaug7",
+            "Air": ""
+        },
+        "Trap Metal": {
+            "Verse": "im - IV - v - VI - iv - I - i7 - V",
+            "Chorus": "im7 - v° - iv - V7",
+            "Solo-Break": "im - iv° - V7#9 - i7 - VII - VIaug7 - i",
+            "Bridge": "im7b5 - iv°7 - VI - VII",
+            "Pre-Chorus": "I - vi - iv° - V7#9",
+            "Intro": "I5 - iv - I5 - vi° - v - I5",
+            "Outro.Fade_Out": "i - iv - v - v°",
+            "Air": ""
+        },
+        "West Coast Hip-Hop": {
+            "Verse": "Imaj7 - ii7 - V7 - im7",
+            "Chorus": "Imaj7 - VI7 - iim7 - V7 - IVadd9 - iim7 - V7 - Imaj7 - VI7 - iim7 - V7#9 - IVadd9",
+            "Solo-Break": "VII - VImaj7 - IV7 - ivm7 - im7 - VII7",
+            "Bridge": "Imaj7 - vi7 - II7 - V7",
+            "Pre-Chorus": "im7 - IV - v7 - VI",
+            "Intro": "im7 - VII - v - IIImaj7",
+            "Outro.Fade_Out": "Imaj7 - IVmaj7 - iim7 - V7#9",
+            "Air": ""
+        },
+        "Boom Bap Revival": {
+            "Verse": "I - II7 - vi - V",
+            "Chorus": "Imaj7 - V7 - iim7 - IV - I7 - III7",
+            "Solo-Break": "im7 - iv7 - VI7 - VII7 - ii°7 - V7#9",
+            "Bridge": "im7b5 - II7#9 - iv - I7 - iim7 - IVmaj7",
+            "Pre-Chorus": "I - IV - vi - V7",
+            "Intro": "I - iv - II7 - v7",
+            "Outro.Fade_Out": "Imaj7 - IV - iim7 - V7 - Imaj7",
+            "Air": ""
+        },
+        "RnB Ballad": {
+            "Verse": "Imaj7 - iim7 - V7sus4 - I6",
+            "Chorus": "Imaj7 - vi7 - iim7 - V7",
+            "Solo-Break": "im7 - iv7 - Imaj7 - VI7 - iim7b5 - V7#9 - im9 - V7",
+            "Bridge": "Imaj7 - ivm7 - vim9 - IV13",
+            "Pre-Chorus": "Imaj7 - IVadd9 - iim7b5 - V7#9",
+            "Intro": "Imaj7 - ivm7 - II7 - iim7b5",
+            "Outro.Fade_Out": "Imaj7 - vi7 - IVmaj7 - V7 - I6 - ii7 - V7 - Imaj7",
+            "Air": ""
+        },
+        "G-Funk": {
+            "Verse": "Imaj7 - vii°7 - iim7b5 - V7",
+            "Chorus": "IVmaj7 - V7 - Imaj7 - ii7",
+            "Solo-Break": "I6/9 - iv7 - II9 - V11",
+            "Bridge": "I9 - vi7 - IVmaj7 - V7",
+            "Pre-Chorus": "im9 - IVmaj7 - iim7 - V7#9",
+            "Intro": "Imaj7 - vi7 - II9 - V13",
+            "Outro.Fade_Out": "Imaj7 - VII7 - i7 - VI7",
+            "Air": ""
+        },
+        "Conscious Hip-Hop": {
+            "Verse": "im7 - III - VII - IVmaj7",
+            "Chorus": "Imaj7 - IV - vi - V7",
+            "Solo-Break": "I7 - iv7 - V7b9 - vi7 - I7#5",
+            "Bridge": "iim7b5 - V7 - im7 - iv7",
+            "Pre-Chorus": "im7b5 - VImaj7 - iim7 - V7#9",
+            "Intro": "VIm9 - iim7 - V7 - Imaj7",
+            "Outro.Fade_Out": "VI7 - iv - i - v7",
+            "Air": ""
+        },
+        "Lo-Fi Chill Beat": {
+            "Verse": "im7 - vii° - IVmaj7 - VI7",
+            "Chorus": "Imaj7 - vim7 - IV7 - II7",
+            "Solo-Break": "im7 - IVmaj7 - iim7b5 - V7#9",
+            "Bridge": "i7 - VImaj7 - iv7 - V7 - II7 - vi7 - IV7 - I7",
+            "Pre-Chorus": "im7 - II7 - iv - V7",
+            "Intro": "Imaj7 - IImaj7 - IV7 - vi",
+            "Outro.Fade_Out": "Imaj7 - vi7 - IVmaj7 - V7",
+            "Air": ""
+        },
+        "Alternative Hip-Hop Groove": {
+            "Verse": "i7 - IVmaj7 - III7 - vi7",
+            "Chorus": "I7 - ivm7 - VImaj7 - i7",
+            "Solo-Break": "im7b5 - VI7 - VIIaug7 - i9",
+            "Bridge": "im9 - iv7 - VII7#9 - vi7 - IIIm7b5 - V7#9",
+            "Pre-Chorus": "I7b9 - ivm7 - II7#5 - vim7b5 - V7#9",
+            "Intro": "Imaj7 - vi7 - IVadd9 - V7",
+            "Outro.Fade_Out": "Vmaj7 - iv - I7 - v - iim7 - VI6 - V11",
+            "Air": ""
+        },
+        "Ethereal Trap Beat": {
+            "Verse": "i - III - IV - ii - V - i",
+            "Chorus": "iadd9 - iiø - IVmaj7 - v7 - vi°7 - IIIadd11 - iv - V11",
+            "Solo-Break": "iø7 - ivm7b5 - VImaj7 - v7#9 - iiø7 - Vm9 - IIIaug9 - vi9",
+            "Bridge": "VIm7b5 - IVmaj7 - iim7 - V7#9",
+            "Pre-Chorus": "Imaj9 - iv7 - vii°7 - IVmaj7",
+            "Intro": "Imaj9 - viadd9 - IVsus2 - im7",
+            "Outro.Fade_Out": "Imaj7 - V7b9 - iim7 - IVmaj7",
+            "Air": ""
+        },
+        "Trap Modern Hip-Hop": {
+            "Verse": "i - vi - iv - III",
+            "Chorus": "i6/9 - VImaj7 - ivadd9 - V7#5",
+            "Solo-Break": "vi - V7#9 - iv - iii7b5",
+            "Bridge": "IIm7b5 - V13b9 - i7 - IV7#5",
+            "Pre-Chorus": "`vi - iv - iiø - V7#9`",
+            "Intro": "Imaj7 - ivm7 - IIIm7b5 - IV6",
+            "Outro.Fade_Out": "Imaj7 - IVmaj7 - vi7 - II9",
+            "Air": ""
+        }
+    },
+    "Gospel": {
+        "Gospel Turn": {
+            "Verse": "Imaj7 - vi7 - ii7 - V7 - I - IV - I - V7",
+            "Chorus": "Imaj7 - IVmaj7 - ii7 - V7",
+            "Solo-Break": "Imaj7 - i7b5 - IV7 - V7 - iim7 - VI7 - IV9 - I7",
+            "Bridge": "IIm7 - V7 - Imaj7 - IVmaj7 - iiim7 - vi7 - iim7 - V7",
+            "Pre-Chorus": "I6 - IV7 - iim7 - V7 - IVmaj7",
+            "Intro": "Imaj7 - V7 - ii7 - I6",
+            "Outro.Fade_Out": "Imaj7 - IVmaj7 - V7 - I7 - IVmaj7 - iv7 - Imaj9",
+            "Air": ""
+        },
+        "Classic Gospel Walk": {
+            "Verse": "I - vi - IV - V7",
+            "Chorus": "Imaj7 - IV - vi - ii7 - V7 - I - IV - I",
+            "Solo-Break": "I7 - IV7 - I7 - VI7 - I7 - ii7 - V7 - I7",
+            "Bridge": "I - vi - IV - ii7 - V7",
+            "Pre-Chorus": "II7 - V7 - I - IV - iimin7 - V7",
+            "Intro": "I - V7 - IV - I",
+            "Outro.Fade_Out": "Imaj7 - IVmaj7 - iim7 - V7 - Imaj7 - IVmaj7 - II7 - V7 - Imaj7",
+            "Air": ""
+        },
+        "Worship Ballad": {
+            "Verse": "Imaj7 - V7 - iim7 - IV - Imaj7 - vi - ii7 - V7",
+            "Chorus": "Imaj7 - IVmaj7 - iim7 - V7 - IVmaj7 - Iadd9 - V7",
+            "Solo-Break": "Imaj7 - IVmaj9 - vi - iim7 - V7 - V9 - IVmaj7 - vi7",
+            "Bridge": "Imaj7 - ii - iii - vi - IV - I7 - IV - V7",
+            "Pre-Chorus": "I6 - IVmaj7 - iim7 - V7 - iii7 - vi7 - I7",
+            "Intro": "Imaj7 - iv7 - I6/9 - vi7",
+            "Outro.Fade_Out": "Imaj7 - V7 - IVmaj7 - I6/9 - iiim7 - vi7",
+            "Air": ""
+        },
+        "Call-and-Response Gospel": {
+            "Verse": "I - IV - vi - V7",
+            "Chorus": "Imaj7 - IV - V7 - IIm7 - V7 - I",
+            "Solo-Break": "I7 - IV - iim7 - V7 - vi - I9 - iim7b5 - V7 - I7",
+            "Bridge": "Imaj7 - IVmaj7 - iim7 - V7 - I7 - IV6 - iiø - V7",
+            "Pre-Chorus": "I6 - IV - iim7 - V7",
+            "Intro": "Imaj7 - IVmaj7 - iim7 - V7",
+            "Outro.Fade_Out": "Imaj7 - IV - iim7 - V7 - I6/9 - IVmaj7 - iim7 - V7 - I",
+            "Air": ""
+        },
+        "Southern Gospel Shout": {
+            "Verse": "I - V7 - IV - I - ii7 - V7 - I - IV",
+            "Chorus": "I - IV - I - V - IV - I - V7 - I",
+            "Solo-Break": "I7 - ii7 - V7 - IVmaj7 - vi7 - V7 - I",
+            "Bridge": "IV - v7 - ii7 - V7 - I",
+            "Pre-Chorus": "I7 - IV - I7 - V7",
+            "Intro": "I - IV - iv - I",
+            "Outro.Fade_Out": "Imaj7 - IVmaj7 - I7 - V7 - IVmaj7 - vi7 - ii7 - I",
+            "Air": ""
+        },
+        "Modern Contemporary Worship": {
+            "Verse": "Imaj7 - IV - vi - V",
+            "Chorus": "Imaj7 - IV - I6 - vi - ii7 - V7 - I - IV",
+            "Solo-Break": "Imaj7 - IV9 - vi7 - II7 - im9 - V13#9 - IVmaj7 - I",
+            "Bridge": "VIm7 - IVmaj7 - Imaj9 - VIm7 - IVmaj7 - V7 - VIm7 - II7",
+            "Pre-Chorus": "Imaj7 - II7 - IV - V7",
+            "Intro": "Imaj7 - IVmaj7 - vi7 - V7",
+            "Outro.Fade_Out": "Imaj7 - vi - IV - V7 - Imaj7 - vi - IV - Imaj7",
+            "Air": ""
+        }
+    },
+    "Musical Theatre": {
+        "Musical Theatre Standard": {
+            "Verse": "Imaj7 - iim7 - V7 - I - vi - ii7 - V7 - I",
+            "Chorus": "Imaj7 - IV - II7 - V7 - vi - ii - V7 - I",
+            "Solo-Break": "Imaj7 - vi7 - ii7 - V7#5 - Imaj9 - iii7 - VI7 - im7 - V7 - I",
+            "Bridge": "Imaj7 - IV - iim7 - V7 - vi - ii7 - V7 - I",
+            "Pre-Chorus": "Imaj7 - vi7 - ii7 - V7 - iii°7 - I7",
+            "Intro": "Imaj7 - I6 - IVmaj7 - IIm7 - V7",
+            "Outro.Fade_Out": "Imaj7 - vi7 - IVmaj7 - ii7 - V7 - I",
+            "Air": ""
+        },
+        "Broadway Ballad": {
+            "Verse": "Imaj7 - ii7 - V7 - I - iii7 - vi7 - II7 - V7",
+            "Chorus": "Imaj7 - iiim7 - vi7 - IVmaj7 - I7 - vim7 - iim7b5 - V7",
+            "Solo-Break": "Imaj7 - V7 - II7 - vi - Imaj7 - VII7 - iv - ii7 - V7",
+            "Bridge": "Imaj7 - IVmaj7 - iim7 - V7 - vi - Imaj7 - IV - V7",
+            "Pre-Chorus": "I6 - iim7 - V7 - iii7 - IVmaj7 - V7",
+            "Intro": "Imaj7 - iii7 - vi7 - ii7",
+            "Outro.Fade_Out": "Imaj7 - vi - IVmaj7 - ii7 - V7 - Imaj7",
+            "Air": ""
+        },
+        "Big Show Finale": {
+            "Verse": "Imaj7 - V - ii7 - III7 - vi - IV7 - V7 - I",
+            "Chorus": "Imaj7 - IV - iim7 - V7 - Imaj7 - vi - IV - V7",
+            "Solo-Break": "Imaj7 - V7 - vi - IV - iiø7 - V7 - I",
+            "Bridge": "Imaj7 - vi7 - IV - V7 - iii7 - vi7 - I - ii7b5",
+            "Pre-Chorus": "Imaj7 - vi7 - IV7 - bVII7 - V7",
+            "Intro": "I - Vmaj7 - vi - ii7 - V7 - I",
+            "Outro.Fade_Out": "Imaj7 - vi - IVmaj7 - V7 - Imaj9 - VI7 - iim7 - V7 - I6/9",
+            "Air": ""
+        },
+        "Vaudeville Classic": {
+            "Verse": "I - iv - I7 - IV - IIm7 - V7 - I - VI7",
+            "Chorus": "I7 - IVmaj7 - I7 - V7 - ii7 - V7 - I",
+            "Solo-Break": "I - II7 - vi - iv° - V7 - I",
+            "Bridge": "I7 - i7 - IVaug - ii7 - V7 - im7 - VIaug",
+            "Pre-Chorus": "I7 - ii7 - IV - IVm6 - I7 - vi - ii7 - V7",
+            "Intro": "I - IV - I - V7",
+            "Outro.Fade_Out": "Imaj7 - ii7 - V7 - I6",
+            "Air": ""
+        },
+        "Golden Age Broadway Tune": {
+            "Verse": "Imaj7 - IVmaj7 - iim7 - V7 - ii° - I - vi - ii7 - V7",
+            "Chorus": "Imaj7 - VI7 - iim7 - V7 - I - IVmaj7 - IIm7 - V7",
+            "Solo-Break": "VI - II7 - V7 - I7 - iv°7 - Iaug - VI - II7 - V7 - I",
+            "Bridge": "VImaj7 - iim7 - V7 - I - vi7 - ii7 - V7",
+            "Pre-Chorus": "Imaj7 - II7 - vim7 - V7 - IVmaj7 - im7 - V7",
+            "Intro": "Imaj7 - IVmaj7 - iim7 - V7",
+            "Outro.Fade_Out": "IVmaj7 - iii7 - vi7 - II7 - I",
+            "Air": ""
+        },
+        "Modern Rock Musical": {
+            "Verse": "I - vi - IV - V",
+            "Chorus": "I - vi - IV - V - ii - V7 - Imaj7 - IV",
+            "Solo-Break": "I - IV - ii7 - V9 - vi - Iaug - IV7 - V13",
+            "Bridge": "I - v - IV - vi - IV - I - V7 - VI",
+            "Pre-Chorus": "IVmaj7 - IIIm7b5 - vi - IV - I7 - V7 - vi7",
+            "Intro": "Imaj7 - vi - IV - I",
+            "Outro.Fade_Out": "I - vi - IV - V - Imaj7 - V7 - IV - I",
+            "Air": ""
+        }
+    },
+    "Classical": {
+        "Avant-Garde Classical": {
+            "Verse": "Imaj7 - iv6 - IIIaug - viio - V7#5 - i6/9",
+            "Chorus": "Imaj7 - ivø - VIaug - ii7 - vii°7 - IVadd9 - imaj9 - V7#9",
+            "Solo-Break": "IVaug - vi°7 - i7b5 - V13#9 - IIaug7",
+            "Bridge": "Imaj13 - vi°7 - IIIaug7 - viiø - IV7 - i9 - V13#9 - IV6/9",
+            "Pre-Chorus": "I7#5 - iv6 - IIaug7 - im11",
+            "Intro": "Iaug - IVdim - ii7b5 - V7#5",
+            "Outro.Fade_Out": "I - IV - iv° - VII° - I - V7",
+            "Air": ""
+        },
+        "Impressionist Dream": {
+            "Verse": "Imaj7 - iiø - V7 - Imaj7",
+            "Chorus": "Imaj7 - IVmaj7 - iim7b5 - V7 - IIIaug - VII7",
+            "Solo-Break": "Imaj7 - ivm9 - I7#5 - vii°7 - IIIaug - iim7b5 - VImaj7 - i°7",
+            "Bridge": "im7b5 - II9 - iv7 - v° - im9 - V7#9 - i6/9",
+            "Pre-Chorus": "Imaj7 - IVadd9 - iim7b5 - V7#5 - viim7 - VImaj7 - Iaug7 - V7#9",
+            "Intro": "Imaj7 - iiø - iv7 - VI7 - iim7 - V7",
+            "Outro.Fade_Out": "Imaj7 - viø - IImaj7 - IV11",
+            "Air": ""
+        },
+        "Electronic Classical Hybrid": {
+            "Verse": "Imaj7 - IV - vi - ii7 - V7",
+            "Chorus": "Imaj9 - IVadd9 - iim7 - V7#9 - viim7b5 - Imaj7",
+            "Solo-Break": "Imaj7 - v - iiø - Imaj9 - IVm7 - Iaug7 - vi - V7",
+            "Bridge": "Imaj7 - viø - IV7 - bVIIaug - IV11 - I6/9",
+            "Pre-Chorus": "V - im7b5 - iv - VII - i°7 - V7 - vi - IIm7b5",
+            "Intro": "Imaj7 - vi - IVmaj7 - V7",
+            "Outro.Fade_Out": "Imaj7 - IVadd9 - iim7 - viø - I",
+            "Air": ""
+        },
+        "12-Tone & Serialism": {
+            "Verse": "i7 - II°7 - iv7 - v°7 - iv - I7 - vii° - viii°7",
+            "Chorus": "I - II - III - IV - V - vi° - vii°",
+            "Solo-Break": "i°7 - IIIaug - iv°7 - vii°7 - IIaug7 - V7#9 - ivb9 - i°",
+            "Bridge": "I - ii - iii° - IV - v - VI - VII - I",
+            "Pre-Chorus": "vii° - iv° - ii° - i°7",
+            "Intro": "I7#9 - iv°7 - IIIaug - iiim7b5 - v° - V7#5",
+            "Outro.Fade_Out": "I - II - III - iv° - V - VI - vii°",
+            "Air": ""
+        },
+        "Early Music (Renaissance & Medieval)": {
+            "Verse": "I - iim - V - I - IV - V - I",
+            "Chorus": "I - V - vi - IV - I - V - I",
+            "Solo-Break": "I - V - vi - IV - ii - V - I",
+            "Bridge": "im - v - VI - III - iv - i - V7",
+            "Pre-Chorus": "I - ii° - V - I - IV - iv - V - I",
+            "Intro": "I - ii - V - I",
+            "Outro.Fade_Out": "I - V - I - IV - I",
+            "Air": ""
+        },
+        "Baroque Cadence": {
+            "Verse": "I - V - vi - iii - IV - I - IV - V",
+            "Chorus": "I - IV - V - I - vi - ii° - V - I",
+            "Solo-Break": "I6 - ii° - V7 - I - vi - iii - IV6 - V7",
+            "Bridge": "I - V - vi - III - IV - I - ii° - V",
+            "Pre-Chorus": "VI - iii - iv - V7",
+            "Intro": "I - I6 - IV - V7",
+            "Outro.Fade_Out": "I - IV - V7 - I",
+            "Air": ""
+        },
+        "Gothic Choral Progression": {
+            "Verse": "vi - iv - i - v° - VII - III - iv - V7",
+            "Chorus": "i - VI - iv - i - V7 - i - i°7 - VI - v7 - i",
+            "Solo-Break": "I - iv°7 - VI - ii°7 - v7 - VII - i - VIaug - i",
+            "Bridge": "im7b5 - VII - iv - v°7 - VI - i",
+            "Pre-Chorus": "I - iv - VI - i°7 - v - VII - i7",
+            "Intro": "im - vii° - iv - VI - i - V7",
+            "Outro.Fade_Out": "i - VI - iv - V7 - i - iv - VI - i",
+            "Air": ""
+        },
+        "Sacred Choral Hymn": {
+            "Verse": "I - IV - I - V - I - vi - ii - V - I",
+            "Chorus": "Imaj7 - IV - V - I6 - ii7 - V7 - I - IV - V7 - I",
+            "Solo-Break": "Imaj7 - VI7 - iiø - V7 - Imaj7 - iv7 - Iim7b5 - i°7",
+            "Bridge": "vi - IV - ii6 - V7 - I - iii - IV - I",
+            "Pre-Chorus": "Imaj7 - vi7 - IV - V7",
+            "Intro": "Imaj7 - iv7 - V - I",
+            "Outro.Fade_Out": "I - IVmaj7 - V7 - Imaj7",
+            "Air": ""
+        },
+        "Dramatic Opera Cadence": {
+            "Verse": "I - IV - ii - vi - V - I7 - iv - V7",
+            "Chorus": "Imaj7 - iii7 - V7 - Imaj9",
+            "Solo-Break": "I7 - iv7 - Vaug7 - iii°7 - VImaj7 - ivm7b5 - i°7 - V7",
+            "Bridge": "I - vi - IV6 - II7 - V7 - Imaj7",
+            "Pre-Chorus": "I7b5 - iv - vii°7 - IIIaug - V7 - vi - IV - i°7",
+            "Intro": "I - vi - IV - II7",
+            "Outro.Fade_Out": "I6 - vi - IV - V - Imaj7",
+            "Air": ""
+        },
+        "A Cappella Choral Harmony": {
+            "Verse": "I - V - vi - iii - IV - I - IV - V",
+            "Chorus": "Imaj7 - vi - IVmaj7 - V7 - Imaj7 - IV - iim7 - V7",
+            "Solo-Break": "Imaj7 - IVadd9 - vø - IIaug7",
+            "Bridge": "Imaj7 - viim7b5 - iii7 - vi6",
+            "Pre-Chorus": "Imaj7 - V7 - vi7 - ii7 - V7 - Isus4 - I",
+            "Intro": "I - IV - V - I",
+            "Outro.Fade_Out": "Imaj7 - V7 - IVmaj7 - I",
+            "Air": ""
+        },
+        "Romantic Period Resolution": {
+            "Verse": "Imaj7 - iim7 - V7 - Imaj7 - vi - iiø7 - V7 - I",
+            "Chorus": "I6 - IVmaj7 - V7 - I - ii7 - V7 - I - vi - IV - V7 - I",
+            "Solo-Break": "IV - vi - iiø - V7 - I - vi - IIIaug - V7",
+            "Bridge": "I6 - iv - V7 - I - vi - I7 - IV - V7",
+            "Pre-Chorus": "Imaj7 - viø - ii7 - V7 - I7 - iv7",
+            "Intro": "Imaj7 - ii7 - V7 - I",
+            "Outro.Fade_Out": "I - vi - IV - I6 - ii°7 - V7 - I",
+            "Air": ""
+        },
+        "Late Romantic Grand Finale": {
+            "Verse": "Imaj7 - vi - ii - V7 - IVmaj7 - iii - vi - I",
+            "Chorus": "Imaj7 - V7 - vi - IVmaj7 - Imaj7 - vi7 - ii7 - V7",
+            "Solo-Break": "I7 - IVmaj7 - iim7 - V7 - vi - ii7 - V7b9 - Imaj7",
+            "Bridge": "Im7b5 - IVmaj7 - VI7 - iim7 - viio7 - Imaj9",
+            "Pre-Chorus": "Iim7b5 - V7b9 - Imaj7 - IV7",
+            "Intro": "I - IVmaj7 - I - V7",
+            "Outro.Fade_Out": "Imaj7 - IVmaj7 - V7 - I - vi - ii - V7 - I6",
+            "Air": ""
+        },
+        "Contemporary Classical": {
+            "Verse": "I - vi - ii6 - V - I - ii7 - V7 - I",
+            "Chorus": "Imaj7 - vi - IVadd9 - V7 - Imaj9 - IV - V7 - I",
+            "Solo-Break": "Imaj7 - vii°7 - II7 - im7b5 - IIIaug7 - VIIm7 - iv° - im13",
+            "Bridge": "Imaj7 - vi - iv - V7 - ii - IIIaug - Imaj7",
+            "Pre-Chorus": "im7b5 - V7b9 - iv6 - Imaj7",
+            "Intro": "Imaj7 - iv - iv°7 - V7",
+            "Outro.Fade_Out": "Imaj7 - vi - IVmaj7 - i°7 - V7 - I",
+            "Air": ""
+        },
+        "Minimalist Classical Repetition": {
+            "Verse": "I - ii - vi - ii - iii - ii - I - ii",
+            "Chorus": "I - ii - IV - V - I - ii - IV - V",
+            "Solo-Break": "I - iii - V - I - I - iii - V - I",
+            "Bridge": "I - IV - vi - II - iii - vi - ii° - V",
+            "Pre-Chorus": "I - IV - ii - vi - V7 - I6",
+            "Intro": "I - IV - vi - V",
+            "Outro.Fade_Out": "I - ii - I6 - ii - I - ii - I6 - ii",
+            "Air": ""
+        },
+        "Baroque Romantic Fusion": {
+            "Verse": "I - vi - iiø - V7 - iii - vi - iv - I",
+            "Chorus": "Imaj7 - IV - vi - iiø - V7 - I - vi - iiº7 - V7 - Imaj7",
+            "Solo-Break": "I7b5 - Vmin7 - iv7 - im11 - V7#5 - II7b9",
+            "Bridge": "im7b5 - V7 - iv - VI - iiim7 - IV - IIm7b5 - V7",
+            "Pre-Chorus": "I - vi - iiø - V7",
+            "Intro": "I6 - iv - V7 - Imaj7",
+            "Outro.Fade_Out": "Imaj7 - VI7 - iim7 - V7",
+            "Air": ""
+        },
+        "Minimalist Classical": {
+            "Verse": "I - vi - IV - ii - V",
+            "Chorus": "Imaj7 - IV - vi - iiim7 - IV - I - V7 - I",
+            "Solo-Break": "Imaj7 - vi - IV6 - V7",
+            "Bridge": "I6 - IVmaj7 - iiø - V7 - iii - VI - iv - I",
+            "Pre-Chorus": "I6 - ii° - v - I6/9",
+            "Intro": "I - ii - vii° - I",
+            "Outro.Fade_Out": "I - vi - IV - ii - iii - I",
+            "Air": ""
+        },
+        "Orchestral Epic Build": {
+            "Verse": "I - IVmaj7 - vi - ii - V7 - I",
+            "Chorus": "Imaj7 - vi - IV - V7 - vi - IV - I - V7",
+            "Solo-Break": "Imaj7 - IV7 - vi - ii°7 - V7 - iii - I7b5",
+            "Bridge": "VImaj7 - vii°7 - i6 - iv - ii7 - V7",
+            "Pre-Chorus": "Imaj7 - vi - IV - V7 - iii° - vi - ii7 - V7",
+            "Intro": "Imaj7 - iiim7 - vi7 - I7",
+            "Outro.Fade_Out": "Imaj7 - IVmaj7 - iim7 - V7 - Imaj9",
+            "Air": ""
+        },
+        "Neoclassical": {
+            "Verse": "I - ii° - V7 - im7 - iv - i°7 - V - I",
+            "Chorus": "Imaj7 - vii°7 - iim7 - V7 - I6/9 - vi7 - ii7 - V7 - Imaj9",
+            "Solo-Break": "I - V7 - vi - IVmaj7 - I6 - iiø - V7 - i°7",
+            "Bridge": "I - IV - vi - ii° - V7 - I",
+            "Pre-Chorus": "I - vi - Iaug - V7 - IV - vii° - I - V7",
+            "Intro": "Imaj7 - iv - V7 - i - vii°",
+            "Outro.Fade_Out": "I6 - vi - ii6 - V7 - Imaj7 - IV - I6/9 - V7 - I",
+            "Air": ""
+        },
+        "Film Score Soundscape": {
+            "Verse": "Imaj7 - IV - iim7 - V7 - vi - viio7 - I - IV",
+            "Chorus": "Imaj7 - IVadd9 - V7 - I6",
+            "Solo-Break": "Imaj7 - vi7 - IVmaj9 - V7#5 - Iadd9 - vi°7 - IVsus2 - V7alt",
+            "Bridge": "IVmaj7 - vi - iiø - V7 - iii - IV - V7 - I",
+            "Pre-Chorus": "Imaj7 - viø - II7 - V7 - vii°7 - I6/9",
+            "Intro": "Imaj7 - vi - IVmaj7 - V7 - I5 - IV6/9 - I",
+            "Outro.Fade_Out": "Imaj7 - vi - ii7 - V7",
+            "Air": ""
+        },
+        "Chamber Opera": {
+            "Verse": "I - vi - IV - V7",
+            "Chorus": "Imaj7 - IV - vi7 - iiø - V7 - iii - vi7 - IV - I",
+            "Solo-Break": "Imaj7 - iv - VII - iii - vi - IV - ii - V7",
+            "Bridge": "I - vi - I7 - IV - ii7 - V7 - I",
+            "Pre-Chorus": "I6 - ii°7 - V7 - vi - iv - V7",
+            "Intro": "Imaj7 - iv - VI - iii7 - iiø - V7",
+            "Outro.Fade_Out": "Imaj7 - iiø7 - V7 - I",
+            "Air": ""
+        },
+        "Symphonic Poem Progression": {
+            "Verse": "I - vi - IV - IIm7 - V7 - I",
+            "Chorus": "Imaj7 - IVmaj7 - vi - ii7 - V7 - Imaj7",
+            "Solo-Break": "I7 - VImaj7 - iv - iiø - vii°7 - V7 - I",
+            "Bridge": "Imaj7 - vi - ii7 - V7 - iii - ivm6 - vii° - I",
+            "Pre-Chorus": "Imaj7 - vi - ii7 - V11",
+            "Intro": "Imaj7 - IVmaj7 - iim7 - V7 - Imaj7",
+            "Outro.Fade_Out": "Vmaj7 - vim7 - Imaj7 - IVm7 - ii°7 - I6",
+            "Air": ""
+        },
+        "Spectral Music": {
+            "Verse": "I - v° - iv - Iaug7",
+            "Chorus": "I - IV4 - vi - vii° - Iadd9 - IVmaj7 - V7 - I",
+            "Solo-Break": "im7b5 - VIaug7 - iv° - i7#5 - iv - VIIø - i9 - v°7",
+            "Bridge": "I7 - iv° - VImaj11 - iim7b5 - V7",
+            "Pre-Chorus": "Iim7b5 - VII7 - iv6 - vi°7",
+            "Intro": "I - vi - ii° - V - I",
+            "Outro.Fade_Out": "Imaj7 - vi - IVmaj7 - V7 - Imaj7",
+            "Air": ""
+        },
+        "Traditional Classical": {
+            "Verse": "I - IV - ii - V - vi - I - IV - V",
+            "Chorus": "I - V7 - vi - IV - ii - V7 - I",
+            "Solo-Break": "Imaj7 - vim7 - I7 - IVmaj7 - iiø - V7 - IIIaug - viio7",
+            "Bridge": "Imaj7 - vi - ii7 - V7 - iii - vi - ii7 - V7",
+            "Pre-Chorus": "I - vi - iiø - V7",
+            "Intro": "I - IV - vi - iii - ii - V - I",
+            "Outro.Fade_Out": "I - vi - IV - I",
+            "Air": ""
+        }
+    },
+    "Latin": {
+        "Bossa Nova Standard": {
+            "Verse": "I7 - IVmaj7 - iim7 - V7 - iim7b5 - V7 - im7 - VI7",
+            "Chorus": "IVmaj7 - V7 - iim7 - V7 - Imaj7 - ii7b5 - V7 - I6/9",
+            "Solo-Break": "Imaj7 - VI7 - iim7 - V7#5 - Imaj9 - IV7 - iiim7b5 - v7",
+            "Bridge": "im7 - II7 - V7 - i7 - III7 - vim7b5 - II7 - V7",
+            "Pre-Chorus": "im7 - V7 - II7 - vi7 - iim7 - V7 - Imaj7",
+            "Intro": "Imaj7 - II7 - ii7 - V7",
+            "Outro.Fade_Out": "Imaj7 - iim7 - V7 - Imaj7 - iim7 - V7 - I6/9",
+            "Air": ""
+        },
+        "Flamenco Tango Cadence": {
+            "Verse": "I - V7 - iv - I",
+            "Chorus": "I - VII - Iaug - VIIm7b5 - I - III - VI - V7",
+            "Solo-Break": "I - iv6 - V7 - I7b9 - iv6 - V+7",
+            "Bridge": "iim7b5 - V7 - i - iv - v° - i",
+            "Pre-Chorus": "i - VI - V7 - Vaug - i - iv - V7",
+            "Intro": "i - V7 - iv - VII",
+            "Outro.Fade_Out": "I6 - VII° - im - V7 - i",
+            "Air": ""
+        },
+        "Salsa Mambo Classic": {
+            "Verse": "I - iim7 - V7 - I - IV - iim7 - V7 - I",
+            "Chorus": "I7 - IV7 - V7 - IV7 - I7 - IV7 - V7 - IV7",
+            "Solo-Break": "vi9 - vii°7 - iim7 - V7#5 - im7 - VIaug7 - Iadd9 - V7b9",
+            "Bridge": "vi7 - I7 - IVm7 - V7 - Imaj7 - II7 - ii7 - V7",
+            "Pre-Chorus": "I7 - IV7 - V7 - iim7 - V7 - I7",
+            "Intro": "Imaj7 - II7 - im7 - V7",
+            "Outro.Fade_Out": "Imaj7 - IV7 - V7 - I6 - Imaj9 - IV7 - V7 - I",
+            "Air": ""
+        },
+        "Bolero Progression": {
+            "Verse": "I6 - VI7 - iim7 - V7",
+            "Chorus": "Imaj7 - vi7 - ii7 - V7",
+            "Solo-Break": "Imaj7 - II7 - iim7 - V7 - im7 - IV - V7 - I",
+            "Bridge": "I - im7 - iv7 - ii°",
+            "Pre-Chorus": "im7 - V7 - VI7 - V7 - im7",
+            "Intro": "I7 - IV6 - I7 - IV6",
+            "Outro.Fade_Out": "I - V7 - iv - I - V7",
+            "Air": ""
+        },
+        "Afro-Cuban Son Clave": {
+            "Verse": "I - V7 - iim7 - V7",
+            "Chorus": "I7 - IV7 - V7 - IV7 - I7 - V7 - I7 - IV7",
+            "Solo-Break": "I7 - IVmaj7 - V7#5#9 - ii7 - V7b5 - im6",
+            "Bridge": "Imaj9 - V9 - iv6 - II7",
+            "Pre-Chorus": "Imaj7 - vi - iim7 - V7",
+            "Intro": "Imaj7 - ii7 - V7 - I7",
+            "Outro.Fade_Out": "Imaj7 - V7 - I6 - II7 - V7 - I",
+            "Air": ""
+        },
+        "Samba Groove": {
+            "Verse": "IIm7 - V7 - Imaj7 - VI7 - iim7b5 - V7 - IIm7 - V7",
+            "Chorus": "Imaj7 - IV - V7 - iim7 - V7 - I - V7 - im7 - V7 - I",
+            "Solo-Break": "I7 - IVmaj7 - II7 - im7b5 - II7#5 - V7 - I9 - V13",
+            "Bridge": "iim7b5 - V7b9 - i - VImaj7",
+            "Pre-Chorus": "I7 - iim7b5 - V7 - i°7 - VIIm7 - II7 - im7",
+            "Intro": "I7 - II7 - III7 - II7",
+            "Outro.Fade_Out": "Imaj7 - VII7 - iiim7 - V7#5 - iim7 - ii°7 - iim7b5 - V7 - Imaj7",
+            "Air": ""
+        },
+        "Latin Jazz Fusion": {
+            "Verse": "Imaj7 - iim7 - V7 - Imaj9",
+            "Chorus": "Imaj9 - iim7b5 - V7#5 - Imaj9",
+            "Solo-Break": "Imaj9 - VII7#5 - iim7b5 - iiim9 - VI7 - iv6 - III11 - V7#9",
+            "Bridge": "Imaj7 - vi - I7b9 - iim7b5 - V7#5 - i6 - IV - V7",
+            "Pre-Chorus": "IImaj7 - i7 - V7#11 - IImaj9",
+            "Intro": "Imaj7 - IVmaj7 - iim7 - V7 - Imaj9",
+            "Outro.Fade_Out": "VImaj9 - I6/9 - IV9 - V7#5 - im9 - im7 - iim7b5 - V9",
+            "Air": ""
+        },
+        "Corridos Tumbados": {
+            "Verse": "Imaj7 - iim7 - V7 - I - vi - IV7 - iiim7 - VI7",
+            "Chorus": "I - V7 - vi - IV - I - V7 - vi - IV",
+            "Solo-Break": "I - VI7 - ivm6 - v7 - III7 - VI - II7 - V7",
+            "Bridge": "i - VII - VI - V7 - i - iv - V7",
+            "Pre-Chorus": "vi - IV - I - V7",
+            "Intro": "I - IV - iiim7 - V",
+            "Outro.Fade_Out": "I - V7 - iv - I",
+            "Air": ""
+        },
+        "Banda": {
+            "Verse": "I - IV - V7 - I - vi - ii - V7 - I",
+            "Chorus": "Imaj7 - V7 - vi7 - IV - I7 - V7",
+            "Solo-Break": "I7 - IVmaj7 - V7 - iib7 - I7 - III7 - vi7 - II7",
+            "Bridge": "Imaj7 - vi - I7#5 - IVm7 - III7 - vi - V7 - I",
+            "Pre-Chorus": "VI - V7 - IV - iim7 - V7",
+            "Intro": "I - V - IV - V7",
+            "Outro.Fade_Out": "Imaj7 - V7 - iim7 - V7 - I",
+            "Air": ""
+        },
+        "Norteño": {
+            "Verse": "VI - ii° - V7 - I",
+            "Chorus": "I - IV - V7 - IV",
+            "Solo-Break": "IImaj7 - IIm7b5 - IV7 - I6 - vi7 - III7 - VI7 - I",
+            "Bridge": "IV - vi - iii - ii7 - V7",
+            "Pre-Chorus": "V - I7 - iv - v - V7",
+            "Intro": "Imaj7 - IV - V7 - I",
+            "Outro.Fade_Out": "I - V - vi - IV - I - V7 - I - I - IV - V - I",
+            "Air": ""
+        },
+        "Mariachi": {
+            "Verse": "I - V7 - I - IV - ii - V7 - I",
+            "Chorus": "Imaj7 - iv - V7 - I - ii7 - V7 - I",
+            "Solo-Break": "I - V - vi - IV - ii - V7 - I",
+            "Bridge": "V7 - I - iim7 - V7 - I - vii° - V7 - I",
+            "Pre-Chorus": "I - V - IV - V7",
+            "Intro": "I - V7 - I - III7",
+            "Outro.Fade_Out": "Imaj7 - V7 - IIm7 - vi - I",
+            "Air": ""
+        }
+    },
+    "Reggae, Ska & Dub": {
+        "Classic Reggae Groove": {
+            "Verse": "I - IV - V7 - IV",
+            "Chorus": "I - IV - V7 - I - vi - ii - V7 - I",
+            "Solo-Break": "I7 - IVmaj7 - iiim7 - V7 - iimin7b5 - VI7 - iim7 - V7",
+            "Bridge": "VImaj7 - iv7 - I - ii7 - V7",
+            "Pre-Chorus": "IVmaj7 - iimin7 - V7 - iimin7 - IVmaj7 - V7",
+            "Intro": "I - IV - ii - V7",
+            "Outro.Fade_Out": "IVmaj7 - iiim7 - iim7 - V7",
+            "Air": ""
+        },
+        "Modern Reggae Ballad": {
+            "Verse": "I - V6 - vi - IV",
+            "Chorus": "Imaj7 - II7 - IV - vi - Imaj7 - II7 - IV - V7",
+            "Solo-Break": "Imaj7 - vi7 - IVmaj7 - V7 - iim7 - V7#9 - I6/9 - V7",
+            "Bridge": "Imaj7 - iv7 - viiø - IV - Imaj7",
+            "Pre-Chorus": "V - ii - IV - Im7 - V - ii - IV - I",
+            "Intro": "Imaj7 - vi - ii7 - V7",
+            "Outro.Fade_Out": "Imaj7 - V9 - iv7 - ii7 - I6/9",
+            "Air": ""
+        },
+        "Ska Jazz Progression": {
+            "Verse": "Imaj7 - IVmaj7 - II7 - V7",
+            "Chorus": "Imaj7 - iv - V - ii° - IVmaj7 - iim7 - V7 - I",
+            "Solo-Break": "Imaj7 - IV9 - iim7 - V7b9 - III7 - VI7 - II9 - V13",
+            "Bridge": "I7 - ii7 - III7 - iv - VI7 - V7",
+            "Pre-Chorus": "Imaj7 - IV7 - iim7 - V7",
+            "Intro": "Imaj7 - vi7 - II7 - V7",
+            "Outro.Fade_Out": "im7 - IVmaj7 - ii7 - V7 - I - vi7 - iii7 - II7 - i7",
+            "Air": ""
+        },
+        "Dub Groove": {
+            "Verse": "I - IV - i - V7",
+            "Chorus": "I - V7 - IVmaj7 - I",
+            "Solo-Break": "Im7 - IVmaj7 - VIIaug7 - iiim7b5 - VI7 - Vsus4 - iV7 - V9",
+            "Bridge": "VImaj7 - vi - iim7 - V7 - i - iib5 - VI7 - ib5",
+            "Pre-Chorus": "IImaj7 - v - I7 - iv",
+            "Intro": "I6 - IVmaj7 - iim7 - V7",
+            "Outro.Fade_Out": "I - IVmaj7 - iiim7 - VI6",
+            "Air": ""
+        },
+        "Rocksteady Rhythm": {
+            "Verse": "I - vi - IV - V",
+            "Chorus": "V - vi7 - II7 - V - I - IV - vi7 - V",
+            "Solo-Break": "I - I6 - IV - iii7 - vi - ii7 - V7 - IV",
+            "Bridge": "I - ii7 - IV - V7",
+            "Pre-Chorus": "II - IV7 - VI7 - I",
+            "Intro": "I - IV - vi - IV",
+            "Outro.Fade_Out": "Imaj7 - VII - IV - V7 - I9 - VII - IV - I",
+            "Air": ""
+        },
+        "Dancehall Beat": {
+            "Verse": "VI - iv - V - I",
+            "Chorus": "Imaj7 - vi - ii7 - V7",
+            "Solo-Break": "VI - iv - V7 - vii° - I7 - ii - V7 - vi",
+            "Bridge": "im7 - IV - ii - V7",
+            "Pre-Chorus": "I - V - vi - IV - II7 - vi - V7 - I",
+            "Intro": "I6 - IVmaj7 - iiim7 - V7",
+            "Outro.Fade_Out": "VIImaj7 - VIm7 - i7 - IV - VIImaj7 - VIm7 - i7 - IV",
+            "Air": ""
+        },
+        "Lovers Rock Cadence": {
+            "Verse": "Imaj7 - vi - I7 - IV",
+            "Chorus": "Imaj7 - IVmaj7 - iim7 - V7",
+            "Solo-Break": "Imaj7 - VII7 - II7 - iivø - v7 - VImaj7",
+            "Bridge": "IIm7b5 - V7 - iim7 - Imaj7 - IV - ii°7 - V7 - I",
+            "Pre-Chorus": "iim7b5 - V7 - Imaj7 - viim7",
+            "Intro": "Imaj7 - iii7 - IV - VI",
+            "Outro.Fade_Out": "Imaj7 - vi - IVmaj7 - V7 - Imaj7 - vi - IVadd9 - V9",
+            "Air": ""
+        }
+    },
+    "Country & Folk": {
+        "Classic Country": {
+            "Verse": "I - IV - V7 - I",
+            "Chorus": "I - IV - V - I - vi - IV - V - I",
+            "Solo-Break": "V7 - IV - I - vi - ii - V7 - I",
+            "Bridge": "I - vi - IV - ii - V7 - I",
+            "Pre-Chorus": "I - IV - ii7 - V7",
+            "Intro": "I - IV - I - V7 - I",
+            "Outro.Fade_Out": "I - vi - IV - V7",
+            "Air": ""
+        },
+        "Bluegrass Honky Tonk": {
+            "Verse": "I - IV - V7 - I - vi - ii - V7 - I",
+            "Chorus": "I - V7 - IV - I - vi - ii - V7 - I",
+            "Solo-Break": "I - IV - V7 - IV - I - vi - ii7 - V7",
+            "Bridge": "I - IV - I - V7",
+            "Pre-Chorus": "I - VI - IV - V7",
+            "Intro": "I - IV - V - I",
+            "Outro.Fade_Out": "I - V - IV - I - vi - ii - V7 - I",
+            "Air": ""
+        },
+        "Americana Heartland Rock": {
+            "Verse": "I - IV - vi - V",
+            "Chorus": "I - IV - vi - V - I - IV - I - V",
+            "Solo-Break": "I - IV - I6 - V7 - vi - IV - ii7 - V7",
+            "Bridge": "I - IV - vi - V7 - ii - IV - V7 - I",
+            "Pre-Chorus": "IV - vi - I - V7",
+            "Intro": "I - V - IV - I",
+            "Outro.Fade_Out": "I - V - IV - I - vi - V - I",
+            "Air": ""
+        },
+        "Country Waltz Cadence": {
+            "Verse": "I - IV - I - V7 - I - IV - ii - V7",
+            "Chorus": "I - IV - V7 - I - ii - V7 - I",
+            "Solo-Break": "V - ii7 - I7 - IV - iv - I - V7 - I",
+            "Bridge": "I6 - IV - ii7 - V7 - I6",
+            "Pre-Chorus": "Imaj7 - V7 - iv - I - V7",
+            "Intro": "I - vi - IV - V7",
+            "Outro.Fade_Out": "I - IV6 - ii - V7",
+            "Air": ""
+        },
+        "Folk Fingerpicking": {
+            "Verse": "I - vi - IV - V",
+            "Chorus": "Imaj7 - vi - IV - V7 - I - V7 - vi - IV - I",
+            "Solo-Break": "I - vi - IV - V7",
+            "Bridge": "I6 - ii7 - IV - I - vi - V7",
+            "Pre-Chorus": "I - vi - IV - V7",
+            "Intro": "I - vi - IV - V",
+            "Outro.Fade_Out": "I - vi - IV - I",
+            "Air": ""
+        },
+        "Appalachian Ballad": {
+            "Verse": "I - vi - IV - V7 - I - IV - V7 - I",
+            "Chorus": "I - IV - I - V - IV - I - V7 - I",
+            "Solo-Break": "I - V/IV - IV - vi - ii - V7 - I",
+            "Bridge": "Iim7b5 - IV - I6 - vi - ii° - V7",
+            "Pre-Chorus": "I - ii - IV - V7",
+            "Intro": "I - IV - vi - V7",
+            "Outro.Fade_Out": "I - IV - I - V - I",
+            "Air": ""
+        },
+        "Outlaw Country Progression": {
+            "Verse": "I - V - IV - I - vi - IV - I - V7",
+            "Chorus": "I - IV - I - V7 - I - IV - V7 - I",
+            "Solo-Break": "I7 - IV - V7 - vi - Iaug - IV - I5 - V7",
+            "Bridge": "I - V - IV - ii - I - V7",
+            "Pre-Chorus": "I - vi - IV - V7 - vi - IV - V7",
+            "Intro": "I - IV - vi - V",
+            "Outro.Fade_Out": "I - V - IV - I",
+            "Air": ""
+        }
+    },
+    "Film Score & Cinematic": {
+        "Epic Cinematic Swell": {
+            "Verse": "I - V - iv - I6 - vi - III - IV - V7",
+            "Chorus": "Imaj7 - VImaj7 - IVsus2 - V7 - iim7 - Imaj9",
+            "Solo-Break": "I - IVmaj7 - VIaug - iii - iiø - V7#9",
+            "Bridge": "VImaj7 - v° - IVadd9 - Imaj9 - vii°7 - IV6 - V7 - Imaj7",
+            "Pre-Chorus": "Imaj7 - IVadd9 - viø - I6/9 - iii7 - V7b9",
+            "Intro": "Imaj7 - iv - vi - ii°",
+            "Outro.Fade_Out": "Imaj7 - iv - Imaj9 - V7 - IVmaj7 - I7 - VIaug - I",
+            "Air": ""
+        },
+        "Hans Zimmer Dark Progression": {
+            "Verse": "im - bVI - bVII - iv - bIII - bVI - v - i",
+            "Chorus": "I - vii° - iv - V7 - Imaj7 - ii7 - V7 - I",
+            "Solo-Break": "i°7 - iiø - V7#9 - VImaj7 - iv - Vaug - Iim7 - iv6",
+            "Bridge": "im7b5 - IVadd9 - IIIaug - viimin7 - I7#5 - iv°7",
+            "Pre-Chorus": "imin7b5 - i°7 - IIIaug - i6/9 - VII7 - iv7 - im13 - v°",
+            "Intro": "imin7b5 - ii° - VIaug - IVm11",
+            "Outro.Fade_Out": "Imaj7 - VI7 - iv - i°7",
+            "Air": ""
+        },
+        "Heroic Theme": {
+            "Verse": "I - V - vi - IVmaj7",
+            "Chorus": "Imaj7 - III7 - IVmaj7 - vi - II7 - Imaj7",
+            "Solo-Break": "Imaj7 - iii7 - IVmaj7 - viø - II7 - V7#5 - Imaj13 - VII°7",
+            "Bridge": "Imaj7 - vi - IV - V7 - Iaug - IVmaj7 - ii°7 - V7",
+            "Pre-Chorus": "Imaj7 - IV6 - vi - V7#9",
+            "Intro": "Imaj7 - III7 - iv - VIaug",
+            "Outro.Fade_Out": "IVmaj9 - V7 - Imaj13 - IVmaj9 - V7 - Imaj7",
+            "Air": ""
+        },
+        "Emotional Swell": {
+            "Verse": "im - VII - iv - V - im7 - IIIm7 - iv - V7",
+            "Chorus": "Imaj7 - ii7 - IVmaj7 - vi - Imaj7 - V7 - IVmaj7 - I6/9",
+            "Solo-Break": "Imaj9 - iv7 - II7#5 - viø - VII9 - I7#11",
+            "Bridge": "im9 - iv - VImaj7 - viø - iiim7 - V7 - i",
+            "Pre-Chorus": "im - i°7 - ivm - V7b9 - iø - III+7",
+            "Intro": "viadd9 - ii - IVmaj7 - I5",
+            "Outro.Fade_Out": "im7 - V7 - Imaj9 - vi - iim7 - V7 - Imaj7",
+            "Air": ""
+        },
+        "Suspense Thriller Motif": {
+            "Verse": "Iim7b5 - V7#9 - Iim7 - iv° - VIIm7b5 - iim6 - bVII7 - Iim6",
+            "Chorus": "I - vi - ii° - IV - V7 - I",
+            "Solo-Break": "im11 - iv7 - vii°7 - i7b9 - iim7b5 - V7#5 - vi6/9 - Iaug7",
+            "Bridge": "im7b5 - iv7 - VIIaug7 - vi° - i6 - III7#5 - VImaj7 - i7",
+            "Pre-Chorus": "iim7b5 - V7b9 - im9 - iv°7 - Iaug7 - viø",
+            "Intro": "vii° - ivm7b5 - iim7b5 - vii°",
+            "Outro.Fade_Out": "i°7 - II7 - iv7 - I7b5 - im6 - ii°7 - V7#9 - Imaj7",
+            "Air": ""
+        },
+        "Sci-Fi Ambient Score": {
+            "Verse": "I - vi - IVmaj7 - iiimin7 - vi - Vadd9",
+            "Chorus": "Imaj9 - IIIadd9 - IVmaj7 - viø - Imaj9 - vii°",
+            "Solo-Break": "Imaj7 - vi° - IVadd9 - iiø - V7 - viim7b5 - I9",
+            "Bridge": "vi - IV - Imaj7 - iiø - IIm7 - V13b9",
+            "Pre-Chorus": "Imaj7 - VI7 - iiø - vii°7",
+            "Intro": "Imaj7 - iv - viø - I6/9",
+            "Outro.Fade_Out": "I6/9 - iv6/9 - iiø - VIImaj7 - viø - Imaj9",
+            "Air": ""
+        },
+        "Period Drama Theme": {
+            "Verse": "Imaj7 - vi - IV - ii7",
+            "Chorus": "I - ii - IV - V - I - vi - IV - V7",
+            "Solo-Break": "Imaj7 - V9 - vi - IVmaj9 - iiø7 - V7 - I6/9",
+            "Bridge": "VImaj7 - iv7 - V7sus4 - IIImaj7 - i°7 - IVmin - II7 - ivmaj9",
+            "Pre-Chorus": "I - ii° - IVadd9 - V7 - vi - V7 - I",
+            "Intro": "I - vi - IV - ii - V7",
+            "Outro.Fade_Out": "Imaj7 - vi7 - IVmaj7 - iiim7 - IVmaj7 - Imaj7",
+            "Air": ""
+        }
+    },
+    "World & Ethnic": {
+        "West African Polyrhythm": {
+            "Verse": "I - IV - vi - V7",
+            "Chorus": "Imaj7 - V7 - iv - I7 - VI7 - ii7 - V7",
+            "Solo-Break": "V7 - im7b5 - VII - iv - IImaj7 - iv7",
+            "Bridge": "VII - II7 - V7 - I6 - II7 - iii - VII - V7",
+            "Pre-Chorus": "i7 - IV - v7 - VII - VI - II7",
+            "Intro": "I - iv - V7 - I6",
+            "Outro.Fade_Out": "I7 - IV - V7 - I - vi7 - I5",
+            "Air": ""
+        },
+        "Bollywood Soundtrack": {
+            "Verse": "i - VI - iv - V7 - i - iv - III - VII",
+            "Chorus": "I6 - IVmaj7 - ii7 - V7 - I - vi7 - IV - V7",
+            "Solo-Break": "ivm7 - VI7 - i7 - iv6 - V7 - im7b5 - VII7 - i",
+            "Bridge": "I - vi - IVm7 - ii°7 - V7",
+            "Pre-Chorus": "Imaj7 - VI7 - iv - V7 - ii6 - I7 - vi7 - ii°7",
+            "Intro": "I - V - vi - IV",
+            "Outro.Fade_Out": "VImaj7 - v7 - Imaj9 - IV6 - Imaj7 - v6 - VI7 - IVmaj7",
+            "Air": ""
+        },
+        "Klezmer": {
+            "Verse": "IVm - vi° - im7 - III7 - iv - V7 - im",
+            "Chorus": "I - VII - iv - V7",
+            "Solo-Break": "I - vi°7 - IIm7b5 - V7 - Iim7 - bIII7 - IIm7b5 - V7alt",
+            "Bridge": "im - iv - iii° - V7 - VI - ii° - V7 - I",
+            "Pre-Chorus": "im - vii°7 - IV - bVIIM7",
+            "Intro": "I - II - vii° - V7",
+            "Outro.Fade_Out": "I - V7 - iv - I - V7 - I",
+            "Air": ""
+        },
+        "Zulu Isicathamiya": {
+            "Verse": "I - IV - V - I - vi - IV - V - I",
+            "Chorus": "I - V - IV - I - V - I - IV - I",
+            "Solo-Break": "I - IV - V7 - IV - ii - V7 - I - IV",
+            "Bridge": "I - IImaj7 - vi - iv - I - ii7",
+            "Pre-Chorus": "I - IV - ii7 - V7 - vi - ii - V7 - I",
+            "Intro": "I - IV - ii - V",
+            "Outro.Fade_Out": "I - ii - IV - V - I - ii - I - I",
+            "Air": ""
+        },
+        "Indian Raga": {
+            "Verse": "I - ii - V - I - vi - ii° - vii - I",
+            "Chorus": "I7 - IV - viim7b5 - V7 - I - V7 - IV - iii7",
+            "Solo-Break": "Im9 - VII - v - i° - VII - i - VI - V7",
+            "Bridge": "I - vi - iv - V7",
+            "Pre-Chorus": "I - vi - ii - V7",
+            "Intro": "I - Iadd9 - IV - IIIm7b5",
+            "Outro.Fade_Out": "I - iii° - IV - I - V7 - I",
+            "Air": ""
+        },
+        "Japanese Koto Progression": {
+            "Verse": "i - iv - VII - III - VI - ii°7 - V7 - i",
+            "Chorus": "Imaj7 - VI7 - ii7 - V7 - Imaj9 - VI7 - ii7 - V7",
+            "Solo-Break": "i - II6 - vii° - i - iv - V7 - III6 - iv - v7 - i",
+            "Bridge": "im7 - II - iv - III - v° - i",
+            "Pre-Chorus": "I - IIIaug - v - VII",
+            "Intro": "I - IVadd9 - vi - v° - IV - Iadd9",
+            "Outro.Fade_Out": "Imaj7 - VII - vi7 - IV - V7 - Imaj7 - V7 - I",
+            "Air": ""
+        },
+        "Nordic Folk": {
+            "Verse": "I - VI - IV - V - VII - i",
+            "Chorus": "I - v - IV - I - VI - v - IV - I",
+            "Solo-Break": "I - IV - im6 - V7 - bVII - V - i - IVm",
+            "Bridge": "vi - IV - i - ii - v - i",
+            "Pre-Chorus": "IV - vi - ii - V7 - iii - iv - V7 - I",
+            "Intro": "I - vi - ii - V",
+            "Outro.Fade_Out": "I - V - vi - IV - I - V - I - IV",
+            "Air": ""
+        },
+        "Tuvan Throat Singing": {
+            "Verse": "I - VII - iv - v",
+            "Chorus": "I - IV - V - i - IV - V - I",
+            "Solo-Break": "III - vi - iv - I5 - iv - vi - v° - III",
+            "Bridge": "im7 - iv° - III7 - VI - I6/9 - vi - iv - I7",
+            "Pre-Chorus": "I - vi - IV - V7",
+            "Intro": "im - i° - IV - im11",
+            "Outro.Fade_Out": "I5 - iv - I5 - VII - I5 - I",
+            "Air": ""
+        },
+        "Celtic Rock": {
+            "Verse": "I - V - vi - IV - I - ii - V - I",
+            "Chorus": "IV - vi - IV - I - V - vi - IV - I - V",
+            "Solo-Break": "I - vi - IV - V7 - I - IV - V - V7",
+            "Bridge": "VI - IV - ii - I - v - ii - V7",
+            "Pre-Chorus": "IIadd9 - V7sus4 - vi7 - IVadd11",
+            "Intro": "I - vi - IV - V",
+            "Outro.Fade_Out": "I - V - vi - IV - I - V - I",
+            "Air": ""
+        },
+        "Middle Eastern Maqam": {
+            "Verse": "i - II - VII - iv - Iaug - vi - v - i",
+            "Chorus": "I - IIø - VI - vii° - I - iv - V7",
+            "Solo-Break": "V - vi - iv - VII - II - iv° - III7 - VI7",
+            "Bridge": "i - III - iv - VII - VI - v° - iv - VII",
+            "Pre-Chorus": "VI - iv° - v - IIIaug",
+            "Intro": "I - VI7 - iv - v° - I",
+            "Outro.Fade_Out": "I - bII - bIII - IV - v",
+            "Air": ""
+        },
+        "Andean Music": {
+            "Verse": "I - IV - vi - V - ii - V7 - I",
+            "Chorus": "VI - iv - V - I - III - vi - V7 - I",
+            "Solo-Break": "I - vi - II5 - VIImaj7 - I6/9 - v7 - I",
+            "Bridge": "i - VII - iv - vi - ii - i",
+            "Pre-Chorus": "I - vi - IVmaj7 - ii7 - V7",
+            "Intro": "I - iv - i - V7",
+            "Outro.Fade_Out": "I - VI - IV - I",
+            "Air": ""
+        },
+        "Sufi Qawwali": {
+            "Verse": "I - vi - ii - V7",
+            "Chorus": "I - iv - V7 - I7 - iv - VI - V7 - I",
+            "Solo-Break": "Iaug - IVm7 - v - VII - i°7",
+            "Bridge": "vi - ii - iii - vi - V7 - vi - IV - V7",
+            "Pre-Chorus": "I - vi - IV - V7",
+            "Intro": "I - IV - V7sus4 - I",
+            "Outro.Fade_Out": "VI - im7 - iv - V7 - VI - im7 - iv - V7 - VI",
+            "Air": ""
+        },
+        "Balinese Gamelan": {
+            "Verse": "I - IV - III - ii",
+            "Chorus": "I - IV - i - V - I - iv - V7 - I",
+            "Solo-Break": "i - v - iv - v12",
+            "Bridge": "i - iv - ii° - i - v - VI - V7 - i",
+            "Pre-Chorus": "I - IV - vi - ii - V7",
+            "Intro": "I5 - iv - VII - III - i - VI - v - I5",
+            "Outro.Fade_Out": "iv - i - v - I - iv - i - v - I",
+            "Air": ""
+        },
+        "Celtic Folk Ballad": {
+            "Verse": "Imaj7 - vi - ii - V7",
+            "Chorus": "Imaj7 - vi - IV - V7 - I - vi - ii - V7",
+            "Solo-Break": "I - ii - IV - vi - IV - I - V7 - I",
+            "Bridge": "Imaj7 - VI - iim7 - V7 - Imaj7 - IV - V7 - I",
+            "Pre-Chorus": "I6 - vi - ii - V7 - I - iii - IV - V7",
+            "Intro": "I - V - vi - IV",
+            "Outro.Fade_Out": "Imaj7 - vi - IV - V",
+            "Air": ""
+        },
+        "Persian Traditional": {
+            "Verse": "I - i - bII - iv - bVII - i",
+            "Chorus": "i - IV - v - VI - VII - II - III - iv",
+            "Solo-Break": "i° - VI - iv - IIIaug - II - v - VII - iv",
+            "Bridge": "I - ii - v - III - VI - iv - VII - i",
+            "Pre-Chorus": "i - iv - V - i - VII - i - ii°7 - i",
+            "Intro": "Im7 - IVm7 - VII - Vim7",
+            "Outro.Fade_Out": "I - VIb - iv - VII",
+            "Air": ""
+        }
+    },
+    "Experimental & Avant-Garde": {
+        "Atonal Composition": {
+            "Verse": "i° - Iaug7 - viø - II7#5 - iv° - VIIadd11 - III6 - v°7",
+            "Chorus": "i°7 - IV+7 - vii°7 - II9#5 - im11 - IIIaug7 - viø - VII13b9",
+            "Solo-Break": "Iaug - iv° - V7#5 - iim7b5 - VIIaug7 - vi°7 - I11#9 - iv5#",
+            "Bridge": "i°7 - IVaug - III7#5 - vi° - IIø - v7 - IIIm7b5 - iv5",
+            "Pre-Chorus": "VII - i° - IIIaug - v°7 - II#9 - vi° - I11 - iv° - VIIb5 - Iadd11",
+            "Intro": "i° - IIIaug7 - viiø - II7#5 - Vdim - iv5",
+            "Outro.Fade_Out": "i° - IV4 - V7#5#9 - viø - I5",
+            "Air": ""
+        },
+        "Noise Music Soundscape": {
+            "Verse": "i - IV9 - ii°7 - V7#9 - VIaug - iv6 - vii°",
+            "Chorus": "VII - v°7 - bIaug - VI7#5 - im11 - I7#9 - iv°7 - I13b9",
+            "Solo-Break": "i° - IIaug - v° - viø - Isus2 - IV6/9 - IIIaug7 - I7#5",
+            "Bridge": "IIaug - IIIø - v° - IVaug7 - vii#5#9 - VIaug11 - V9 - I4",
+            "Pre-Chorus": "VII° - iv° - Iaug7 - iii7b5",
+            "Intro": "I4 - iiø - v7#9 - vii° - IIaug",
+            "Outro.Fade_Out": "I13 - ii° - V7#9 - viim7b5 - Iaug7 - iv° - VII13 - I9 - i°7",
+            "Air": ""
+        },
+        "Post-Rock Progression": {
+            "Verse": "Imaj7 - vi - IVadd9 - I5 - ii7 - iiø",
+            "Chorus": "VImaj7 - ivsus2 - im7 - iiø - VIIaug - VIIm7b5",
+            "Solo-Break": "VImaj7 - iv°7 - Iadd9 - viim7 - V7#9 - I9 - iim11 - VIø",
+            "Bridge": "im11 - IVmaj7 - VIIø - iiim7 - VI11",
+            "Pre-Chorus": "Imaj7 - ivadd9 - VII6/9 - VImaj7 - iiø - V7#5",
+            "Intro": "I6 - iim7 - ivmaj7 - Iadd11",
+            "Outro.Fade_Out": "I6/9 - IVmaj7 - iiø - Iadd11",
+            "Air": ""
+        },
+        "Microtonal Experimentation": {
+            "Verse": "I - iv° - v - II7#5 - vi - IIø - iv - Iaug",
+            "Chorus": "I7b9 - iv°7 - IIaug7 - viø - v7 - iii13 - VI7#5",
+            "Solo-Break": "im11 - VIaug - iv°7 - I7b5#9",
+            "Bridge": "I#5 - vi°7 - iv+ - II7#9",
+            "Pre-Chorus": "Iaug - iv°7 - iiø - I7#5#9",
+            "Intro": "Iaug7 - iii° - VI6/9 - Iø",
+            "Outro.Fade_Out": "Iaug - iv°7 - IIø - VII7#5 - im13",
+            "Air": ""
+        }
+    },
+    "Punk & Hardcore": {
+        "Classic Punk Rock": {
+            "Verse": "I5 - VI5 - IV5 - V5",
+            "Chorus": "I5 - IV5 - VI5 - V5",
+            "Solo-Break": "I5 - IV5 - vi5 - V5",
+            "Bridge": "IV - vi - ii - V",
+            "Pre-Chorus": "I5 - iv - v - I7",
+            "Intro": "I5 - VII5 - IV5 - V5",
+            "Outro.Fade_Out": "I - IV - V - I",
+            "Air": ""
+        },
+        "Hardcore Punk Breakdown": {
+            "Verse": "I5 - vi - iii° - V5",
+            "Chorus": "I5 - bVII5 - VI5 - IV5",
+            "Solo-Break": "iv - v - iv - v - IIIaug - VII - IIIaug - VII",
+            "Bridge": "iv - iii - iv - v - iv - VI - v - I",
+            "Pre-Chorus": "I5 - iv - v - VI5",
+            "Intro": "I5 - VII5 - VI5 - V5",
+            "Outro.Fade_Out": "im5 - v5 - i5 - iv5",
+            "Air": ""
+        },
+        "Pop Punk Progression": {
+            "Verse": "I5 - vi - IV - V",
+            "Chorus": "I5 - IV5 - vi - V5",
+            "Solo-Break": "I5 - III5 - vi - IV - I5 - V5 - IV - vi",
+            "Bridge": "v - VI - iv - i - iv - VI - v - i",
+            "Pre-Chorus": "I - vi - IV - V",
+            "Intro": "I5 - IV5 - vi5 - V5",
+            "Outro.Fade_Out": "I - V - vi - IV - I - V - I",
+            "Air": ""
+        },
+        "Post-Punk Atmosphere": {
+            "Verse": "vi - IV - I - V - ii - I - vi - V",
+            "Chorus": "I - iv - VI - ii - V - i",
+            "Solo-Break": "I - i - VI - iv - V7 - iv - i - V7",
+            "Bridge": "vi - iv - i - v° - iv - III",
+            "Pre-Chorus": "I - vi - I7 - IV",
+            "Intro": "VI - iv - i - V",
+            "Outro.Fade_Out": "I - iv - I - v - ii - I",
+            "Air": ""
+        },
+        "Skate Punk Groove": {
+            "Verse": "I5 - IV5 - vi - V7",
+            "Chorus": "I - V - vi - IV",
+            "Solo-Break": "I5 - IV5 - vi - V - VII - vi - IV5 - V",
+            "Bridge": "I5 - vi - IV - iii - V7",
+            "Pre-Chorus": "I5 - vi - ii° - vii°",
+            "Intro": "I5 - IV5 - ii5 - V5",
+            "Outro.Fade_Out": "I5 - IV5 - vi - V - IV5 - I5",
+            "Air": ""
+        }
+    },
+    "Jazz & Blues": {
+        "Gypsy Jazz": {
+            "Verse": "I - IVmaj7 - iim7 - V7 - iiø - V7 - I6/9 - III7",
+            "Chorus": "Imaj7 - VI7 - iim7 - V7 - im7b5 - V7 - Imaj7 - II7",
+            "Solo-Break": "I6 - V7 - im7b5 - Iaug7",
+            "Bridge": "Imaj7 - VII7 - i7 - VI7 - II7 - V7",
+            "Pre-Chorus": "I - IVm6 - IIm7b5 - V7",
+            "Intro": "I6 - iim7b5 - V7 - I6",
+            "Outro.Fade_Out": "Imaj7 - VI7 - iim7 - V7",
+            "Air": ""
+        },
+        "Acid Jazz": {
+            "Verse": "Imaj9 - iv7 - VI7 - II9",
+            "Chorus": "Imaj7 - iv7 - ii7 - V9 - Iadd9 - VImaj7 - iim9 - V7#9",
+            "Solo-Break": "IIm9 - V13#9 - iim7b5 - VI7b9 - Imaj7 - IV9",
+            "Bridge": "Imaj7 - IVmaj7 - iim7 - V7 - viø - I7#5 - ii7 - V7",
+            "Pre-Chorus": "IV7 - iim7 - V7#9 - iiiø - VI7b9",
+            "Intro": "Imaj7 - iv7 - III7#5 - VI7#9",
+            "Outro.Fade_Out": "Imaj7 - ii7 - VI7#9 - im7 - IVmaj7 - III7b5 - VI7 - ii7b5 - Imaj9",
+            "Air": ""
+        },
+        "Free Jazz": {
+            "Verse": "Imaj7 - iv7 - bVII7 - viim7b5",
+            "Chorus": "V13#9 - iv7 - bVII7#5 - i13 - V7#9 - iiø7 - VIaug7 - iim9",
+            "Solo-Break": "VImaj7#11 - iiø - V7#5#9 - i9 - iv7 - bVII13b9 - V7alt - i7",
+            "Bridge": "im7b5 - I7b9 - IV13#9 - ii°7",
+            "Pre-Chorus": "im13 - IV9 - iim7b5 - IIIaug7 - V7#9 - viø - IVmaj7#11 - I7#5",
+            "Intro": "V13#9 - ii°7 - IIIaug7 - iv6/9 - viiø",
+            "Outro.Fade_Out": "im9 - v°7 - IVmaj7 - iim11 - V7#9 - I7b5 - vii° - I9",
+            "Air": ""
+        },
+        "New Orleans Jazz": {
+            "Verse": "Imaj7 - II7 - iim7 - V7 - Imaj7 - vi7 - iim7 - V7",
+            "Chorus": "Imaj7 - VI7 - iim7 - V7 - I7 - IVmaj7 - III7 - vi7 - II7 - V7 - Imaj9 - V7",
+            "Solo-Break": "I7 - IV7 - V7 - iv - i°7 - VI7 - iiim7 - VIØ7 - I7",
+            "Bridge": "V7 - vi7 - II7 - i°7 - ivm7 - V7#5 - iim7b5 - Imaj7",
+            "Pre-Chorus": "I7 - IV9 - iim7b5 - V7#9",
+            "Intro": "Imaj9 - III7#5 - iim7 - V7#9",
+            "Outro.Fade_Out": "Imaj7 - V7 - IV7 - I6/9",
+            "Air": ""
+        },
+        "Hard Bop": {
+            "Verse": "I7 - IV7 - iim7 - V7 - I7 - vi°7 - iim7 - V7",
+            "Chorus": "Imaj7 - iim7 - V7 - Imaj7 - III7 - vi7 - ii7 - V7",
+            "Solo-Break": "VI7 - iim7 - V7#9 - Imaj7 - IIIø - vi7 - ii7 - V7b9",
+            "Bridge": "Imaj7 - ii7 - V7#9 - iim7b5 - V7alt - Imaj7",
+            "Pre-Chorus": "Imaj7 - VI7 - iim7 - V7#9 - iiø - V7 - I7",
+            "Intro": "Imaj7 - iim7 - V7 - Imaj7",
+            "Outro.Fade_Out": "Imaj7 - iim7 - V7alt - ii7 - V7alt - Imaj7 - IVmaj7 - iii7 - VI7alt - iimin7 - V7alt - Imaj7",
+            "Air": ""
+        },
+        "Swing Revival": {
+            "Verse": "I7 - iv7 - V7 - I7 - I7 - VI7 - ii7 - V7",
+            "Chorus": "Imaj7 - VI7 - iim7 - V7 - Imaj7 - VI7 - ii7 - V7",
+            "Solo-Break": "I7 - IV7 - ii7 - V7 - Imaj7 - vi7b5 - iim7b5 - V7",
+            "Bridge": "I7 - IV7 - iim7 - V7 - im7b5 - III7 - VI7 - iiø - V7",
+            "Pre-Chorus": "II7 - V7 - Imaj7 - vi7 - ii7 - V7 - Imaj7 - VI7",
+            "Intro": "Imaj7 - II7 - V7 - I6",
+            "Outro.Fade_Out": "Imaj7 - IV7 - iim7 - V7 - Imaj7 - I6/9",
+            "Air": ""
+        },
+        "Jump Blues": {
+            "Verse": "Imaj7 - I7 - IV7 - IVm7 - iim7 - V7 - I7 - V7",
+            "Chorus": "I7 - IV7 - I7 - VI7 - iim7 - V7 - I7 - IV7",
+            "Solo-Break": "I7 - IV7 - V7 - ii7b5 - I7#9 - IV9 - V7#9 - IV7 - I7",
+            "Bridge": "II7 - V7 - I7 - IV7 - iii7 - vi7 - ii7 - V7",
+            "Pre-Chorus": "V9 - IV7 - vi - II7 - V7 - IV - iim7 - V7",
+            "Intro": "I7 - IV7 - I7 - V7",
+            "Outro.Fade_Out": "I7 - IV7 - I7 - II7 - V7 - I7",
+            "Air": ""
+        },
+        "Chicago Blues": {
+            "Verse": "I7 - IV7 - I7 - I7 - IV7 - IV7 - I7 - I7 - V7 - IV7 - I7 - V7",
+            "Chorus": "I7 - IV7 - I7 - V7 - IV7 - I7 - V7",
+            "Solo-Break": "I7 - IV7 - i7 - I7 - V7 - IV7 - I7 - V7",
+            "Bridge": "I7 - IV7 - I7 - V7",
+            "Pre-Chorus": "I7 - IV7 - I7 - vi°7 - ii7 - V7",
+            "Intro": "I7 - IV7 - I7 - I7",
+            "Outro.Fade_Out": "I7 - iv7 - I7 - V7 - I7 - IV7 - I7 - V7 - I7",
+            "Air": ""
+        },
+        "Piedmont Blues": {
+            "Verse": "I - IV7 - I - I7 - IV7 - iv - I - V7",
+            "Chorus": "I7 - IV7 - I7 - ii7 - V7 - I7 - V7",
+            "Solo-Break": "V7 - I7 - IV7 - iii° - V7 - ii7 - I7 - VI7",
+            "Bridge": "im7b5 - V7b9 - Im7 - IV7 - iim7 - V7 - Im7",
+            "Pre-Chorus": "im7 - III7 - iim7b5 - V7 - VI7 - iim7 - V7",
+            "Intro": "I7 - IV7 - I7 - ii7 - V7",
+            "Outro.Fade_Out": "I7 - IV7 - i7 - V7 - I7",
+            "Air": ""
+        },
+        "West Coast Blues": {
+            "Verse": "I7 - IV7 - I7 - vi7 - ii7 - V7",
+            "Chorus": "I7 - IV7 - I7 - I7 - IV7 - ivm7 - I7 - VI7 - iim7 - V7",
+            "Solo-Break": "I7 - IV7 - ii7 - V7 - I7 - VI7 - ii7 - V7",
+            "Bridge": "im7b5 - VI7 - i7 - v9 - im7b5 - VI7 - i7 - V7",
+            "Pre-Chorus": "I9 - IV7 - iim7 - V7#9",
+            "Intro": "I7 - IV7 - ii7 - V7",
+            "Outro.Fade_Out": "Imaj7 - V7 - IV9 - VI7 - iim7 - V7 - I6",
+            "Air": ""
+        }
+    },
+    "Miscellaneous": {
+        "Lo-Fi House": {
+            "Verse": "im7 - iv7 - VImaj7 - VII7",
+            "Chorus": "Imaj7 - V7 - iim7 - IVmaj7",
+            "Solo-Break": "im7 - IVmaj9 - vi7 - Isus4",
+            "Bridge": "Imaj7 - II7 - im7b5 - III7 - I9 - V7#9",
+            "Pre-Chorus": "im7 - ii7 - IV - iiim7",
+            "Intro": "Imaj7 - ii7 - IV6 - V9",
+            "Outro.Fade_Out": "Imaj7 - vi7 - Iadd9 - IV6/9",
+            "Air": ""
+        },
+        "Chiptune (8-Bit Music)": {
+            "Verse": "I - vi - IV - V",
+            "Chorus": "I - VI - IV - V",
+            "Solo-Break": "I - ii - V7 - IV - Iaug - vi - vii° - I",
+            "Bridge": "I - vi - II7 - V7",
+            "Pre-Chorus": "I - vi - IV - V7",
+            "Intro": "I - V - vi - IV",
+            "Outro.Fade_Out": "I - vi - IV - V7",
+            "Air": ""
+        },
+        "Vaporwave": {
+            "Verse": "Imaj7 - IVadd9 - iim7 - V7",
+            "Chorus": "Imaj7 - vi7 - IVmaj7 - V7 - Iadd9 - vi7 - IVmaj7 - V7",
+            "Solo-Break": "I - I7#5 - IVmaj7 - v - V6/9 - IVadd9 - iiø - III",
+            "Bridge": "vi - IV - IImaj7 - v - iii - Iadd9",
+            "Pre-Chorus": "IImaj9 - VImaj7 - iv7 - IIø - VIIaug - iv7",
+            "Intro": "Imaj7 - II7 - vim7 - V7",
+            "Outro.Fade_Out": "Imaj7 - vi - IVmaj7 - V7 - Imaj7 - IV7 - iiø - Imaj7",
+            "Air": ""
+        },
+        "Synthwave Darkwave Hybrid": {
+            "Verse": "i - III - VII - iv - VI - V - i - ii°",
+            "Chorus": "I - VI - iv - V7",
+            "Solo-Break": "Iaug - vi - I7#9 - iiø - i - IIaug - I7b5 - VI",
+            "Bridge": "vi - IV - iiim7 - V7 - iim7b5 - ivml7 - VII7 - im7",
+            "Pre-Chorus": "Imin9 - Iaug7 - iv - VImaj7",
+            "Intro": "iadd9 - IVmaj7 - IIIm7b5 - VImaj7",
+            "Outro.Fade_Out": "i - VI - iv - VII - i - VI - iv - v",
+            "Air": ""
+        },
+        "Neoclassical Darkwave": {
+            "Verse": "im - III - iv - i - VII - v - VI - i",
+            "Chorus": "I - v - I7 - iv7 - VI - iv - V7 - i",
+            "Solo-Break": "i - iv6 - VII7 - IIIaug - VImaj7b5 - i° - ivø - vii°7",
+            "Bridge": "i°7 - iv - v7 - VI - i - V7 - i7 - iv6",
+            "Pre-Chorus": "iim7b5 - V7b9 - imaj7 - iv - ii°7 - V7 - iv - i°7",
+            "Intro": "i - III - vi° - v - iv - VII - I7 - i",
+            "Outro.Fade_Out": "i - vi - iv - v - i° - VII - IIIaug - i",
+            "Air": ""
+        },
+        "Ambient Drone": {
+            "Verse": "im11 - IVadd9 - vii° - VImaj7",
+            "Chorus": "Imaj7 - iv7 - Iadd9 - viø - Imaj7 - I9 - iv7 - viø",
+            "Solo-Break": "Imaj7 - III7 - iim7b5 - VIaug7 - iv - v7 - iadd9 - ii°7",
+            "Bridge": "i - iv - VII - iii6/9 - vi - V7 - i7b5 - iv",
+            "Pre-Chorus": "iv7b5 - Isus2 - iim11 - VII",
+            "Intro": "iv - iii - iv - ii - iv - ii° - iv - vi",
+            "Outro.Fade_Out": "Imaj11 - IVmaj7 - iim7b5 - Imaj9",
+            "Air": ""
+        },
+        "Noise Pop": {
+            "Verse": "I - vi - IV - V",
+            "Chorus": "Imaj7 - iv - VI - ii7 - V7#9",
+            "Solo-Break": "V - IVadd9 - im7b5 - vi - I7#9 - iv - v°7",
+            "Bridge": "IVmaj7 - vi - Imaj9 - V7#9",
+            "Pre-Chorus": "I - vi - IV - Iadd9 - vi - V7#9 - IV - I",
+            "Intro": "Imaj7 - IVmaj7 - Iadd9 - vi",
+            "Outro.Fade_Out": "Imaj7 - iv - iim7b5 - I - VImaj7 - iv - I",
+            "Air": ""
+        },
+        "Glitch Music": {
+            "Verse": "I - VI7 - ii°7 - VII",
+            "Chorus": "I7#5 - iv° - Imaj9 - VII - i7 - V7#9 - iv° - I7#5",
+            "Solo-Break": "V7#9 - vi° - iiø - I7b9 - III9 - vi7 - iv7 - V9#11",
+            "Bridge": "iii7#5 - vi°7 - IVadd9 - ii° - Imaj7",
+            "Pre-Chorus": "I6 - iv° - VIIadd9 - III7b9",
+            "Intro": "im7 - IVadd9 - vi° - I6/9",
+            "Outro.Fade_Out": "I - v - IIIaug - VI - iv - vii° - VIsus4 - iv",
+            "Air": ""
+        },
+        "Plunderphonics": {
+            "Verse": "I - iv - III - VII",
+            "Chorus": "im7 - IV - v7 - VI - ii° - V7 - VII - I",
+            "Solo-Break": "I7#5 - iv7 - VI9 - iiim7b5",
+            "Bridge": "Imaj7 - IV7 - iim7b5 - vi7 - Iaug7 - VII7",
+            "Pre-Chorus": "I7b5b9 - IVsus2 - vi° - IIIaug7",
+            "Intro": "I - I7 - im7 - II7",
+            "Outro.Fade_Out": "Imaj7 - iim7b5 - V7#9 - im9",
+            "Air": ""
+        },
+        "Dreampunk": {
+            "Verse": "iadd11 - IVmaj7 - viim7b5 - VIm7 - iadd13 - V7sus4 - IV4 - IIIm9",
+            "Chorus": "Imaj7 - vi7 - IVadd9 - V7#9",
+            "Solo-Break": "im11 - VImaj7 - iiø - VII7",
+            "Bridge": "Imaj7 - vii° - IV6 - V9",
+            "Pre-Chorus": "im7b5 - IImaj7 - vi - IVmaj9 - V7#9",
+            "Intro": "im11 - IVmaj9 - VI7 - vii°7",
+            "Outro.Fade_Out": "Imaj7 - IVmaj7 - iim7 - V7 - Iadd9 - vi7 - IVmaj7 - I",
+            "Air": ""
+        }
+    }
+}
