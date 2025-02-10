@@ -192,6 +192,49 @@ export function QuickActionsFooter({
 
             <div className="h-8 w-px bg-gray-700" />
 
+            {/* Play Controls */}
+            <div className="flex items-center gap-4">
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => handlePlayProgression()}
+                  className={`
+                    px-3 py-1.5 text-sm rounded-lg inline-flex items-center gap-1.5
+                    ${isPlaying 
+                      ? 'bg-red-600 hover:bg-red-500 animate-pulse' 
+                      : 'bg-green-600 hover:bg-green-500'
+                    }
+                    transition-colors duration-150
+                  `}
+                  style={isPlaying ? {
+                    animationDuration: `${(60 / Tone.Transport.bpm.value) * 1000}ms`
+                  } : undefined}
+                >
+                  <Music className="w-4 h-4" />
+                  <span>{isPlaying ? 'Stop' : 'Play'}</span>
+                </button>
+                <div className="flex gap-1">
+                  <button
+                    onClick={() => Tone.Transport.bpm.value = Tone.Transport.bpm.value / 2}
+                    className={`px-2 py-1.5 text-xs ${Tone.Transport.bpm.value === 60 ? 'bg-blue-800' : 'bg-blue-600 hover:bg-blue-500'} rounded-lg`}
+                  >
+                    ½x
+                  </button>
+                  <button
+                    onClick={() => Tone.Transport.bpm.value = Tone.Transport.bpm.value * 2}
+                    className={`px-2 py-1.5 text-xs ${Tone.Transport.bpm.value === 240 ? 'bg-blue-800' : 'bg-blue-600 hover:bg-blue-500'} rounded-lg`}
+                  >
+                    2x
+                  </button>
+                  <button
+                    onClick={() => Tone.Transport.bpm.value = 120}
+                    className={`px-2 py-1.5 text-xs ${Tone.Transport.bpm.value === 120 ? 'bg-blue-800' : 'bg-blue-600 hover:bg-blue-500'} rounded-lg`}
+                  >
+                    1x
+                  </button>
+                </div>
+              </div>
+            </div>
+
             {/* Other Actions */}
             <div className="flex items-center gap-2">
               <button
