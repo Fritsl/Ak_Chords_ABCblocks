@@ -13,6 +13,15 @@ export function SynthControls({ controls, onChange }: SynthControlsProps) {
     <div className="p-4 bg-gray-800 rounded-lg border border-gray-700">
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-sm font-medium text-gray-300">Sound Settings</h3>
+        <button
+          onClick={() => onChange({ ...controls, showModal: false })}
+          className="p-1.5 text-gray-400 hover:text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
       </div>
 
       <div className="space-y-4">
