@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Music, Copy, Trash2 } from 'lucide-react';
 import { getCycledQuality } from '../../utils/chordUtils';
 import { usePlayback } from '../../hooks/usePlayback';
