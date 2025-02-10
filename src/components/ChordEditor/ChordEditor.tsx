@@ -226,7 +226,78 @@ export function ChordEditor({
             </span>
           )}
         </div>
-        <div className="flex gap-2">
+        <div className="flex items-center gap-4">
+          {/* Progression Selector */}
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => {
+                const newIndex = currentProgressionIndex === 0 ? progressions.length - 1 : currentProgressionIndex - 1;
+                setCurrentProgressionIndex(newIndex);
+                if (progressions[newIndex]) {
+                  onProgressionSelect(progressions[newIndex]);
+                }
+              }}
+              disabled={progressions.length === 0}
+              className="p-2 text-gray-400 hover:text-white disabled:opacity-50 disabled:cursor-not-allowed bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
+            >
+              <ChevronLeftIcon className="w-4 h-4" />
+            </button>
+
+            <div className="flex items-center gap-2">
+              {isLoading ? (
+                <div className="w-[240px] h-[38px] bg-gray-700 rounded-lg flex items-center justify-center">
+                  <span className="text-sm text-gray-400">Loading...</span>
+                </div>
+              ) : currentProgression ? (
+                <button
+                  onClick={() => onProgressionSelect(currentProgression)}
+                  className="w-[240px] h-[38px] p-2 bg-gray-700 hover:bg-gray-600 rounded-lg text-left transition-colors flex flex-col justify-center"
+                >
+                  <div className="flex items-center gap-2">
+                    <Wand2 className="w-3 h-3 text-indigo-400 flex-shrink-0" />
+                    <div className="min-w-0 flex-1">
+                      <h4 className="text-xs font-medium truncate">{currentProgression.name}</h4>
+                      <div className="text-indigo-400 text-xs truncate">
+                        {currentProgression.chords.join(' - ')}
+                      </div>
+                    </div>
+                  </div>
+                </button>
+              ) : (
+                <div className="w-[240px] h-[38px] bg-gray-700 rounded-lg flex items-center justify-center">
+                  <span className="text-sm text-gray-400">No progressions</span>
+                </div>
+              )}
+
+              <button
+                onClick={() => handleProgressionModeChange(progressionMode === 'repeat' ? 'stretch' : 'repeat')}
+                className="h-[38px] w-[38px] bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors flex items-center justify-center text-gray-300"
+                title={progressionMode === 'stretch' ? 'Stretch pattern' : 'Repeat pattern'}
+              >
+                {progressionMode === 'stretch' ? (
+                  <ArrowLeftRight className="w-4 h-4" />
+                ) : (
+                  <RefreshCw className="w-4 h-4" />
+                )}
+              </button>
+            </div>
+
+            <button
+              onClick={() => {
+                const newIndex = currentProgressionIndex === progressions.length - 1 ? 0 : currentProgressionIndex + 1;
+                setCurrentProgressionIndex(newIndex);
+                if (progressions[newIndex]) {
+                  onProgressionSelect(progressions[newIndex]);
+                }
+              }}
+              disabled={progressions.length === 0}
+              className="p-2 text-gray-400 hover:text-white disabled:opacity-50 disabled:cursor-not-allowed bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
+            >
+              <ChevronRightIcon className="w-4 h-4" />
+            </button>
+          </div>
+          
+          {/* Original Random button */}
           <button 
             onClick={(e) => {
               e.stopPropagation();

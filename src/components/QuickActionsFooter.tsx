@@ -127,65 +127,6 @@ export function QuickActionsFooter({
         <div className="max-w-6xl mx-auto h-full flex items-center justify-between">
           {/* Quick Actions */}
           <div className="flex items-center gap-6">
-            {/* Quick Progression Carousel */}
-            <div className="flex items-center gap-2">
-              <button
-                onClick={handlePreviousProgression}
-                disabled={progressions.length === 0}
-                className="p-2 text-gray-400 hover:text-white disabled:opacity-50 disabled:cursor-not-allowed bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
-              >
-                <ChevronLeftIcon className="w-5 h-5" />
-              </button>
-
-              <div className="flex items-center gap-2">
-                {isLoading ? (
-                  <div className="w-[300px] h-[48px] bg-gray-700 rounded-lg flex items-center justify-center">
-                    <span className="text-sm text-gray-400">Loading progressions...</span>
-                  </div>
-                ) : currentProgression ? (
-                  <button
-                    onClick={() => onProgressionSelect(currentProgression)}
-                    className="w-[300px] h-[48px] p-3 bg-gray-700 hover:bg-gray-600 rounded-lg text-left transition-colors flex flex-col justify-center"
-                  >
-                    <div className="flex items-center gap-2">
-                      <Wand2 className="w-3 h-3 text-indigo-400 flex-shrink-0" />
-                      <div className="min-w-0 flex-1">
-                        <h4 className="text-xs font-medium truncate">{currentProgression.name}</h4>
-                        <div className="text-indigo-400 text-xs truncate">
-                          {currentProgression.chords.join(' - ')}
-                        </div>
-                      </div>
-                    </div>
-                  </button>
-                ) : (
-                  <div className="w-[300px] h-[48px] bg-gray-700 rounded-lg flex items-center justify-center">
-                    <span className="text-sm text-gray-400">No progressions available</span>
-                  </div>
-                )}
-
-                {/* Stretch/Loop Toggle - Always visible */}
-                <button
-                  onClick={() => handleProgressionModeChange(progressionMode === 'repeat' ? 'stretch' : 'repeat')}
-                  className="h-[48px] w-[48px] bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors flex items-center justify-center text-gray-300"
-                  title={progressionMode === 'stretch' ? 'Stretch pattern across section' : 'Repeat pattern to fill section'}
-                >
-                  {progressionMode === 'stretch' ? (
-                    <ArrowLeftRight className="w-5 h-5" />
-                  ) : (
-                    <RefreshCw className="w-5 h-5" />
-                  )}
-                </button>
-              </div>
-
-              <button
-                onClick={handleNextProgression}
-                disabled={progressions.length === 0}
-                className="p-2 text-gray-400 hover:text-white disabled:opacity-50 disabled:cursor-not-allowed bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
-              >
-                <ChevronRightIcon className="w-5 h-5" />
-              </button>
-            </div>
-
             <div className="h-8 w-px bg-gray-700" />
 
             {/* Play Controls */}
