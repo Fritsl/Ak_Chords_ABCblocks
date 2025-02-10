@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Music, Copy, Trash2 } from 'lucide-react';
 import { Arrangement, KeySignature } from '../../types';
 import { ChordCell } from './ChordCell';
+import * as Tone from 'tone';
 import { ChordSelector } from './ChordSelector';
 import { getFunctionColor } from '../../constants/music';
 import { useChordProgressions } from '../../hooks/useChordProgressions';
@@ -137,7 +138,7 @@ export function ChordEditor({
     const updateInterval = async () => {
       if (isPlaying && intervalRef.current) {
         window.clearInterval(intervalRef.current);
-        await initializeSynth();
+        await Tone.start();
         const stepTime = (60 / Tone.Transport.bpm.value) * 1000;
         const validChords = chords.filter(chord => chord);
         
