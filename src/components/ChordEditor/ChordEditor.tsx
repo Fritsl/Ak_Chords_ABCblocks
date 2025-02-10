@@ -22,7 +22,6 @@ import {
   sortableKeyboardCoordinates,
   rectSortingStrategy,
 } from '@dnd-kit/sortable';
-import * as Tone from 'tone';
 
 interface ChordEditorProps {
   arrangement: Arrangement;
@@ -141,11 +140,11 @@ export function ChordEditor({
         await Tone.start();
         const stepTime = (60 / Tone.Transport.bpm.value) * 1000;
         const validChords = chords.filter(chord => chord);
-        
+
         if (validChords[0]) {
           playChord(validChords[0], keySignature);
         }
-        
+
         intervalRef.current = window.setInterval(() => {
           setCurrentStep(step => {
             const nextStep = (step + 1) % validChords.length;
@@ -159,7 +158,7 @@ export function ChordEditor({
     };
 
     updateInterval();
-    
+
     return () => {
       if (intervalRef.current) {
         window.clearInterval(intervalRef.current);
