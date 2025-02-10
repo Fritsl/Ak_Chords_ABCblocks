@@ -24,8 +24,6 @@ export function useSynth() {
   const synthRef = useRef<Tone.PolySynth | null>(null);
   const reverbRef = useRef<Tone.Reverb | null>(null);
   const volumeRef = useRef<Tone.Volume | null>(null);
-  const analyserRef = useRef<Tone.Analyser | null>(null);
-  const animationFrameRef = useRef<number>();
   const isInitializedRef = useRef(false);
   const playbackTimeoutRef = useRef<number | null>(null);
   const [controls, setControls] = useState<SynthControls>(DEFAULT_CONTROLS);
@@ -70,7 +68,7 @@ export function useSynth() {
         attack: controls.attack,
         release: controls.release
       }
-    }).connect(analyserRef.current).connect(reverbRef.current);
+    }).connect(reverbRef.current);
   }, [controls]);
 
   const initializeSynth = useCallback(async () => {
@@ -128,10 +126,6 @@ export function useSynth() {
       if (volumeRef.current) {
         volumeRef.current.dispose();
         volumeRef.current = null;
-      }
-      if (analyserRef.current) {
-        analyserRef.current.dispose();
-        analyserRef.current = null;
       }
       isInitializedRef.current = false;
     };
