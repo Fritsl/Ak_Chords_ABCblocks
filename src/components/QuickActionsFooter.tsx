@@ -85,6 +85,13 @@ export function QuickActionsFooter({
     }
   };
 
+  const handleProgressionModeChange = (mode: 'repeat' | 'stretch') => {
+    onProgressionModeChange(mode);
+    if (currentProgression) {
+      onProgressionSelect(currentProgression);
+    }
+  };
+
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-gray-800/95 backdrop-blur-sm border-t border-gray-700 shadow-xl z-50">
       {/* Synth Controls Modal */}
@@ -161,7 +168,7 @@ export function QuickActionsFooter({
 
                 {/* Stretch/Loop Toggle - Always visible */}
                 <button
-                  onClick={() => onProgressionModeChange(progressionMode === 'repeat' ? 'stretch' : 'repeat')}
+                  onClick={() => handleProgressionModeChange(progressionMode === 'repeat' ? 'stretch' : 'repeat')}
                   className="h-[48px] w-[48px] bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors flex items-center justify-center text-gray-300"
                   title={progressionMode === 'stretch' ? 'Stretch pattern across section' : 'Repeat pattern to fill section'}
                 >
