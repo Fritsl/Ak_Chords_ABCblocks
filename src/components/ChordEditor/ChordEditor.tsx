@@ -132,16 +132,15 @@ export function ChordEditor({
   };
 
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isContinuousPlay, setIsContinuousPlay] = useState(false); // Continuous play toggle
+  const [isContinuousPlay, setIsContinuousPlay] = useState(false);
   const [currentStep, setCurrentStep] = useState<number>(-1);
   const intervalRef = useRef<number | null>(null);
 
   useEffect(() => {
     const updateInterval = async () => {
-      if (isPlaying && intervalRef.current) {
-        window.clearInterval(intervalRef.current);
+      if (isPlaying && !intervalRef.current) {
         await Tone.start();
-        const stepTime = (60 / Tone.Transport.bpm.value) * 1000 * 4; // 4 beats per bar
+        const stepTime = (60 / Tone.Transport.bpm.value) * 1000 * 4;
         const validChords = chords.filter(chord => chord);
 
         if (validChords[0]) {
