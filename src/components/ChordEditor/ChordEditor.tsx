@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { Music, Copy, Trash2, DicesIcon } from 'lucide-react'; // Added import for DicesIcon
+import React, { useState, useEffect, useRef } from 'react';
+import { Music, Copy, Trash2, DicesIcon, ChevronLeftIcon, ChevronRightIcon, ArrowLeftRight, RefreshCw, Wand2 } from 'lucide-react';
 import { Arrangement, KeySignature } from '../../types';
 import { ChordCell } from './ChordCell';
 import * as Tone from 'tone';
@@ -29,7 +29,7 @@ interface ChordEditorProps {
   chords?: string[];
   onChordChange?: (barIndex: number, chord: string) => void;
   onChordsReorder?: (newChords: string[]) => void;
-  onBlockFinished?: () => void; // Added callback for block completion
+  onBlockFinished?: () => void;
   genreTypeName: string;
   isSelected?: boolean;
   onSelect?: () => void;
@@ -42,7 +42,7 @@ export function ChordEditor({
   chords = [], 
   onChordChange,
   onChordsReorder,
-  onBlockFinished, // Use the added callback
+  onBlockFinished, 
   genreTypeName,
   isSelected = false,
   onSelect,
@@ -57,12 +57,11 @@ export function ChordEditor({
 
   const { progressions, isLoading } = useChordProgressions(
     arrangement.Genre,
-    block.Type // Pass the raw type directly
+    block.Type 
   );
 
   const { playChord, playProgression, stopPlayback } = useSynth();
 
-  // DnD sensors
   const sensors = useSensors(
     useSensor(PointerSensor),
     useSensor(KeyboardSensor, {
@@ -152,7 +151,7 @@ export function ChordEditor({
             const nextStep = step + 1;
             if (nextStep >= validChords.length) {
               if (isContinuousPlay) {
-                onBlockFinished?.(); // Call the callback when the block is finished
+                onBlockFinished?.(); 
               }
               return 0;
             }
@@ -188,7 +187,7 @@ export function ChordEditor({
       setCurrentStep(0);
       const validChords = chords.filter(chord => chord);
       if (validChords.length > 0) {
-        const stepTime = (60 / Tone.Transport.bpm.value) * 1000 * 4; // 4 beats per bar
+        const stepTime = (60 / Tone.Transport.bpm.value) * 1000 * 4; 
         intervalRef.current = window.setInterval(() => {
           setCurrentStep(step => {
             const nextStep = (step + 1) % validChords.length;
@@ -202,6 +201,19 @@ export function ChordEditor({
     }
   };
 
+  const [currentProgressionIndex, setCurrentProgressionIndex] = useState(0);
+  const currentProgression = progressions[currentProgressionIndex];
+  const [progressionMode, setProgressionMode] = useState('repeat');
+  const onProgressionSelect = (progression: any) => {
+    progression.chords.forEach((chord: string, i: number) => {
+      onChordChange?.(i, chord);
+    })
+  }
+  const handleProgressionModeChange = (mode: 'repeat' | 'stretch') => {
+    setProgressionMode(mode);
+  };
+
+
   return (
     <div 
       onClick={onSelect}
@@ -213,7 +225,6 @@ export function ChordEditor({
         }
       `}
     >
-      {/* Header */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <Music className="w-4 h-4 text-indigo-400" />
@@ -227,7 +238,6 @@ export function ChordEditor({
           )}
         </div>
         <div className="flex items-center gap-4">
-          {/* Progression Selector */}
           <div className="flex items-center gap-2">
             <button
               onClick={() => {
@@ -296,8 +306,7 @@ export function ChordEditor({
               <ChevronRightIcon className="w-4 h-4" />
             </button>
           </div>
-          
-          {/* Original Random button */}
+
           <button 
             onClick={(e) => {
               e.stopPropagation();
@@ -351,7 +360,6 @@ export function ChordEditor({
         </div>
       </div>
 
-      {/* Chord Grid */}
       <div className="grid grid-cols-8 gap-2" onClick={e => e.stopPropagation()}>
         <DndContext
           sensors={sensors}
