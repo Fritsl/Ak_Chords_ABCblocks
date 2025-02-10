@@ -63,6 +63,7 @@ export function ArrangementVisualizer({
         background: 'linear-gradient(180deg, rgb(14, 42, 71) 0%, rgb(41, 128, 185) 55%, rgb(223, 237, 245) 100%)'
       }}
     >
+      <canvas id="waveform" className="absolute inset-0 w-full h-full opacity-30 pointer-events-none" />
       <div className="mb-2 flex justify-between items-center text-white">
         <div>
           <h2 className="text-lg font-bold text-shadow">{arrangement.Name || 'Untitled Arrangement'}</h2>
