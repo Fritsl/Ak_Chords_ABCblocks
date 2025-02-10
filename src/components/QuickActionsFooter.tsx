@@ -62,6 +62,7 @@ export function QuickActionsFooter({
   const [isExpanded, setIsExpanded] = useState(false);
   const [showSynthControls, setShowSynthControls] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [isContinuousPlay, setIsContinuousPlay] = useState(false);
   const [isExporting, setIsExporting] = useState(false);
   const [isCopying, setIsCopying] = useState(false);
   const [copySuccess, setCopySuccess] = useState(false);
@@ -199,7 +200,15 @@ export function QuickActionsFooter({
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
                 <button
-                  onClick={() => handlePlayProgression()}
+                  onClick={() => {
+                    if (isPlaying) {
+                      stopCurrentPlayback();
+                      setIsPlaying(false);
+                    } else {
+                      playProgression(chords, keySignature);
+                      setIsPlaying(true);
+                    }
+                  }}
                   className={`
                     px-3 py-1.5 text-sm rounded-lg inline-flex items-center gap-1.5
                     ${isPlaying 
@@ -209,12 +218,21 @@ export function QuickActionsFooter({
                     transition-colors duration-150
                   `}
                   style={isPlaying ? {
-                    animationDuration: `${(60 / Tone.Transport.bpm.value) * 1000}ms`
+                    animationDuration: `${(60 / bpm) * 1000}ms`
                   } : undefined}
                 >
                   <Music className="w-4 h-4" />
                   <span>{isPlaying ? 'Stop' : 'Play'}</span>
                 </button>
+                <label className="flex items-center gap-2 text-sm text-gray-300">
+                  <input
+                    type="checkbox"
+                    checked={isContinuousPlay}
+                    onChange={(e) => setIsContinuousPlay(e.target.checked)}
+                    className="form-checkbox h-4 w-4 text-blue-600 rounded border-gray-500 bg-gray-700"
+                  />
+                  Loop
+                </label>
                 <div className="flex gap-1">
                   <button
                     onClick={() => Tone.Transport.bpm.value = Tone.Transport.bpm.value / 2}

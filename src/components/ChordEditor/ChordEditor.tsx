@@ -263,15 +263,7 @@ export function ChordEditor({
             <Trash2 className="w-3 h-3" />
             <span>Clear</span>
           </button>
-          <label className="flex items-center cursor-pointer">
-            <input
-              type="checkbox"
-              checked={isContinuousPlay}
-              onChange={(e) => setIsContinuousPlay(e.target.checked)}
-              className="mr-2"
-            />
-            Continuous Play
-          </label> {/* Added continuous play toggle */}
+          
         </div>
       </div>
 
