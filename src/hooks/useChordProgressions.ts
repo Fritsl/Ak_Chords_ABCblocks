@@ -15,8 +15,9 @@ export function useChordProgressions(genre: string, blockType: string) {
 
     setIsLoading(true);
     try {
-      // Convert internal reference (A, B, C, etc) back to original type name
-      const originalType = REVERSE_BLOCK_TYPE_MAP[blockType as keyof typeof REVERSE_BLOCK_TYPE_MAP];
+      // Normalize block type by removing spaces and numbers
+      const normalizedType = blockType.replace(/\s*\d+$/, '');
+      const originalType = REVERSE_BLOCK_TYPE_MAP[normalizedType as keyof typeof REVERSE_BLOCK_TYPE_MAP] || normalizedType;
       
       if (!originalType) {
         console.error('Unknown block type:', blockType);
