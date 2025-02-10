@@ -4,7 +4,7 @@ import {
   RefreshCw, 
   CircleSlash2, 
   ChevronUp,
-  DicesIcon, 
+  Dice2 as DicesIcon, 
   ChevronDown, 
   Download, 
   Copy,

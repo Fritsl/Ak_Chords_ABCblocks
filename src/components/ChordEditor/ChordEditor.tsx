@@ -21,6 +21,7 @@ import {
   sortableKeyboardCoordinates,
   rectSortingStrategy,
 } from '@dnd-kit/sortable';
+import * as Tone from 'tone';
 
 interface ChordEditorProps {
   arrangement: Arrangement;
@@ -73,7 +74,7 @@ export function ChordEditor({
     if (over && active.id !== over.id) {
       const oldIndex = parseInt(active.id.split('-')[1]);
       const newIndex = parseInt(over.id.split('-')[1]);
-      
+
       const newChords = arrayMove([...chords], oldIndex, newIndex);
       onChordsReorder?.(newChords);
     }
@@ -107,7 +108,7 @@ export function ChordEditor({
       setPasteError(null);
       const text = await navigator.clipboard.readText();
       const lines = text.split('\n');
-      
+
       const pastedChords = lines.map(line => {
         const match = line.match(/Bar \d+: (.+)/);
         return match ? (match[1] === '-' ? '' : match[1]) : null;
@@ -275,13 +276,13 @@ export function ChordEditor({
                 onCycleQuality={() => {
                   const currentChord = chords[barIndex];
                   if (!currentChord) return;
-                  
+
                   const baseChord = currentChord.replace(/[^IiVv]+$/, '');
                   const qualities = ['', 'm', 'm7', '7'];
                   const currentQuality = currentChord.slice(baseChord.length);
                   const currentIndex = qualities.indexOf(currentQuality);
                   const nextQuality = qualities[(currentIndex + 1) % qualities.length];
-                  
+
                   onChordChange?.(barIndex, baseChord + nextQuality);
                 }}
                 functionColor={getFunctionColor(chords[barIndex])}
