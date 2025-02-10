@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Music, Copy, Trash2 } from 'lucide-react';
 import { Arrangement, KeySignature } from '../../types';
 import { ChordCell } from './ChordCell';
