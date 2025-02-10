@@ -59,27 +59,22 @@ export function KeySelector({ value, onChange }: KeySelectorProps) {
         </button>
       </div>
 
-      {/* Circle of Fifths Popup */}
+      {/* Circle of Fifths Full Page */}
       {showCircle && (
-        <div 
-          className="fixed inset-0 bg-gray-900/80 backdrop-blur-sm z-[9999999] flex items-center justify-center"
-          style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
-          onClick={(e) => {
-            if (e.target === e.currentTarget) {
-              setShowCircle(false);
-            }
-          }}
-        >
-          <div className="bg-gray-800 p-8 rounded-xl shadow-xl border border-gray-700 relative max-w-[90vw] max-h-[90vh] overflow-auto" style={{ margin: 'auto' }}>
-            <button
-              onClick={() => setShowCircle(false)}
-              className="absolute top-4 right-4 p-2 text-gray-400 hover:text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
-            >
-              ✕
-            </button>
-            <div className="mb-4">
-              <h3 className="text-lg font-medium text-gray-200">Circle of Fifths</h3>
-              <p className="text-sm text-gray-400">Click on a key to select it</p>
+        <div className="fixed inset-0 bg-[#0B1B33] z-[999999] flex flex-col items-center justify-center">
+          <div className="w-full max-w-4xl mx-auto p-8">
+            <div className="flex justify-between items-center mb-8">
+              <div>
+                <h1 className="text-2xl font-bold text-white">Circle of Fifths</h1>
+                <p className="text-gray-400">Click on a key to select it</p>
+              </div>
+              <button
+                onClick={() => setShowCircle(false)}
+                className="p-3 text-gray-400 hover:text-white bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors"
+                title="Back to main page"
+              >
+                ✕
+              </button>
             </div>
             <CircleOfFifths
               selectedKey={value}

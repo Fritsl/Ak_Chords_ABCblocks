@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Music, Copy, Trash2, DicesIcon, ChevronLeftIcon, ChevronRightIcon, ArrowLeftRight, RefreshCw, Wand2 } from 'lucide-react';
+import React, { useState, useRef, useEffect } from 'react';
+import { Music, Copy, Trash2 } from 'lucide-react';
 import { Arrangement, KeySignature } from '../../types';
 import { ChordCell } from './ChordCell';
 import * as Tone from 'tone';
@@ -29,7 +29,7 @@ interface ChordEditorProps {
   chords?: string[];
   onChordChange?: (barIndex: number, chord: string) => void;
   onChordsReorder?: (newChords: string[]) => void;
-  onBlockFinished?: () => void;
+  onBlockFinished?: () => void; // Added callback for block completion
   genreTypeName: string;
   isSelected?: boolean;
   onSelect?: () => void;
@@ -42,7 +42,7 @@ export function ChordEditor({
   chords = [], 
   onChordChange,
   onChordsReorder,
-  onBlockFinished, 
+  onBlockFinished, // Use the added callback
   genreTypeName,
   isSelected = false,
   onSelect,
@@ -57,11 +57,12 @@ export function ChordEditor({
 
   const { progressions, isLoading } = useChordProgressions(
     arrangement.Genre,
-    block.Type 
+    block.Type // Pass the raw type directly
   );
 
-  const { playChord, stopPlayback } = useSynth();
+  const { playChord, playProgression, stopPlayback } = useSynth();
 
+  // DnD sensors
   const sensors = useSensors(
     useSensor(PointerSensor),
     useSensor(KeyboardSensor, {
@@ -131,15 +132,16 @@ export function ChordEditor({
   };
 
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isContinuousPlay, setIsContinuousPlay] = useState(false);
+  const [isContinuousPlay, setIsContinuousPlay] = useState(false); // Continuous play toggle
   const [currentStep, setCurrentStep] = useState<number>(-1);
   const intervalRef = useRef<number | null>(null);
 
   useEffect(() => {
     const updateInterval = async () => {
-      if (isPlaying && !intervalRef.current) {
+      if (isPlaying && intervalRef.current) {
+        window.clearInterval(intervalRef.current);
         await Tone.start();
-        const stepTime = (60 / Tone.Transport.bpm.value) * 1000 * 4;
+        const stepTime = (60 / Tone.Transport.bpm.value) * 1000 * 4; // 4 beats per bar
         const validChords = chords.filter(chord => chord);
 
         if (validChords[0]) {
@@ -151,7 +153,7 @@ export function ChordEditor({
             const nextStep = step + 1;
             if (nextStep >= validChords.length) {
               if (isContinuousPlay) {
-                onBlockFinished?.(); 
+                onBlockFinished?.(); // Call the callback when the block is finished
               }
               return 0;
             }
@@ -187,7 +189,7 @@ export function ChordEditor({
       setCurrentStep(0);
       const validChords = chords.filter(chord => chord);
       if (validChords.length > 0) {
-        const stepTime = (60 / Tone.Transport.bpm.value) * 1000 * 4; 
+        const stepTime = (60 / Tone.Transport.bpm.value) * 1000 * 4; // 4 beats per bar
         intervalRef.current = window.setInterval(() => {
           setCurrentStep(step => {
             const nextStep = (step + 1) % validChords.length;
@@ -201,19 +203,6 @@ export function ChordEditor({
     }
   };
 
-  const [currentProgressionIndex, setCurrentProgressionIndex] = useState(0);
-  const currentProgression = progressions[currentProgressionIndex];
-  const [progressionMode, setProgressionMode] = useState('repeat');
-  const onProgressionSelect = (progression: any) => {
-    progression.chords.forEach((chord: string, i: number) => {
-      onChordChange?.(i, chord);
-    })
-  }
-  const handleProgressionModeChange = (mode: 'repeat' | 'stretch') => {
-    setProgressionMode(mode);
-  };
-
-
   return (
     <div 
       onClick={onSelect}
@@ -225,6 +214,7 @@ export function ChordEditor({
         }
       `}
     >
+      {/* Header */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <Music className="w-4 h-4 text-indigo-400" />
@@ -237,93 +227,58 @@ export function ChordEditor({
             </span>
           )}
         </div>
-        <div className="flex items-center gap-4">
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => {
-                const newIndex = currentProgressionIndex === 0 ? progressions.length - 1 : currentProgressionIndex - 1;
-                setCurrentProgressionIndex(newIndex);
-                if (progressions[newIndex]) {
-                  onProgressionSelect(progressions[newIndex]);
-                }
+        <div className="flex gap-2">
+          <div className="flex gap-2">
+            <button 
+              onClick={(e) => {
+                e.stopPropagation();
+                handlePlayProgression();
               }}
-              disabled={progressions.length === 0}
-              className="p-2 text-gray-400 hover:text-white disabled:opacity-50 disabled:cursor-not-allowed bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
+              className={`
+                  px-3 py-1.5 text-xs rounded-lg inline-flex items-center gap-1.5
+                  ${isPlaying 
+                    ? 'bg-red-600 hover:bg-red-500 animate-pulse' 
+                    : 'bg-green-600 hover:bg-green-500'
+                  }
+                  transition-colors duration-150
+                `}
+                style={isPlaying ? {
+                  animationDuration: `${(60 / Tone.Transport.bpm.value) * 1000}ms`
+                } : undefined}
             >
-              <ChevronLeftIcon className="w-4 h-4" />
+              <Music className="w-3 h-3" />
+              <span>{isPlaying ? 'Stop' : 'Play'}</span>
             </button>
-
-            <div className="flex items-center gap-2">
-              {isLoading ? (
-                <div className="w-[240px] h-[38px] bg-gray-700 rounded-lg flex items-center justify-center">
-                  <span className="text-sm text-gray-400">Loading...</span>
-                </div>
-              ) : currentProgression ? (
-                <button
-                  onClick={() => onProgressionSelect(currentProgression)}
-                  className="w-[240px] h-[38px] p-2 bg-gray-700 hover:bg-gray-600 rounded-lg text-left transition-colors flex flex-col justify-center"
-                >
-                  <div className="flex items-center gap-2">
-                    <Wand2 className="w-3 h-3 text-indigo-400 flex-shrink-0" />
-                    <div className="min-w-0 flex-1">
-                      <h4 className="text-xs font-medium truncate">{currentProgression.name}</h4>
-                      <div className="text-indigo-400 text-xs truncate">
-                        {currentProgression.chords.join(' - ')}
-                      </div>
-                    </div>
-                  </div>
-                </button>
-              ) : (
-                <div className="w-[240px] h-[38px] bg-gray-700 rounded-lg flex items-center justify-center">
-                  <span className="text-sm text-gray-400">No progressions</span>
-                </div>
-              )}
-
+            <div className="flex gap-1">
               <button
-                onClick={() => handleProgressionModeChange(progressionMode === 'repeat' ? 'stretch' : 'repeat')}
-                className="h-[38px] w-[38px] bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors flex items-center justify-center text-gray-300"
-                title={progressionMode === 'stretch' ? 'Stretch pattern' : 'Repeat pattern'}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  Tone.Transport.bpm.value = Tone.Transport.bpm.value / 2;
+                }}
+                className={`px-2 py-1.5 text-xs ${Tone.Transport.bpm.value === 60 ? 'bg-blue-800' : 'bg-blue-600 hover:bg-blue-500'} rounded-lg`}
               >
-                {progressionMode === 'stretch' ? (
-                  <ArrowLeftRight className="w-4 h-4" />
-                ) : (
-                  <RefreshCw className="w-4 h-4" />
-                )}
+                ½x
+              </button>
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  Tone.Transport.bpm.value = Tone.Transport.bpm.value * 2;
+                }}
+                className={`px-2 py-1.5 text-xs ${Tone.Transport.bpm.value === 240 ? 'bg-blue-800' : 'bg-blue-600 hover:bg-blue-500'} rounded-lg`}
+              >
+                2x
+              </button>
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  Tone.Transport.bpm.value = 120;
+                }}
+                className={`px-2 py-1.5 text-xs ${Tone.Transport.bpm.value === 120 ? 'bg-blue-800' : 'bg-blue-600 hover:bg-blue-500'} rounded-lg`}
+              >
+                1x
               </button>
             </div>
-
-            <button
-              onClick={() => {
-                const newIndex = currentProgressionIndex === progressions.length - 1 ? 0 : currentProgressionIndex + 1;
-                setCurrentProgressionIndex(newIndex);
-                if (progressions[newIndex]) {
-                  onProgressionSelect(progressions[newIndex]);
-                }
-              }}
-              disabled={progressions.length === 0}
-              className="p-2 text-gray-400 hover:text-white disabled:opacity-50 disabled:cursor-not-allowed bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
-            >
-              <ChevronRightIcon className="w-4 h-4" />
-            </button>
           </div>
-
-          <button 
-            onClick={(e) => {
-              e.stopPropagation();
-              if (!isLoading && progressions.length > 0) {
-                const randomProgression = progressions[Math.floor(Math.random() * progressions.length)];
-                randomProgression.chords.forEach((chord, i) => {
-                  if (i < numBars) {
-                    onChordChange?.(i, chord);
-                  }
-                });
-              }
-            }}
-            className="px-3 py-1.5 text-xs bg-indigo-600 hover:bg-indigo-500 rounded-lg inline-flex items-center gap-1.5"
-          >
-            <DicesIcon className="w-3 h-3" />
-            <span>Random</span>
-          </button>
           <button 
             onClick={(e) => {
               e.stopPropagation();
@@ -356,10 +311,19 @@ export function ChordEditor({
             <Trash2 className="w-3 h-3" />
             <span>Clear</span>
           </button>
-
+          <label className="flex items-center cursor-pointer">
+            <input
+              type="checkbox"
+              checked={isContinuousPlay}
+              onChange={(e) => setIsContinuousPlay(e.target.checked)}
+              className="mr-2"
+            />
+            Continuous Play
+          </label> {/* Added continuous play toggle */}
         </div>
       </div>
 
+      {/* Chord Grid */}
       <div className="grid grid-cols-8 gap-2" onClick={e => e.stopPropagation()}>
         <DndContext
           sensors={sensors}
