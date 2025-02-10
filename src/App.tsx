@@ -88,8 +88,20 @@ export default function App() {
   };
 
   const handleRandomProgression = () => {
-    if (selectedBlockIndex === null) return;
-    // Implementation for random progression
+    if (selectedBlockIndex === null || !arrangement) return;
+    
+    const block = arrangement.Blocks[selectedBlockIndex];
+    const numBars = arrangement.Types[block.Type].Length;
+    const possibleChords = ['I', 'ii', 'iii', 'IV', 'V', 'vi', 'vii°'];
+    
+    const newChords = Array(numBars).fill(0).map(() => 
+      possibleChords[Math.floor(Math.random() * possibleChords.length)]
+    );
+    
+    setBlockChords(prev => ({
+      ...prev,
+      [selectedBlockIndex]: newChords
+    }));
   };
 
   const handleClearBlockChords = () => {
