@@ -60,7 +60,7 @@ export function ChordEditor({
     block.Type 
   );
 
-  const { playChord, playProgression, stopPlayback } = useSynth();
+  const { playChord, stopPlayback } = useSynth();
 
   const sensors = useSensors(
     useSensor(PointerSensor),
