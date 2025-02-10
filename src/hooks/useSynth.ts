@@ -27,6 +27,7 @@ export function useSynth() {
   const isInitializedRef = useRef(false);
   const playbackTimeoutRef = useRef<number | null>(null);
   const [controls, setControls] = useState<SynthControls>(DEFAULT_CONTROLS);
+  const [tempoMultiplier, setTempoMultiplier] = useState(1); // Added tempo control
 
   const stopCurrentPlayback = useCallback(() => {
     if (playbackTimeoutRef.current) {
@@ -53,7 +54,7 @@ export function useSynth() {
         release: controls.release
       }
     });
-    
+
     // Force synth voice update
     synthRef.current.releaseAll();
     synthRef.current = new Tone.PolySynth(Tone.Synth, {
@@ -75,7 +76,7 @@ export function useSynth() {
       if (volumeRef.current) volumeRef.current.dispose();
 
       volumeRef.current = new Tone.Volume(controls.volume).toDestination();
-      
+
       reverbRef.current = new Tone.Reverb({
         decay: 2,
         wet: controls.reverb
@@ -148,7 +149,7 @@ export function useSynth() {
       const notes = getRomanNumeralNotes(romanNumeral, keySignature);
       if (notes.length === 0) return;
 
-      synthRef.current.triggerAttackRelease(notes, '2n');
+      synthRef.current.triggerAttackRelease(notes, '4n', undefined, 1.0); // Legato playback
     } catch (error) {
       console.error('Error playing chord:', error);
       isInitializedRef.current = false;
@@ -163,12 +164,12 @@ export function useSynth() {
       if (!synthRef.current) return;
 
       const now = Tone.now();
-      const duration = 1;
+      const duration = 1 / tempoMultiplier; // Adjust duration based on tempo
 
       chords.forEach((chord, index) => {
         const notes = getRomanNumeralNotes(chord, keySignature);
         if (notes.length > 0) {
-          synthRef.current!.triggerAttackRelease(notes, '2n', now + index * duration);
+          synthRef.current!.triggerAttackRelease(notes, '4n', now + index * duration, 1.0); // Legato playback
         }
       });
 
@@ -181,7 +182,11 @@ export function useSynth() {
       isInitializedRef.current = false;
       await initializeSynth();
     }
-  }, [initializeSynth, getRomanNumeralNotes, stopCurrentPlayback]);
+  }, [initializeSynth, getRomanNumeralNotes, stopCurrentPlayback, tempoMultiplier]);
+
+  const handleTempoChange = (multiplier: number) => {
+    setTempoMultiplier(multiplier);
+  };
 
   return {
     playChord,
@@ -189,6 +194,8 @@ export function useSynth() {
     controls,
     setControls,
     presets: SYNTH_PRESETS,
-    stopPlayback: stopCurrentPlayback
+    stopPlayback: stopCurrentPlayback,
+    handleTempoChange, // Added tempo control function
+    tempoMultiplier // Added tempoMultiplier state
   };
 }

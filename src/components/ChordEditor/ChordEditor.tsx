@@ -219,16 +219,47 @@ export function ChordEditor({
           )}
         </div>
         <div className="flex gap-2">
-          <button 
-            onClick={(e) => {
-              e.stopPropagation();
-              handlePlayProgression();
-            }}
-            className="px-3 py-1.5 text-xs bg-green-600 hover:bg-green-500 rounded-lg inline-flex items-center gap-1.5"
-          >
-            <Music className="w-3 h-3" />
-            <span>Play</span>
-          </button>
+          <div className="flex gap-2">
+            <button 
+              onClick={(e) => {
+                e.stopPropagation();
+                handlePlayProgression();
+              }}
+              className="px-3 py-1.5 text-xs bg-green-600 hover:bg-green-500 rounded-lg inline-flex items-center gap-1.5"
+            >
+              <Music className="w-3 h-3" />
+              <span>Play</span>
+            </button>
+            <div className="flex gap-1">
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  Tone.Transport.bpm.value = Tone.Transport.bpm.value / 2;
+                }}
+                className="px-2 py-1.5 text-xs bg-blue-600 hover:bg-blue-500 rounded-lg"
+              >
+                ½x
+              </button>
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  Tone.Transport.bpm.value = Tone.Transport.bpm.value * 2;
+                }}
+                className="px-2 py-1.5 text-xs bg-blue-600 hover:bg-blue-500 rounded-lg"
+              >
+                2x
+              </button>
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  Tone.Transport.bpm.value = 120;
+                }}
+                className="px-2 py-1.5 text-xs bg-blue-600 hover:bg-blue-500 rounded-lg"
+              >
+                1x
+              </button>
+            </div>
+          </div>
           <button 
             onClick={(e) => {
               e.stopPropagation();
