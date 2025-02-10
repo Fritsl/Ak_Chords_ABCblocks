@@ -128,10 +128,43 @@ export function ChordEditor({
     }
   };
 
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [currentStep, setCurrentStep] = useState<number>(-1);
+  const intervalRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (intervalRef.current) {
+        window.clearInterval(intervalRef.current);
+      }
+    };
+  }, []);
+
   const handlePlayProgression = () => {
-    const validChords = chords.filter(chord => chord);
-    if (validChords.length > 0) {
-      playProgression(validChords, keySignature);
+    if (isPlaying) {
+      if (intervalRef.current) {
+        window.clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+      setIsPlaying(false);
+      setCurrentStep(-1);
+      stopPlayback();
+    } else {
+      setIsPlaying(true);
+      setCurrentStep(0);
+      const validChords = chords.filter(chord => chord);
+      if (validChords.length > 0) {
+        const stepTime = (60 / Tone.Transport.bpm.value) * 1000;
+        intervalRef.current = window.setInterval(() => {
+          setCurrentStep(step => {
+            const nextStep = (step + 1) % validChords.length;
+            if (validChords[nextStep]) {
+              playChord(validChords[nextStep], keySignature);
+            }
+            return nextStep;
+          });
+        }, stepTime);
+      }
     }
   };
 

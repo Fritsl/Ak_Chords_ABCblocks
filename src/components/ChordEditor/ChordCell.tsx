@@ -15,6 +15,7 @@ interface ChordCellProps {
   functionColor: string;
   keySignature: KeySignature;
   onPlay: (chord: string) => void;
+  currentStep: number; // Added prop for current step
 }
 
 export const ChordCell = forwardRef<HTMLDivElement, ChordCellProps>(({
@@ -27,7 +28,8 @@ export const ChordCell = forwardRef<HTMLDivElement, ChordCellProps>(({
   onCycleQuality,
   functionColor,
   keySignature,
-  onPlay
+  onPlay,
+  currentStep // Added prop for current step
 }, ref) => {
   const {
     attributes,
@@ -59,6 +61,7 @@ export const ChordCell = forwardRef<HTMLDivElement, ChordCellProps>(({
             border border-gray-600 focus:outline-none transition-all
             ${chord ? 'border-indigo-500/50' : ''}
             ${isActive ? 'ring-2 ring-indigo-500' : ''}
+            ${currentStep === barIndex ? 'bg-indigo-500/30' : ''} // Added visual feedback for current step
           `}
         >
           {/* Drag handle */}
