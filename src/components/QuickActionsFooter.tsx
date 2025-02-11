@@ -67,6 +67,9 @@ export function QuickActionsFooter({
   const [isExporting, setIsExporting] = useState(false);
   const [isCopying, setIsCopying] = useState(false);
   const [copySuccess, setCopySuccess] = useState(false);
+  const [showExtensions, setShowExtensions] = useState(false);
+  const [showAlterations, setShowAlterations] = useState(false);
+  const [showInversions, setShowInversions] = useState(false);
 
   // Reset progression index when block type or genre changes
   useEffect(() => {
