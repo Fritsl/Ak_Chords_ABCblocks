@@ -19,6 +19,7 @@ import { useChordProgressions } from '../hooks/useChordProgressions';
 import { useSynth } from '../hooks/useSynth';
 import { exportToMIDI } from '../utils/midiExport';
 import { SynthControls } from './SynthControls';
+import Switch from './Switch'; // Assuming a Switch component exists
 
 interface QuickActionsFooterProps {
   onRandomProgression: () => void;
@@ -35,6 +36,8 @@ interface QuickActionsFooterProps {
   chords: string[];
   bpm: number;
   arrangement: { Genre: string } | null;
+  controls: any; // Add controls prop
+  setControls: React.Dispatch<React.SetStateAction<any>>; //Add setControls prop
 }
 
 export function QuickActionsFooter({
@@ -50,13 +53,14 @@ export function QuickActionsFooter({
   keySignature,
   chords,
   bpm,
-  arrangement
+  arrangement,
+  controls,
+  setControls
 }: QuickActionsFooterProps) {
   const { progressions, isLoading } = useChordProgressions(
     arrangement?.Genre || 'Pop.Rock.Disco',
     selectedBlockType
   );
-  const { controls, setControls } = useSynth();
   const [currentProgressionIndex, setCurrentProgressionIndex] = useState(0);
   const [isExpanded, setIsExpanded] = useState(false);
   const [showSynthControls, setShowSynthControls] = useState(false);
@@ -128,6 +132,65 @@ export function QuickActionsFooter({
 
           {/* Quick Actions */}
           <div className="flex items-center gap-6">
+            {/* Chord Settings */}
+            <div className="flex items-center gap-4">
+              <div className="flex items-center gap-2">
+                <Switch
+                  checked={controls.showExtensions}
+                  onChange={(checked) => setControls({...controls, showExtensions: checked})}
+                  className={`${
+                    controls.showExtensions ? 'bg-blue-600' : 'bg-gray-600'
+                  } relative inline-flex h-6 w-11 items-center rounded-full transition-colors`}
+                >
+                  <span className="sr-only">Show Extensions</span>
+                  <span
+                    className={`${
+                      controls.showExtensions ? 'translate-x-6' : 'translate-x-1'
+                    } inline-block h-4 w-4 transform rounded-full bg-white transition-transform`}
+                  />
+                </Switch>
+                <span className="text-sm text-gray-300">Extensions</span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <Switch
+                  checked={controls.showAlterations}
+                  onChange={(checked) => setControls({...controls, showAlterations: checked})}
+                  className={`${
+                    controls.showAlterations ? 'bg-blue-600' : 'bg-gray-600'
+                  } relative inline-flex h-6 w-11 items-center rounded-full transition-colors`}
+                >
+                  <span className="sr-only">Show Alterations</span>
+                  <span
+                    className={`${
+                      controls.showAlterations ? 'translate-x-6' : 'translate-x-1'
+                    } inline-block h-4 w-4 transform rounded-full bg-white transition-transform`}
+                  />
+                </Switch>
+                <span className="text-sm text-gray-300">Alterations</span>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <Switch
+                  checked={controls.showInversions}
+                  onChange={(checked) => setControls({...controls, showInversions: checked})}
+                  className={`${
+                    controls.showInversions ? 'bg-blue-600' : 'bg-gray-600'
+                  } relative inline-flex h-6 w-11 items-center rounded-full transition-colors`}
+                >
+                  <span className="sr-only">Show Inversions</span>
+                  <span
+                    className={`${
+                      controls.showInversions ? 'translate-x-6' : 'translate-x-1'
+                    } inline-block h-4 w-4 transform rounded-full bg-white transition-transform`}
+                  />
+                </Switch>
+                <span className="text-sm text-gray-300">Inversions</span>
+              </div>
+            </div>
+
+            <div className="h-8 w-px bg-gray-700" />
+
             {/* Quick Progression Carousel */}
             <div className="flex items-center gap-2">
               <button
