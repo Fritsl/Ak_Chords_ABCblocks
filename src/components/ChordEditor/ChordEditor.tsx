@@ -56,6 +56,7 @@ export function ChordEditor({
   const [showQualities, setShowQualities] = useState(false);
   const [selectedChord, setSelectedChord] = useState<string>('');
   const [pasteError, setPasteError] = useState<string | null>(null);
+  const [controls, setControls] = useState({extensions: false, alterations: false, inversions: false}); // Added state for controls
 
   const { progressions, isLoading } = useChordProgressions(
     arrangement.Genre,
@@ -411,6 +412,7 @@ export function ChordEditor({
             showQualities={showQualities}
             onChordSelect={handleChordSelect}
             onQualitySelect={handleQualitySelect}
+            controls={controls} // Pass controls prop here
           />
         )}
       </div>

@@ -8,6 +8,11 @@ interface ChordSelectorProps {
   showQualities: boolean;
   onChordSelect: (chord: string) => void;
   onQualitySelect: (quality: string) => void;
+  controls: {
+    showExtensions: boolean;
+    showAlterations: boolean;
+    showInversions: boolean;
+  };
 }
 
 export function ChordSelector({
@@ -15,11 +20,10 @@ export function ChordSelector({
   selectedChord,
   showQualities,
   onChordSelect,
-  onQualitySelect
+  onQualitySelect,
+  controls
 }: ChordSelectorProps) {
-  const [showExtensions, setShowExtensions] = useState(false);
-  const [showAlterations, setShowAlterations] = useState(false);
-  const [showInversions, setShowInversions] = useState(false);
+  const { showExtensions, showAlterations, showInversions } = controls;
 
   if (!isVisible) return null;
 
