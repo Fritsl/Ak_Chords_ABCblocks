@@ -295,15 +295,18 @@ export function ChordEditor({
             onClick={(e) => {
               e.stopPropagation();
               const currentType = arrangement.Blocks[blockIndex].Type;
+              // Handle special case for Outro type
+              const progressionType = currentType === 'O' ? 'Outro.Fade_Out' : 
+                                     currentType === 'A' ? 'Verse' :
+                                     currentType === 'B' ? 'Chorus' :
+                                     currentType === 'C' ? 'Bridge' :
+                                     currentType === 'D' ? 'Pre-Chorus' :
+                                     currentType === 'S' ? 'Solo-Break' :
+                                     currentType === 'I' ? 'Intro' : currentType;
+
               arrangement.Blocks.forEach((block, idx) => {
                 if (block.Type === currentType && idx !== blockIndex) {
-                  chords.forEach((chord, barIndex) => {
-                    if (onChordChange && chord !== undefined && chord !== null) {
-                      onChordChange(idx, barIndex, chord);
-                    } else if (onChordChange) {
-                      onChordChange(idx, barIndex, '');
-                    }
-                  });
+                  onChordChange?.(idx, [...chords]);
                 }
               });
             }}
