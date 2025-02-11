@@ -40,6 +40,7 @@ export function ChordSelector({
               </Switch>
               <span className="text-sm text-gray-300">Alterations</span>
             </div>
+          </div>
 
             <div className="flex items-center gap-2">
               <Switch
