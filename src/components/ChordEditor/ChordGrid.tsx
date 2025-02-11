@@ -28,6 +28,11 @@ interface ChordGridProps {
   onBarClick: (index: number) => void;
   keySignature: KeySignature;
   playChord: (chord: string, keySignature: KeySignature) => void;
+  controls: {
+    showExtensions: boolean;
+    showAlterations: boolean;
+    showInversions: boolean;
+  };
 }
 
 export function ChordGrid({ 
@@ -83,6 +88,7 @@ export function ChordGrid({
               keySignature={keySignature}
               onPlay={playChord}
               currentStep={currentStep}
+              controls={controls}
             />
           ))}
         </SortableContext>

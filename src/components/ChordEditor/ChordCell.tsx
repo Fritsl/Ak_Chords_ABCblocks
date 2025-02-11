@@ -7,6 +7,39 @@ import { useSortable } from '@dnd-kit/sortable';
 interface ChordCellProps {
   id: string;
   barIndex: number;
+
+const formatChord = (chord: string, controls: any) => {
+  const baseChord = chord.replace(/[^IiVv]+$/, '');
+  let result = baseChord;
+  
+  // Extract the full quality/extension part
+  const qualityPart = chord.slice(baseChord.length);
+  
+  if (controls.showExtensions) {
+    if (qualityPart.includes('maj')) result += 'maj';
+    if (qualityPart.includes('m')) result += 'm';
+    if (qualityPart.includes('dim')) result += 'dim';
+    if (qualityPart.includes('aug')) result += 'aug';
+  }
+
+  if (controls.showAlterations) {
+    if (qualityPart.includes('7')) result += '7';
+    if (qualityPart.includes('9')) result += '9';
+    if (qualityPart.includes('11')) result += '11';
+    if (qualityPart.includes('13')) result += '13';
+    if (qualityPart.includes('#5')) result += '#5';
+    if (qualityPart.includes('b5')) result += 'b5';
+  }
+
+  if (controls.showInversions) {
+    if (qualityPart.includes('/3')) result += '/3';
+    if (qualityPart.includes('/5')) result += '/5';
+    if (qualityPart.includes('/7')) result += '/7';
+  }
+
+  return result;
+};
+
   chord: string;
   isActive: boolean;
   onClick: () => void;
@@ -15,7 +48,12 @@ interface ChordCellProps {
   functionColor: string;
   keySignature: KeySignature;
   onPlay: (chord: string) => void;
-  currentStep: number; // Added prop for current step
+  currentStep: number;
+  controls: {
+    showExtensions: boolean;
+    showAlterations: boolean;
+    showInversions: boolean;
+  };
 }
 
 export const ChordCell = forwardRef<HTMLDivElement, ChordCellProps>(({
@@ -81,7 +119,7 @@ export const ChordCell = forwardRef<HTMLDivElement, ChordCellProps>(({
           {/* Chord display */}
           <div className="absolute inset-0 flex items-center justify-center">
             <span className={`text-lg font-medium ${chord ? functionColor : 'text-gray-400'}`}>
-              {chord || '-'}
+              {chord ? formatChord(chord, controls) : '-'}
             </span>
           </div>
         </button>
