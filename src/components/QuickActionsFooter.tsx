@@ -19,7 +19,7 @@ import { useChordProgressions } from '../hooks/useChordProgressions';
 import { useSynth } from '../hooks/useSynth';
 import { exportToMIDI } from '../utils/midiExport';
 import { SynthControls } from './SynthControls';
-import Switch from './Switch'; // Assuming a Switch component exists
+import { Switch } from '@headlessui/react';
 
 interface QuickActionsFooterProps {
   onRandomProgression: () => void;
