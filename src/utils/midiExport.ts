@@ -47,8 +47,8 @@ async function createMIDIData(
     if (!chord) return;
 
     const midiNotes = getRomanNumeralNotes(chord, keySignature);
-    const startTime = index;
-    const duration = 1;
+    const startTime = index * 4;  // Multiply by 4 to space out the chords
+    const duration = 4;  // Make each chord 4 beats long
 
     midiNotes.forEach(note => {
       track.addNote({
