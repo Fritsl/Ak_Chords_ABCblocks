@@ -372,6 +372,7 @@ export function ChordEditor({
                 barIndex={barIndex}
                 chord={chords[barIndex]}
                 isActive={activeBarIndex === barIndex}
+                controls={controls}
                 onClick={() => {
                   if (activeBarIndex === barIndex) {
                     setActiveBarIndex(null);

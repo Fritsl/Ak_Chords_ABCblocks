@@ -1,4 +1,3 @@
-
 import React, { forwardRef } from 'react';
 import { Wand2, RefreshCw, Play, GripVertical } from 'lucide-react';
 import { KeySignature } from '../../types';
@@ -27,10 +26,10 @@ interface ChordCellProps {
 const formatChord = (chord: string, controls: any) => {
   const baseChord = chord.replace(/[^IiVv]+$/, '');
   let result = baseChord;
-  
+
   // Extract the full quality/extension part
   const qualityPart = chord.slice(baseChord.length);
-  
+
   if (controls.showExtensions) {
     if (qualityPart.includes('maj')) result += 'maj';
     if (qualityPart.includes('m')) result += 'm';
@@ -67,7 +66,8 @@ export const ChordCell = forwardRef<HTMLDivElement, ChordCellProps>(({
   functionColor,
   keySignature,
   onPlay,
-  currentStep
+  currentStep,
+  controls
 }, ref) => {
   const {
     attributes,
