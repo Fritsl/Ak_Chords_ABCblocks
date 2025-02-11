@@ -32,7 +32,10 @@ export function ChordSelector({
   const extensions = ['9', '11', '13', 'maj9', 'maj13', 'm9', 'm13'];
   const alterations = ['7#5', '7b5', '9#5', '9b5', '7#9', '7b9', '7#11', '6/9'];
 
-  if (showQualities && selectedChord) {
+  const [showExtensions, setShowExtensions] = useState(false);
+const [showAlterations, setShowAlterations] = useState(false);
+
+if (showQualities && selectedChord) {
     return (
       <div className="absolute z-50 top-full mt-1 left-0 right-0 bg-gray-800 rounded-lg border border-gray-700 shadow-xl">
         <div className="p-4 space-y-4">
