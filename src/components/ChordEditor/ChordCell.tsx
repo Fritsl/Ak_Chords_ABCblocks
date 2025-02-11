@@ -86,16 +86,6 @@ export const ChordCell = forwardRef<HTMLDivElement, ChordCellProps>(({
   keySignature,
   onPlay,
   currentStep,
-  controls,
-  chord,
-  isActive,
-  onClick,
-  onSuggest,
-  onCycleQuality,
-  functionColor,
-  keySignature,
-  onPlay,
-  currentStep,
   controls
 }, ref) => {
   const {
