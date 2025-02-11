@@ -17,6 +17,7 @@ import {
 import { ChordProgression, KeySignature } from '../types';
 import { useChordProgressions } from '../hooks/useChordProgressions';
 import { useSynth } from '../hooks/useSynth';
+import { exportToMIDI } from '../utils/midiExport';
 import { SynthControls } from './SynthControls';
 
 interface QuickActionsFooterProps {
@@ -212,6 +213,26 @@ export function QuickActionsFooter({
                 <CircleSlash2 className="w-5 h-5" />
                 <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 whitespace-nowrap transition-opacity">
                   Clear chords
+                </span>
+              </button>
+              <button
+                onClick={async () => {
+                  try {
+                    setIsExporting(true);
+                    await exportToMIDI(chords, keySignature, bpm, selectedBlockType);
+                  } catch (error) {
+                    console.error('Failed to export MIDI:', error);
+                  } finally {
+                    setIsExporting(false);
+                  }
+                }}
+                disabled={isExporting || !chords.length}
+                className="p-2 text-gray-400 hover:text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors group relative disabled:opacity-50 disabled:cursor-not-allowed"
+                title="Download MIDI file"
+              >
+                <Download className="w-5 h-5" />
+                <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 whitespace-nowrap transition-opacity">
+                  Download MIDI
                 </span>
               </button>
               <button
