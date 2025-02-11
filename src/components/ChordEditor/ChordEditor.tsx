@@ -298,8 +298,10 @@ export function ChordEditor({
               arrangement.Blocks.forEach((block, idx) => {
                 if (block.Type === currentType && idx !== blockIndex) {
                   chords.forEach((chord, barIndex) => {
-                    if (onChordChange) {
-                      onChordChange(idx, barIndex, chord || '');
+                    if (onChordChange && chord !== undefined && chord !== null) {
+                      onChordChange(idx, barIndex, chord);
+                    } else if (onChordChange) {
+                      onChordChange(idx, barIndex, '');
                     }
                   });
                 }
