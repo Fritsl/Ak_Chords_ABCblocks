@@ -13,6 +13,7 @@ interface ChordSelectorProps {
     showAlterations: boolean;
     showInversions: boolean;
   };
+  setControls: (controls: any) => void;
 }
 
 export function ChordSelector({
