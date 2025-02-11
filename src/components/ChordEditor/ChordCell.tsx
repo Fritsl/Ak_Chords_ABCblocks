@@ -7,6 +7,21 @@ import { useSortable } from '@dnd-kit/sortable';
 interface ChordCellProps {
   id: string;
   barIndex: number;
+  chord: string;
+  isActive: boolean;
+  onClick: () => void;
+  onSuggest: () => void;
+  onCycleQuality: () => void;
+  functionColor: string;
+  keySignature: KeySignature;
+  onPlay: (chord: string) => void;
+  currentStep: number;
+  controls: {
+    showExtensions: boolean;
+    showAlterations: boolean;
+    showInversions: boolean;
+  };
+}
 
 const formatChord = (chord: string, controls: any) => {
   const baseChord = chord.replace(/[^IiVv]+$/, '');
