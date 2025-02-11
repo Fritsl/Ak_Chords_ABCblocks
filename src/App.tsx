@@ -25,6 +25,11 @@ export default function App() {
   const [selectedBlockIndex, setSelectedBlockIndex] = useState<number | null>(null);
   const [blockChords, setBlockChords] = useState<Record<number, string[]>>({});
   const [progressionMode, setProgressionMode] = useState<'repeat' | 'stretch'>('repeat');
+const [controls, setControls] = useState({
+  showExtensions: false,
+  showAlterations: false,
+  showInversions: false
+});
   const [bpm, setBpm] = useState(120);
   const [isContinuousPlay, setIsContinuousPlay] = useState(false); // Added continuous play state
 
@@ -191,6 +196,8 @@ export default function App() {
       {/* Footer */}
       {selectedBlockIndex !== null && arrangement && (
         <QuickActionsFooter
+          controls={controls}
+          setControls={setControls}
           onRandomProgression={handleRandomProgression}
           onClearChords={handleClearBlockChords}
           selectedBlockType={getNumberedSectionName(
