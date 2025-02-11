@@ -22,36 +22,32 @@ export function ChordSelector({
   showQualities,
   onChordSelect,
   onQualitySelect,
-  controls
+  controls,
+  setControls
 }: ChordSelectorProps) {
-  const { showExtensions, showAlterations, showInversions } = controls;
-
   if (!isVisible) return null;
 
   const basicQualities = ['', 'm', 'dim', 'aug', '7', 'maj7', 'm7', 'sus4'];
   const extensions = ['9', '11', '13', 'maj9', 'maj13', 'm9', 'm13'];
   const alterations = ['7#5', '7b5', '9#5', '9b5', '7#9', '7b9', '7#11', '6/9'];
 
-  const [showExtensions, setShowExtensions] = useState(false);
-const [showAlterations, setShowAlterations] = useState(false);
-
-if (showQualities && selectedChord) {
+  if (showQualities && selectedChord) {
     return (
       <div className="absolute z-50 top-full mt-1 left-0 right-0 bg-gray-800 rounded-lg border border-gray-700 shadow-xl">
         <div className="p-4 space-y-4">
           <div className="flex flex-col space-y-2">
             <div className="flex items-center gap-2">
               <Switch
-                checked={showExtensions}
-                onChange={setShowExtensions}
+                checked={controls.showExtensions}
+                onChange={(checked) => setControls({ ...controls, showExtensions: checked })}
                 className={`${
-                  showExtensions ? 'bg-blue-600' : 'bg-gray-600'
+                  controls.showExtensions ? 'bg-blue-600' : 'bg-gray-600'
                 } relative inline-flex h-6 w-11 items-center rounded-full transition-colors`}
               >
                 <span className="sr-only">Show Extensions</span>
                 <span
                   className={`${
-                    showExtensions ? 'translate-x-6' : 'translate-x-1'
+                    controls.showExtensions ? 'translate-x-6' : 'translate-x-1'
                   } inline-block h-4 w-4 transform rounded-full bg-white transition-transform`}
                 />
               </Switch>
@@ -60,16 +56,16 @@ if (showQualities && selectedChord) {
 
             <div className="flex items-center gap-2">
               <Switch
-                checked={showAlterations}
-                onChange={setShowAlterations}
+                checked={controls.showAlterations}
+                onChange={(checked) => setControls({ ...controls, showAlterations: checked })}
                 className={`${
-                  showAlterations ? 'bg-blue-600' : 'bg-gray-600'
+                  controls.showAlterations ? 'bg-blue-600' : 'bg-gray-600'
                 } relative inline-flex h-6 w-11 items-center rounded-full transition-colors`}
               >
                 <span className="sr-only">Show Alterations</span>
                 <span
                   className={`${
-                    showAlterations ? 'translate-x-6' : 'translate-x-1'
+                    controls.showAlterations ? 'translate-x-6' : 'translate-x-1'
                   } inline-block h-4 w-4 transform rounded-full bg-white transition-transform`}
                 />
               </Switch>
@@ -78,16 +74,16 @@ if (showQualities && selectedChord) {
 
             <div className="flex items-center gap-2">
               <Switch
-                checked={showInversions}
-                onChange={setShowInversions}
+                checked={controls.showInversions}
+                onChange={(checked) => setControls({ ...controls, showInversions: checked })}
                 className={`${
-                  showInversions ? 'bg-blue-600' : 'bg-gray-600'
+                  controls.showInversions ? 'bg-blue-600' : 'bg-gray-600'
                 } relative inline-flex h-6 w-11 items-center rounded-full transition-colors`}
               >
                 <span className="sr-only">Show Inversions</span>
                 <span
                   className={`${
-                    showInversions ? 'translate-x-6' : 'translate-x-1'
+                    controls.showInversions ? 'translate-x-6' : 'translate-x-1'
                   } inline-block h-4 w-4 transform rounded-full bg-white transition-transform`}
                 />
               </Switch>
@@ -109,7 +105,7 @@ if (showQualities && selectedChord) {
           </div>
 
           {/* Extensions */}
-          {showExtensions && (
+          {controls.showExtensions && (
             <div className="grid grid-cols-4 gap-2 pt-2 border-t border-gray-700">
               {extensions.map((quality) => (
                 <button
@@ -124,7 +120,7 @@ if (showQualities && selectedChord) {
           )}
 
           {/* Alterations */}
-          {showAlterations && (
+          {controls.showAlterations && (
             <div className="grid grid-cols-4 gap-2 pt-2 border-t border-gray-700">
               {alterations.map((quality) => (
                 <button
@@ -139,7 +135,7 @@ if (showQualities && selectedChord) {
           )}
 
           {/* Inversions */}
-          {showInversions && (
+          {controls.showInversions && (
             <div className="grid grid-cols-4 gap-2 pt-2 border-t border-gray-700">
               {['', '/3', '/5', '/7'].map((inversion) => (
                 <button
