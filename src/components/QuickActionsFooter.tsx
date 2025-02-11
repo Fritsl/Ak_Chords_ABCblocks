@@ -219,9 +219,13 @@ export function QuickActionsFooter({
                 onClick={async () => {
                   try {
                     setIsExporting(true);
+                    if (!chords || chords.length === 0) {
+                      throw new Error('No chords to export');
+                    }
                     await exportToMIDI(chords, keySignature, bpm, selectedBlockType);
                   } catch (error) {
-                    console.error('Failed to export MIDI:', error);
+                    console.error('Failed to export MIDI:', error.message || error);
+                    // Could add user feedback here if needed
                   } finally {
                     setIsExporting(false);
                   }

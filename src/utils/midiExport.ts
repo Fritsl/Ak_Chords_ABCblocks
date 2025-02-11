@@ -47,6 +47,10 @@ async function createMIDIData(
     if (!chord) return;
 
     const midiNotes = getRomanNumeralNotes(chord, keySignature);
+    if (!midiNotes || midiNotes.length === 0) {
+      console.warn(`No notes found for chord: ${chord}`);
+      return;
+    }
     const startTime = index * 2;  // Multiply by 2 to space out the chords
     const duration = 2;  // Make each chord 2 beats long
 
