@@ -31,6 +31,33 @@ export function ChordSelector({
     return (
       <div className="absolute z-50 top-full mt-1 left-0 right-0 bg-gray-800 rounded-lg border border-gray-700 shadow-xl">
         <div className="p-4 space-y-4">
+          <div className="flex flex-col space-y-2">
+            <div className="flex items-center gap-2">
+              <Switch
+                checked={showExtensions}
+                onChange={setShowExtensions}
+                className={`${
+                  showExtensions ? 'bg-blue-600' : 'bg-gray-600'
+                } relative inline-flex h-6 w-11 items-center rounded-full transition-colors`}
+              >
+                <span className="sr-only">Show Extensions</span>
+                <span
+                  className={`${
+                    showExtensions ? 'translate-x-6' : 'translate-x-1'
+                  } inline-block h-4 w-4 transform rounded-full bg-white transition-transform`}
+                />
+              </Switch>
+              <span className="text-sm text-gray-300">Extensions</span>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <Switch
+                checked={showAlterations}
+                onChange={setShowAlterations}
+                className={`${
+                  showAlterations ? 'bg-blue-600' : 'bg-gray-600'
+                } relative inline-flex h-6 w-11 items-center rounded-full transition-colors`}
+              >
                 <span className="sr-only">Show Alterations</span>
                 <span
                   className={`${
@@ -40,7 +67,6 @@ export function ChordSelector({
               </Switch>
               <span className="text-sm text-gray-300">Alterations</span>
             </div>
-          </div>
 
             <div className="flex items-center gap-2">
               <Switch
