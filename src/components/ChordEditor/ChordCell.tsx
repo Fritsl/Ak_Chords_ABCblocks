@@ -1,3 +1,4 @@
+
 import React, { forwardRef } from 'react';
 import { Wand2, RefreshCw, Play, GripVertical } from 'lucide-react';
 import { KeySignature } from '../../types';
@@ -55,22 +56,6 @@ const formatChord = (chord: string, controls: any) => {
   return result;
 };
 
-  chord: string;
-  isActive: boolean;
-  onClick: () => void;
-  onSuggest: () => void;
-  onCycleQuality: () => void;
-  functionColor: string;
-  keySignature: KeySignature;
-  onPlay: (chord: string) => void;
-  currentStep: number;
-  controls: {
-    showExtensions: boolean;
-    showAlterations: boolean;
-    showInversions: boolean;
-  };
-}
-
 export const ChordCell = forwardRef<HTMLDivElement, ChordCellProps>(({
   id,
   barIndex,
@@ -82,7 +67,7 @@ export const ChordCell = forwardRef<HTMLDivElement, ChordCellProps>(({
   functionColor,
   keySignature,
   onPlay,
-  currentStep // Added prop for current step
+  currentStep
 }, ref) => {
   const {
     attributes,
