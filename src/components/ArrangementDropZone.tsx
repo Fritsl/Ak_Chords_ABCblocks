@@ -107,7 +107,7 @@ export function ArrangementDropZone({
               <li>Come back here and press Ctrl + V (Windows) or Cmd+V (OsX)</li>
             </ol>
           </div>
-          
+
           {/* Sample arrangement buttons */}
           <div className="mt-8 flex justify-center gap-4">
             <button
@@ -142,7 +142,7 @@ export function ArrangementDropZone({
               <li>Click the ArrangerKing Logo, Select "XML Copy"</li>
               <li>Come back here and press Ctrl + V (Windows) or Cmd+V (OsX)</li>
             </ol>
-            
+
             {/* Sample arrangement buttons */}
             <div className="mt-8 flex justify-center gap-4">
               <button

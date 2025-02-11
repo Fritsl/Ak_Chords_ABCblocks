@@ -36,6 +36,16 @@ interface ChordEditorProps {
   isSelected?: boolean;
   onSelect?: () => void;
   keySignature: KeySignature;
+  controls: {
+    showExtensions: boolean;
+    showAlterations: boolean;
+    showInversions: boolean;
+  };
+  setControls: React.Dispatch<React.SetStateAction<{
+    showExtensions: boolean;
+    showAlterations: boolean;
+    showInversions: boolean;
+  }>>;
 }
 
 export function ChordEditor({ 
@@ -48,7 +58,9 @@ export function ChordEditor({
   genreTypeName,
   isSelected = false,
   onSelect,
-  keySignature
+  keySignature,
+  controls,
+  setControls
 }: ChordEditorProps) {
   const block = arrangement.Blocks[blockIndex];
   const numBars = arrangement.Types[block.Type].Length;
@@ -56,11 +68,11 @@ export function ChordEditor({
   const [showQualities, setShowQualities] = useState(false);
   const [selectedChord, setSelectedChord] = useState<string>('');
   const [pasteError, setPasteError] = useState<string | null>(null);
-  const [controls, setControls] = useState({
-    showExtensions: false,
-    showAlterations: false,
-    showInversions: false
-  });
+  // const [controls, setControls] = useState({ // Removed as controls are now passed as props
+  //   showExtensions: false,
+  //   showAlterations: false,
+  //   showInversions: false
+  // });
 
   const { progressions, isLoading } = useChordProgressions(
     arrangement.Genre,
