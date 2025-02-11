@@ -23,6 +23,25 @@ interface ChordCellProps {
   };
 }
 
+interface ChordCellProps {
+  id: string;
+  barIndex: number;
+  chord: string;
+  isActive: boolean;
+  onClick: () => void;
+  onSuggest: () => void;
+  onCycleQuality: () => void;
+  functionColor: string;
+  keySignature: KeySignature;
+  onPlay: (chord: string) => void;
+  currentStep: number;
+  controls: {
+    showExtensions: boolean;
+    showAlterations: boolean;
+    showInversions: boolean;
+  };
+}
+
 const formatChord = (chord: string, controls: any) => {
   const baseChord = chord.replace(/[^IiVv]+$/, '');
   let result = baseChord;
@@ -58,6 +77,16 @@ const formatChord = (chord: string, controls: any) => {
 export const ChordCell = forwardRef<HTMLDivElement, ChordCellProps>(({
   id,
   barIndex,
+  chord,
+  isActive,
+  onClick,
+  onSuggest,
+  onCycleQuality,
+  functionColor,
+  keySignature,
+  onPlay,
+  currentStep,
+  controls,
   chord,
   isActive,
   onClick,
