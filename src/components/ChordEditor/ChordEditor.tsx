@@ -295,9 +295,10 @@ export function ChordEditor({
             onClick={(e) => {
               e.stopPropagation();
               const currentType = arrangement.Blocks[blockIndex].Type;
+              const validChords = chords.map(chord => chord || '');
               arrangement.Blocks.forEach((block, idx) => {
                 if (block.Type === currentType && idx !== blockIndex) {
-                  onChordChange?.(idx, [...chords]);
+                  onChordChange?.(idx, [...validChords]);
                 }
               });
             }}
