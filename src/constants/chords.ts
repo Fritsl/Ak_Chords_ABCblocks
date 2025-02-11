@@ -1,4 +1,5 @@
-// Only keep the chord qualities definition, remove all hardcoded progressions
+
+// Extended chord qualities with alterations
 export const CHORD_QUALITIES = {
   '': [0, 4, 7],
   'm': [0, 3, 7],
@@ -15,7 +16,19 @@ export const CHORD_QUALITIES = {
   'sus2': [0, 2, 7],
   '9': [0, 4, 7, 10, 14],
   'maj9': [0, 4, 7, 11, 14],
-  'm9': [0, 3, 7, 10, 14]
+  'm9': [0, 3, 7, 10, 14],
+  '11': [0, 4, 7, 10, 14, 17],
+  '13': [0, 4, 7, 10, 14, 17, 21],
+  'maj13': [0, 4, 7, 11, 14, 17, 21],
+  'm13': [0, 3, 7, 10, 14, 17, 21],
+  '7#5': [0, 4, 8, 10],
+  '7b5': [0, 4, 6, 10],
+  '9#5': [0, 4, 8, 10, 14],
+  '9b5': [0, 4, 6, 10, 14],
+  '7#9': [0, 4, 7, 10, 15],
+  '7b9': [0, 4, 7, 10, 13],
+  '7#11': [0, 4, 7, 10, 14, 18],
+  '6/9': [0, 4, 7, 9, 14]
 } as const;
 
 export const SCALE_DEGREES = {
