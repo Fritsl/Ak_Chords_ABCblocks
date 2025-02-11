@@ -296,7 +296,7 @@ export function ChordEditor({
               e.stopPropagation();
               const currentType = arrangement.Blocks[blockIndex].Type;
               // Handle special case for Outro type
-              const progressionType = currentType === 'O' ? 'Outro.Fade_Out' : 
+              const progressionType = currentType === 'O' ? 'Outro_Fade_Out' : 
                                      currentType === 'A' ? 'Verse' :
                                      currentType === 'B' ? 'Chorus' :
                                      currentType === 'C' ? 'Bridge' :

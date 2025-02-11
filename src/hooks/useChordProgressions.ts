@@ -15,8 +15,8 @@ export function useChordProgressions(genre: string, blockType: string) {
 
     setIsLoading(true);
     try {
-      // Normalize block type by removing spaces, numbers and converting slashes to hyphens
-      const normalizedType = blockType.replace(/\s*\d+$/, '').replace('/', '-');
+      // Normalize block type by removing spaces, numbers and converting slashes to hyphens and dots to underscores
+      const normalizedType = blockType.replace(/\s*\d+$/, '').replace('/', '-').replace('.', '_');
       const originalType = REVERSE_BLOCK_TYPE_MAP[normalizedType as keyof typeof REVERSE_BLOCK_TYPE_MAP] || normalizedType;
       
       if (!originalType) {
