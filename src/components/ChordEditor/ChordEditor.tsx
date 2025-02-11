@@ -294,6 +294,21 @@ export function ChordEditor({
           <button 
             onClick={(e) => {
               e.stopPropagation();
+              const currentType = arrangement.Blocks[blockIndex].Type;
+              arrangement.Blocks.forEach((block, idx) => {
+                if (block.Type === currentType && idx !== blockIndex) {
+                  onChordChange?.(idx, [...chords]);
+                }
+              });
+            }}
+            className="px-3 py-1.5 text-xs bg-indigo-600 hover:bg-indigo-500 rounded-lg inline-flex items-center gap-1.5"
+          >
+            <Copy className="w-3 h-3" />
+            <span>Copy to all {genreTypeName.split(' ')[0]}</span>
+          </button>
+          <button 
+            onClick={(e) => {
+              e.stopPropagation();
               handlePasteChords();
             }}
             className="px-3 py-1.5 text-xs bg-indigo-600 hover:bg-indigo-500 rounded-lg inline-flex items-center gap-1.5"
