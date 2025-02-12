@@ -27,7 +27,7 @@ interface ChordGridProps {
   onBarClick: (index: number) => void;
   keySignature: KeySignature;
   playChord: (chord: string, keySignature: KeySignature) => void;
-  controls: {
+  controls?: {
     showExtensions: boolean;
     showAlterations: boolean;
     showInversions: boolean;

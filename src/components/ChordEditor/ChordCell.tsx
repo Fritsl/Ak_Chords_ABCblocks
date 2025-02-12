@@ -42,8 +42,13 @@ interface ChordCellProps {
   };
 }
 
-const formatChord = (chord: string, controls: any) => {
-  if (!controls) return chord;
+const formatChord = (chord: string, controls: any = {}) => {
+  const defaultControls = {
+    showExtensions: false,
+    showAlterations: false,
+    showInversions: false,
+    ...controls
+  };
   
   const baseChord = chord.replace(/[^IiVv]+$/, '');
   let result = baseChord;
