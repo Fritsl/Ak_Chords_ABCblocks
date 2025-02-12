@@ -36,17 +36,7 @@ interface ChordEditorProps {
   isSelected?: boolean;
   onSelect?: () => void;
   keySignature: KeySignature;
-  controls: {
-    showExtensions: boolean;
-    showAlterations: boolean;
-    showInversions: boolean;
-  };
-  setControls: React.Dispatch<React.SetStateAction<{
-    showExtensions: boolean;
-    showAlterations: boolean;
-    showInversions: boolean;
-  }>>;
-}
+  }
 
 export function ChordEditor({ 
   arrangement, 
