@@ -44,7 +44,8 @@ export function ChordGrid({
   onChordsReorder,
   onBarClick,
   keySignature,
-  playChord 
+  playChord,
+  controls 
 }: ChordGridProps) {
   const sensors = useSensors(
     useSensor(PointerSensor),
@@ -88,11 +89,7 @@ export function ChordGrid({
               keySignature={keySignature}
               onPlay={playChord}
               currentStep={currentStep}
-              controls={{
-                showExtensions: false,
-                showAlterations: false,
-                showInversions: false
-              }}
+              controls={controls}
               onSuggest={() => {}}
               onCycleQuality={() => {}}
             />
