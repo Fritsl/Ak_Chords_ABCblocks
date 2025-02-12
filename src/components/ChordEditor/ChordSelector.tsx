@@ -159,7 +159,7 @@ export function ChordSelector({
         {['I', 'II', 'III', 'IV', 'V', 'VI', 'VII'].map((chord) => (
           <button
             key={chord}
-            onClick={() => console.log('Selected chord:', chord)}
+            onClick={() => onChordSelect(chord)}
             className="px-2 py-1 text-sm bg-gray-700 hover:bg-gray-600 rounded"
           >
             {chord}
