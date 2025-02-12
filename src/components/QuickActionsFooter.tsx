@@ -200,65 +200,7 @@ export function QuickActionsFooter({
               </button>
             </div>
 
-            <div className="h-8 w-px bg-gray-700" />
-
-            {/* Other Actions */}
-            <div className="flex items-center gap-2">
-              <button
-                onClick={onRandomProgression}
-                className="p-2 text-gray-400 hover:text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors group relative"
-                title="Generate random progression"
-              >
-                <RefreshCw className="w-5 h-5" />
-                <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 whitespace-nowrap transition-opacity">
-                  Random progression
-                </span>
-              </button>
-              <button
-                onClick={onClearChords}
-                className="p-2 text-gray-400 hover:text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors group relative"
-                title="Clear all chords"
-              >
-                <CircleSlash2 className="w-5 h-5" />
-                <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 whitespace-nowrap transition-opacity">
-                  Clear chords
-                </span>
-              </button>
-              <button
-                onClick={async () => {
-                  try {
-                    setIsExporting(true);
-                    if (!chords || chords.length === 0) {
-                      throw new Error('No chords to export');
-                    }
-                    await exportToMIDI(chords, keySignature, bpm, selectedBlockType);
-                  } catch (error) {
-                    console.error('Failed to export MIDI:', error.message || error);
-                    // Could add user feedback here if needed
-                  } finally {
-                    setIsExporting(false);
-                  }
-                }}
-                disabled={isExporting || !chords.length}
-                className="p-2 text-gray-400 hover:text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors group relative disabled:opacity-50 disabled:cursor-not-allowed"
-                title="Download MIDI file"
-              >
-                <Download className="w-5 h-5" />
-                <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 whitespace-nowrap transition-opacity">
-                  Download MIDI
-                </span>
-              </button>
-              <button
-                onClick={() => setShowSynthControls(true)}
-                className="p-2 text-gray-400 hover:text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors group relative"
-                title="Sound settings"
-              >
-                <Settings className="w-5 h-5" />
-                <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 whitespace-nowrap transition-opacity">
-                  Sound settings
-                </span>
-              </button>
-            </div>
+            
           </div>
         </div>
       </div>

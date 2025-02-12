@@ -1,13 +1,23 @@
-import React from 'react';
-import { Arrangement, BUILDING_HEIGHTS, BUILDING_COLORS } from '../types';
-import { MousePointer, Music } from 'lucide-react'; // Added Music import
+import React, { useState } from 'react';
+import { Arrangement, BUILDING_HEIGHTS, BUILDING_COLORS, KeySignature } from '../types';
+import { MousePointer, Music, RefreshCw, CircleSlash2, Download, Settings } from 'lucide-react';
 import { getNumberedSectionName } from '../utils/sectionNames';
+import { exportToMIDI } from '../utils/midiExport';
+import { SynthControls } from './SynthControls';
 
 interface Props {
   arrangement: Arrangement;
   showColors: boolean;
   selectedBlockIndex: number | null;
   onBlockClick: (index: number) => void;
+  onRandomProgression: () => void;
+  onClearChords: () => void;
+  keySignature: KeySignature;
+  bpm: number;
+  selectedBlockType: string;
+  chords: string[];
+  controls: any;
+  setControls: (controls: any) => void;
 }
 
 export function ArrangementVisualizer({ 
@@ -219,17 +229,48 @@ export function ArrangementVisualizer({
 
       {/* Play Controls */}
       <div className="mt-4 flex items-center justify-center gap-4">
-        <button
-          onClick={() => onBlockClick(selectedBlockIndex || 0)}
-          className="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg inline-flex items-center gap-2"
-        >
-          <Music className="w-4 h-4" />
-          <span>Play</span>
-        </button>
-        <div className="flex gap-2">
-          <button className="px-3 py-2 bg-blue-600 hover:bg-blue-500 rounded-lg text-sm">½x</button>
-          <button className="px-3 py-2 bg-blue-600 hover:bg-blue-500 rounded-lg text-sm">1x</button>
-          <button className="px-3 py-2 bg-blue-600 hover:bg-blue-500 rounded-lg text-sm">2x</button>
+        <div className="flex items-center gap-2">
+          <button
+            onClick={onRandomProgression}
+            className="p-2 text-gray-400 hover:text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
+            title="Generate random progression"
+          >
+            <RefreshCw className="w-5 h-5" />
+          </button>
+          <button
+            onClick={onClearChords}
+            className="p-2 text-gray-400 hover:text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
+            title="Clear all chords"
+          >
+            <CircleSlash2 className="w-5 h-5" />
+          </button>
+          <button
+            onClick={async () => {
+              try {
+                setIsExporting(true);
+                if (!chords || chords.length === 0) {
+                  throw new Error('No chords to export');
+                }
+                await exportToMIDI(chords, keySignature, bpm, selectedBlockType);
+              } catch (error) {
+                console.error('Failed to export MIDI:', error.message || error);
+              } finally {
+                setIsExporting(false);
+              }
+            }}
+            disabled={isExporting || !chords.length}
+            className="p-2 text-gray-400 hover:text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            title="Download MIDI file"
+          >
+            <Download className="w-5 h-5" />
+          </button>
+          <button
+            onClick={() => setShowSynthControls(true)}
+            className="p-2 text-gray-400 hover:text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
+            title="Sound settings"
+          >
+            <Settings className="w-5 h-5" />
+          </button>
         </div>
       </div>
     </div>
