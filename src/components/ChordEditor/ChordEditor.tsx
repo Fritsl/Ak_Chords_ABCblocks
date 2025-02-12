@@ -91,11 +91,20 @@ export function ChordEditor({
     }
   };
 
-  const handleChordSelect = (chord: string, quality: string) => {
+  const handleChordSelect = (chord: string) => {
     if (activeBarIndex !== null) {
-      const newChord = chord + quality;
+      setSelectedChord(chord);
+      setShowQualities(true);
+    }
+  };
+
+  const handleQualitySelect = (quality: string) => {
+    if (activeBarIndex !== null && selectedChord) {
+      const newChord = selectedChord + quality;
       onChordChange?.(activeBarIndex, newChord);
+      setShowQualities(false);
       setActiveBarIndex(null);
+      setSelectedChord('');
     }
   };
 
