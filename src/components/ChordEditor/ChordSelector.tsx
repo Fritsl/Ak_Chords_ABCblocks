@@ -8,7 +8,7 @@ interface ChordSelectorProps {
   showQualities: boolean;
   onChordSelect: (chord: string) => void;
   onQualitySelect: (quality: string) => void;
-  controls: {
+  controls?: {
     showExtensions: boolean;
     showAlterations: boolean;
     showInversions: boolean;
@@ -26,6 +26,13 @@ export function ChordSelector({
   setControls
 }: ChordSelectorProps) {
   if (!isVisible) return null;
+  
+  const defaultControls = {
+    showExtensions: false,
+    showAlterations: false,
+    showInversions: false,
+    ...controls
+  };
 
   const basicQualities = ['', 'm', 'dim', 'aug', '7', 'maj7', 'm7', 'sus4'];
   const extensions = ['9', '11', '13', 'maj9', 'maj13', 'm9', 'm13'];
@@ -38,8 +45,8 @@ export function ChordSelector({
           <div className="flex flex-col space-y-2">
             <div className="flex items-center gap-2">
               <Switch
-                checked={controls.showExtensions}
-                onChange={(checked) => setControls({ ...controls, showExtensions: checked })}
+                checked={defaultControls.showExtensions}
+                onChange={(checked) => setControls?.({ ...defaultControls, showExtensions: checked })}
                 className={`${
                   controls.showExtensions ? 'bg-blue-600' : 'bg-gray-600'
                 } relative inline-flex h-6 w-11 items-center rounded-full transition-colors`}
@@ -56,8 +63,8 @@ export function ChordSelector({
 
             <div className="flex items-center gap-2">
               <Switch
-                checked={controls.showAlterations}
-                onChange={(checked) => setControls({ ...controls, showAlterations: checked })}
+                checked={defaultControls.showAlterations}
+                onChange={(checked) => setControls?.({ ...defaultControls, showAlterations: checked })}
                 className={`${
                   controls.showAlterations ? 'bg-blue-600' : 'bg-gray-600'
                 } relative inline-flex h-6 w-11 items-center rounded-full transition-colors`}
@@ -74,8 +81,8 @@ export function ChordSelector({
 
             <div className="flex items-center gap-2">
               <Switch
-                checked={controls.showInversions}
-                onChange={(checked) => setControls({ ...controls, showInversions: checked })}
+                checked={defaultControls.showInversions}
+                onChange={(checked) => setControls?.({ ...defaultControls, showInversions: checked })}
                 className={`${
                   controls.showInversions ? 'bg-blue-600' : 'bg-gray-600'
                 } relative inline-flex h-6 w-11 items-center rounded-full transition-colors`}
