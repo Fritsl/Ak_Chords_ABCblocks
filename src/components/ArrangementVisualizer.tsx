@@ -24,10 +24,20 @@ export function ArrangementVisualizer({
   arrangement, 
   showColors,
   selectedBlockIndex,
-  onBlockClick 
+  onBlockClick,
+  onRandomProgression,
+  onClearChords,
+  keySignature,
+  bpm,
+  selectedBlockType,
+  chords,
+  controls,
+  setControls
 }: Props) {
   const maxHeight = 8;
   const gapSize = 2;
+  const [isExporting, setIsExporting] = useState(false);
+  const [showSynthControls, setShowSynthControls] = useState(false);
 
   const getDisplayName = (type: string, index: number) => {
     return getNumberedSectionName(type, index, arrangement.Blocks, arrangement.Genre);
