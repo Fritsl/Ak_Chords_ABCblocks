@@ -102,12 +102,15 @@ export function ChordEditor({
   };
 
   const handleChordSelect = (chord: string) => {
-    if (showQualities) {
-      setSelectedChord(chord);
-      setShowQualities(false);
-      onChordChange?.(activeBarIndex!, chord);
-    } else {
-      setSelectedChord(chord);
+    console.log('handleChordSelect:', { 
+      chord, 
+      activeBarIndex, 
+      controls,
+      showQualities
+    });
+
+    if (activeBarIndex !== null) {
+      onChordChange?.(activeBarIndex, chord);
       setShowQualities(true);
     }
   };

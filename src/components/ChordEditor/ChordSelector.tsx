@@ -38,7 +38,18 @@ export function ChordSelector({
   const extensions = ['9', '11', '13', 'maj9', 'maj13', 'm9', 'm13'];
   const alterations = ['7#5', '7b5', '9#5', '9b5', '7#9', '7b9', '7#11', '6/9'];
 
+  console.log('ChordSelector render:', { 
+    isVisible, 
+    selectedChord, 
+    showQualities, 
+    controls: defaultControls 
+  });
+
   if (showQualities && selectedChord) {
+    if (!controls) {
+      console.warn('Controls object is undefined');
+      return null;
+    }
     return (
       <div className="absolute z-50 top-full mt-1 left-0 right-0 bg-gray-800 rounded-lg border border-gray-700 shadow-xl">
         <div className="p-4 space-y-4">
@@ -48,13 +59,13 @@ export function ChordSelector({
                 checked={defaultControls.showExtensions}
                 onChange={(checked) => setControls?.({ ...defaultControls, showExtensions: checked })}
                 className={`${
-                  controls.showExtensions ? 'bg-blue-600' : 'bg-gray-600'
+                  defaultControls.showExtensions ? 'bg-blue-600' : 'bg-gray-600'
                 } relative inline-flex h-6 w-11 items-center rounded-full transition-colors`}
               >
                 <span className="sr-only">Show Extensions</span>
                 <span
                   className={`${
-                    controls.showExtensions ? 'translate-x-6' : 'translate-x-1'
+                    defaultControls.showExtensions ? 'translate-x-6' : 'translate-x-1'
                   } inline-block h-4 w-4 transform rounded-full bg-white transition-transform`}
                 />
               </Switch>
@@ -112,7 +123,7 @@ export function ChordSelector({
           </div>
 
           {/* Extensions */}
-          {controls.showExtensions && (
+          {defaultControls.showExtensions && (
             <div className="grid grid-cols-4 gap-2 pt-2 border-t border-gray-700">
               {extensions.map((quality) => (
                 <button
