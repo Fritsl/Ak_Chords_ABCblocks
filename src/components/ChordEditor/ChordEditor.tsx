@@ -101,29 +101,11 @@ export function ChordEditor({
     }
   };
 
-  const handleChordSelect = (chord: string) => {
-    console.log('handleChordSelect:', { 
-      chord, 
-      activeBarIndex, 
-      controls,
-      showQualities
-    });
-
+  const handleChordSelect = (chord: string, quality: string) => {
     if (activeBarIndex !== null) {
-      setSelectedChord(chord);
-      setShowQualities(true);
-      // Add base chord immediately
-      onChordChange?.(activeBarIndex, chord);
-    }
-  };
-
-  const handleQualitySelect = (quality: string) => {
-    if (activeBarIndex !== null && selectedChord) {
-      const newChord = selectedChord + quality;
+      const newChord = chord + quality;
       onChordChange?.(activeBarIndex, newChord);
-      setShowQualities(false);
       setActiveBarIndex(null);
-      setSelectedChord('');
     }
   };
 
