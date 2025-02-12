@@ -5,14 +5,24 @@ interface ChordSelectorProps {
   isVisible: boolean;
   selectedChord: string;
   showQualities: boolean;
-  onChordSelect: (chord: string, quality: string) => void;
+  onChordSelect: (chord: string) => void;
+  onQualitySelect: (quality: string) => void;
+  controls?: {
+    showExtensions: boolean;
+    showAlterations: boolean;
+    showInversions: boolean;
+  };
+  setControls?: (controls: any) => void;
 }
 
 export function ChordSelector({
   isVisible,
   selectedChord,
   showQualities,
-  onChordSelect
+  onChordSelect,
+  onQualitySelect,
+  controls,
+  setControls
 }: ChordSelectorProps) {
   if (!isVisible) return null;
 
@@ -22,10 +32,10 @@ export function ChordSelector({
   return (
     <div className="absolute z-50 p-4 bg-gray-800 rounded-lg border border-gray-700 shadow-xl w-[300px]">
       <div className="grid grid-cols-4 gap-2">
-        {chords.map(chord => (
+        {!showQualities && chords.map(chord => (
           <button
             key={chord}
-            onClick={() => onChordSelect(chord, '')}
+            onClick={() => onChordSelect(chord)}
             className="p-2 bg-gray-700 hover:bg-gray-600 rounded"
           >
             {chord}
@@ -37,7 +47,7 @@ export function ChordSelector({
           {qualities.map(quality => (
             <button
               key={quality}
-              onClick={() => onChordSelect(selectedChord, quality)}
+              onClick={() => onQualitySelect(quality)}
               className="p-2 bg-gray-700 hover:bg-gray-600 rounded"
             >
               {quality || 'Basic'}
