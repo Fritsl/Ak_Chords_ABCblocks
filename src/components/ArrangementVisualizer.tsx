@@ -1,6 +1,6 @@
 import React from 'react';
 import { Arrangement, BUILDING_HEIGHTS, BUILDING_COLORS } from '../types';
-import { MousePointer } from 'lucide-react';
+import { MousePointer, Music } from 'lucide-react'; // Added Music import
 import { getNumberedSectionName } from '../utils/sectionNames';
 
 interface Props {
@@ -214,8 +214,24 @@ export function ArrangementVisualizer({
                 </div>
               );
             })}
-          </div>
         </div>
       </div>
-    );
+
+      {/* Play Controls */}
+      <div className="mt-4 flex items-center justify-center gap-4">
+        <button
+          onClick={() => onBlockClick(selectedBlockIndex || 0)}
+          className="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 rounded-lg inline-flex items-center gap-2"
+        >
+          <Music className="w-4 h-4" />
+          <span>Play</span>
+        </button>
+        <div className="flex gap-2">
+          <button className="px-3 py-2 bg-blue-600 hover:bg-blue-500 rounded-lg text-sm">½x</button>
+          <button className="px-3 py-2 bg-blue-600 hover:bg-blue-500 rounded-lg text-sm">1x</button>
+          <button className="px-3 py-2 bg-blue-600 hover:bg-blue-500 rounded-lg text-sm">2x</button>
+        </div>
+      </div>
+    </div>
+  );
 }
