@@ -157,10 +157,23 @@ export default function App() {
               <div className="relative">
                 <div className="bg-gray-800/80 backdrop-blur-sm rounded-lg shadow-xl p-4 sm:p-6 border border-gray-700">
                   <ArrangementVisualizer 
-                    arrangement={arrangement} 
+                    arrangement={arrangement}
                     showColors={showColors}
                     selectedBlockIndex={selectedBlockIndex}
                     onBlockClick={handleBlockClick}
+                    onRandomProgression={handleRandomProgression}
+                    onClearChords={handleClearBlockChords}
+                    keySignature={keySignature}
+                    bpm={bpm}
+                    selectedBlockType={selectedBlockIndex !== null ? getNumberedSectionName(
+                      arrangement.Blocks[selectedBlockIndex].Type,
+                      selectedBlockIndex,
+                      arrangement.Blocks,
+                      arrangement.Genre
+                    ) : ''}
+                    chords={selectedBlockIndex !== null ? (blockChords[selectedBlockIndex] || []) : []}
+                    controls={controls}
+                    setControls={setControls}
                   />
                 </div>
 
