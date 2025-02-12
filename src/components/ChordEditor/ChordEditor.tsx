@@ -110,10 +110,8 @@ export function ChordEditor({
     });
 
     if (activeBarIndex !== null) {
-      onChordChange?.(activeBarIndex, chord);
       setSelectedChord(chord);
-      setShowQualities(false);
-      setActiveBarIndex(null);
+      setShowQualities(true); // Show qualities after chord selection instead of hiding
     }
   };
 
