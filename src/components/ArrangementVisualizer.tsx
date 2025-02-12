@@ -239,30 +239,45 @@ export function ArrangementVisualizer({
 
       <div className="mt-4 flex justify-center gap-4">
         <div className="flex items-center gap-2 absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4">
-          {/* Play Controls Here */}
+          {/* Play Controls */}
           <button
-            onClick={() => {}} // Add play functionality
+            onClick={() => {
+              if (isPlaying) {
+                Tone.Transport.stop();
+                setIsPlaying(false);
+              } else {
+                Tone.start();
+                Tone.Transport.start();
+                setIsPlaying(true);
+              }
+            }}
             className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-500 rounded-lg text-white"
           >
             <Music className="w-4 h-4" />
-            <span>Play</span>
+            <span>{isPlaying ? 'Stop' : 'Play'}</span>
           </button>
           <div className="flex gap-1">
             <button
-              onClick={() => {}} // Add half-speed functionality
-              className="px-2 py-1.5 text-xs bg-blue-600 hover:bg-blue-500 rounded-lg"
+              onClick={() => {
+                Tone.Transport.bpm.value = Tone.Transport.bpm.value / 2;
+              }}
+              className={`px-2 py-1.5 text-xs ${Tone.Transport.bpm.value === 60 ? 'bg-blue-800' : 'bg-blue-600 hover:bg-blue-500'} rounded-lg`}
             >
               ½x
             </button>
             <button
-              onClick={() => {}} // Add double-speed functionality
-              className="px-2 py-1.5 text-xs bg-blue-600 hover:bg-blue-500 rounded-lg"
+              onClick={() => {
+                Tone.Transport.bpm.value = Tone.Transport.bpm.value * 2;
+              }}
+              className={`px-2 py-1.5 text-xs ${Tone.Transport.bpm.value === 240 ? 'bg-blue-800' : 'bg-blue-600 hover:bg-blue-500'} rounded-lg`}
             >
               2x
             </button>
             <button
-              onClick={() => {}} // Add reset-speed functionality
-              className="px-2 py-1.5 text-xs bg-blue-600 hover:bg-blue-500 rounded-lg"
+              onClick={() => {
+                Tone.Transport.bpm.value = 120;
+              }}
+              className={`px-2 py-1.5 text-xs ${Tone.Transport.bpm.value === 120 ? 'bg-blue-800' : 'bg-blue-600 hover:bg-blue-500'} rounded-lg`}
             >
               1x
             </button>
