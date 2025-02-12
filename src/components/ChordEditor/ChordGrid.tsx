@@ -88,7 +88,13 @@ export function ChordGrid({
               keySignature={keySignature}
               onPlay={playChord}
               currentStep={currentStep}
-              controls={controls}
+              controls={{
+                showExtensions: false,
+                showAlterations: false,
+                showInversions: false
+              }}
+              onSuggest={() => {}}
+              onCycleQuality={() => {}}
             />
           ))}
         </SortableContext>
