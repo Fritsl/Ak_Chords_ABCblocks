@@ -43,35 +43,12 @@ interface ChordCellProps {
 }
 
 const formatChord = (chord: string, controls: any) => {
+  if (!controls) return chord; // Add null check
+  
   const baseChord = chord.replace(/[^IiVv]+$/, '');
   let result = baseChord;
-
-  // Extract the full quality/extension part
-  const qualityPart = chord.slice(baseChord.length);
-
-  if (controls.showExtensions) {
-    if (qualityPart.includes('maj')) result += 'maj';
-    if (qualityPart.includes('m')) result += 'm';
-    if (qualityPart.includes('dim')) result += 'dim';
-    if (qualityPart.includes('aug')) result += 'aug';
-  }
-
-  if (controls.showAlterations) {
-    if (qualityPart.includes('7')) result += '7';
-    if (qualityPart.includes('9')) result += '9';
-    if (qualityPart.includes('11')) result += '11';
-    if (qualityPart.includes('13')) result += '13';
-    if (qualityPart.includes('#5')) result += '#5';
-    if (qualityPart.includes('b5')) result += 'b5';
-  }
-
-  if (controls.showInversions) {
-    if (qualityPart.includes('/3')) result += '/3';
-    if (qualityPart.includes('/5')) result += '/5';
-    if (qualityPart.includes('/7')) result += '/7';
-  }
-
-  return result;
+  
+  return result; // Temporarily return just base chord
 };
 
 export const ChordCell = forwardRef<HTMLDivElement, ChordCellProps>(({
