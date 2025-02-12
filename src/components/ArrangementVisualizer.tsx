@@ -238,8 +238,8 @@ export function ArrangementVisualizer({
       </div>
 
       <div className="mt-4 flex justify-center gap-4">
-        {/* Play controls only */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4">
+          {/* Play Controls Here */}
           <button
             onClick={() => {}} // Add play functionality
             className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-500 rounded-lg text-white"
@@ -267,6 +267,51 @@ export function ArrangementVisualizer({
               1x
             </button>
           </div>
+        </div>
+
+        {/* Utility Controls */}
+        <div className="flex items-center gap-2">
+          <button
+            onClick={onRandomProgression}
+            className="p-2 text-gray-400 hover:text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
+            title="Generate random progression"
+          >
+            <RefreshCw className="w-5 h-5" />
+          </button>
+          <button
+            onClick={onClearChords}
+            className="p-2 text-gray-400 hover:text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
+            title="Clear all chords"
+          >
+            <CircleSlash2 className="w-5 h-5" />
+          </button>
+          <button
+            onClick={async () => {
+              try {
+                setIsExporting(true);
+                if (!chords || chords.length === 0) {
+                  throw new Error('No chords to export');
+                }
+                await exportToMIDI(chords, keySignature, bpm, selectedBlockType);
+              } catch (error) {
+                console.error('Failed to export MIDI:', error.message || error);
+              } finally {
+                setIsExporting(false);
+              }
+            }}
+            disabled={isExporting || !chords.length}
+            className="p-2 text-gray-400 hover:text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            title="Download MIDI file"
+          >
+            <Download className="w-5 h-5" />
+          </button>
+          <button
+            onClick={() => setShowSynthControls(true)}
+            className="p-2 text-gray-400 hover:text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
+            title="Sound settings"
+          >
+            <Settings className="w-5 h-5" />
+          </button>
         </div>
       </div>
     </div>
