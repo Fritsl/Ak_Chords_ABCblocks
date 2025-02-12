@@ -237,9 +237,8 @@ export function ArrangementVisualizer({
         </div>
       </div>
 
-      {/* Play Controls */}
-      <div className="mt-4 flex items-center justify-center gap-4">
-        <div className="flex items-center gap-2">
+      <div className="mt-4 flex justify-center gap-4">
+        <div className="flex items-center gap-2 absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4">
           <button
             onClick={onRandomProgression}
             className="p-2 text-gray-400 hover:text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
