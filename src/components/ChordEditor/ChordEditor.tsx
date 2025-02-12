@@ -111,15 +111,20 @@ export function ChordEditor({
 
     if (activeBarIndex !== null) {
       setSelectedChord(chord);
-      setShowQualities(true); // Show qualities after chord selection instead of hiding
+      setShowQualities(true);
+      // Add base chord immediately
+      onChordChange?.(activeBarIndex, chord);
     }
   };
 
   const handleQualitySelect = (quality: string) => {
-    const newChord = selectedChord + quality;
-    onChordChange?.(activeBarIndex!, newChord);
-    setShowQualities(false);
-    setActiveBarIndex(null);
+    if (activeBarIndex !== null && selectedChord) {
+      const newChord = selectedChord + quality;
+      onChordChange?.(activeBarIndex, newChord);
+      setShowQualities(false);
+      setActiveBarIndex(null);
+      setSelectedChord('');
+    }
   };
 
   const handleCopyChords = () => {
