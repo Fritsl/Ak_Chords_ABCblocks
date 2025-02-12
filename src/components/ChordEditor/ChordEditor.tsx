@@ -110,7 +110,7 @@ export function ChordEditor({
     });
 
     if (activeBarIndex !== null) {
-      onChordChange?.(activeBarIndex, chord);
+      setSelectedChord(chord);
       setShowQualities(true);
     }
   };
