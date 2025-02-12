@@ -137,6 +137,47 @@ export function QuickActionsFooter({
           <div className="flex items-center gap-6">
             {/* Quick Actions */}
             <div className="flex items-center gap-4">
+              <button
+                onClick={onRandomProgression}
+                className="p-2 text-gray-400 hover:text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
+                title="Generate random progression"
+              >
+                <RefreshCw className="w-5 h-5" />
+              </button>
+              <button
+                onClick={onClearChords}
+                className="p-2 text-gray-400 hover:text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
+                title="Clear all chords"
+              >
+                <CircleSlash2 className="w-5 h-5" />
+              </button>
+              <button
+                onClick={async () => {
+                  try {
+                    setIsExporting(true);
+                    if (!chords || chords.length === 0) {
+                      throw new Error('No chords to export');
+                    }
+                    await exportToMIDI(chords, keySignature, bpm, selectedBlockType);
+                  } catch (error) {
+                    console.error('Failed to export MIDI:', error.message || error);
+                  } finally {
+                    setIsExporting(false);
+                  }
+                }}
+                disabled={isExporting || !chords.length}
+                className="p-2 text-gray-400 hover:text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                title="Download MIDI file"
+              >
+                <Download className="w-5 h-5" />
+              </button>
+              <button
+                onClick={() => setShowSynthControls(true)}
+                className="p-2 text-gray-400 hover:text-white bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
+                title="Sound settings"
+              >
+                <Settings className="w-5 h-5" />
+              </button>
             </div>
 
             <div className="h-8 w-px bg-gray-700" />
